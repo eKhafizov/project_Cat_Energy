@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html
+  class="page"
+  lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Подбор программы Cat-Energy</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Cat-energy/img/icon/favicon__size__32x32.svg" />
+  </head>
+
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a
+          class="page-header__logo logo"
+          href="#"
+          ><img
+            class="page-header__logo-icon logo__icon logo__icon--image"
+            src="/Cat-energy/img/icon/logo__icon--image.png"
+            width="34"
+            height="38"
+            alt="иконка-логотип сайта."
+        /></a>
+        <a
+          class="page-header__logo logo"
+          href="#"
+          ><img
+            class="page-header__logo-text logo__icon logo__icon--text"
+            src="/Cat-energy/img/icon/logo__icon--text.png.png"
+            width="101"
+            height="18"
+            alt="иконка-логотип сайта."
+        /></a>
+        <nav class="site-nav navigation">
+          <button
+            class="site-nav__button navigation__button navigation__button--open"
+            type="button">
+            <img
+              src="/Cat-energy/img/icon/site-nav__button.png"
+              width="24"
+              height="16"
+              alt="иконка меню сайта." />
+          </button>
+          <ul class="site-nav__list navigation__list">
+            <li class="site-nav__item navigation__item">
+              <a
+                class="site-nav__link navigation__link"
+                href="#"
+                >Главная</a
+              >
+            </li>
+            <li class="site-nav__item navigation__item">
+              <a class="site-nav__link navigation__link">Каталог продукции</a>
+            </li>
+            <li class="site-nav__item navigation__item">
+              <a
+                class="site-nav__link navigation__link navigation__link--current"
+                >Подбор программы</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="catalog-main">
+      <h1 class="visually-hidden">Страница с формой для оформления заказа.</h1>
+
+      <section class="program-choice info">
+        <h2 class="program-choice__heading info__heading">Подбор программы</h2>
+        <p class="program-choice__calltoaction info__calltoaction">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+        <form
+          class="program-choice__form info__form"
+          method="post"
+          action="https://echo.htmlacademy.ru">
+          <fieldset class="program-choice__info info__pet-details">
+            <legend class="visually-hidden"></legend>
+            <ul class="info__pet-list">
+              <li class="info__pet-item">
+                <label
+                  class="info__pet-name"
+                  for="pet-name"
+                  >ИМЯ:*<input
+                    type="text"
+                    name="pet-name"
+                    id="pet-name"
+                    value="БАРСИК"
+                /></label>
+              </li>
+              <li class="info__pet-item">
+                <label
+                  class="info__pet-weight"
+                  for="pet-weight"
+                  >Вес (кг):*<input
+                    type="number"
+                    name="pet-weight"
+                    id="pet-weight"
+                    value="7"
+                /></label>
+              </li>
+              <li class="info__pet-item">
+                <label
+                  class="info__pet-age"
+                  for="pet-age"
+                  >Возраст (лет):<input
+                    type="number"
+                    name="pet-age"
+                    id="pet-age"
+                    value="7"
+                /></label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program-choice__goal info__goal">
+            <legend class="info__goal-choice visually-hidden">
+              Выбор задачи
+            </legend>
+            <ul class="info__goal-list">
+              <li class="info__goal-item">
+                <label
+                  class="info__goal-label"
+                  for="info__goal-slim"
+                  ><input
+                    class="info__goal-input"
+                    type="radio"
+                    name="info__goal-name"
+                    id="info__goal-slim"
+                    checked />Похудение</label
+                >
+              </li>
+              <li class="info__goal-item">
+                <label
+                  class="info__goal-label"
+                  for="info__goal-muscle"
+                  ><input
+                    class="info__goal-input"
+                    type="radio"
+                    name="info__goal-name"
+                    id="info__goal-muscle" />Набор массы</label
+                >
+              </li>
+              <li class="info__goal-item">
+                <label
+                  class="info__goal-label"
+                  for="info__goal-noinfo"
+                  ><input
+                    class="info__goal-input"
+                    type="radio"
+                    name="info__goal-name"
+                    id="info__goal-noinfo" />Не знаю (Нужен ваш совет)</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program-choice__owner info__owner">
+            <legend class="info__owner-data">
+              Контактные данные (владельца кота)
+            </legend>
+            <ul class="info__owner-list">
+              <li class="info__owner-item">
+                <label
+                  class="info__mail"
+                  for="info__owner-mail"
+                  >E-mail:*<input
+                    type="email"
+                    name="info__owner-mail"
+                    id="info__owner-mail"
+                /></label>
+              </li>
+              <li class="info__owner-item">
+                <label
+                  class="info__phone"
+                  for="info__owner-phone"
+                  >Телефон:*<input
+                    type="tel"
+                    name="info__owner-phone"
+                    id="info__owner-phone"
+                /></label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program-choice__comment info__comment">
+            <legend class="info__comment-add">Комментарий</legend>
+            <label
+              class="info__comment-label"
+              for="comment-area">
+              <textarea
+                class="info__comment-textarea"
+                name="comment-area"
+                id="comment-area"
+                cols="30"
+                rows="10">
+                Расскажите обо всех повадках кота</textarea
+              ><span class="visually-hidden">Блок комментария.</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="program-choice__extra info__extra">
+            <legend class="info__extra-heading">Дополнительно</legend>
+            <ul class="info__extra-list">
+              <li class="info__extra-item">
+                <label
+                  class="info__checkbox-label"
+                  for="checbox-sugar"
+                  ><input
+                    class="info__checkbox-field"
+                    type="checkbox"
+                    name="checbox-sugar"
+                    id="checbox-sugar" />Cахарозаменитель</label
+                >
+              </li>
+              <li class="info__extra-item">
+                <label
+                  class="info__checkbox-label"
+                  for="checbox-milk"
+                  ><input
+                    class="info__checkbox-field"
+                    type="checkbox"
+                    name="checbox-milk"
+                    id="checbox-milk" />Молоко</label
+                >
+              </li>
+              <li class="info__extra-item">
+                <label
+                  class="info__checkbox-label"
+                  for="checbox-water"
+                  ><input
+                    class="info__checkbox-field"
+                    type="checkbox"
+                    name="checbox-water"
+                    id="checbox-water" />Питьевая вода</label
+                >
+              </li>
+              <li class="info__extra-item">
+                <label
+                  class="info__checkbox-label"
+                  for="checbox-vitamin"
+                  ><input
+                    class="info__checkbox-field"
+                    type="checkbox"
+                    name="checbox-vitamin"
+                    id="checbox-vitamin" />Витамины</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+
+          <label class="info__submit-label"
+            ><input
+              class="info__submit-button"
+              type="submit"
+              value="Подписаться" />* — Обязательные поля</label
+          >
+        </form>
+      </section>
+
+      <section class="contacts-section contacts contacts--mobile">
+        <h2 class="visually-hidden">Контакты.</h2>
+        <div class="contacts-section__block">
+          <h3 class="contacts-section__heading contacts__heading">
+            Приглашаем к сотрудничеству дилеров!
+          </h3>
+          <address
+            class="contacts-section__street contacts__address contacts__address--street">
+            ул. Большая Конюшенная, д. 19/8
+            <span class="contacts__address contacts__address--city"
+              >Санкт-Петербург</span
+            >
+          </address>
+        </div>
+        <div class="contacts-section__map-block contacts__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.32089461569251!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sil!4v1680630114757!5m2!1sru!2sil"
+            width="320"
+            height="362"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a
+          class="page-footer__logo logo"
+          href="">
+          <img
+            class="logo__icon logo__icon--text"
+            src="/Cat-energy/img/icon/logo__icon--text.png.png"
+            width="101"
+            height="18"
+            alt="Текстовый логотип сайта Cat-energy." />
+        </a>
+
+        <ul class="page-footer__list social">
+          <li class="page-footer__item social__item">
+            <a
+              class="social__link"
+              href="#"
+              ><img
+                class="social__icon social__icon--vk"
+                src="/Cat-energy/img/socials/social__icon/social__icon--vk.png"
+                width="22"
+                height="22"
+                alt="иконка вконтакте."
+            /></a>
+          </li>
+          <li class="page-footer__item social__item">
+            <a
+              class="social__link"
+              href="#"
+              ><img
+                class="social__icon social__icon--insta"
+                src="/Cat-energy/img/socials/social__icon/social__icon--insta.png"
+                width="22"
+                height="22"
+                alt="иконка инстаграм."
+            /></a>
+          </li>
+          <li class="page-footer__item social__item">
+            <a
+              class="social__link"
+              href="#"
+              ><img
+                class="social__icon social__icon--fb"
+                src="/Cat-energy/img/socials/social__icon/social__icon--fb.png"
+                width="22"
+                height="22"
+                alt="иконка фейсбук."
+            /></a>
+          </li>
+        </ul>
+
+        <div class="page-footer__studio developer">
+          <a
+            class="page-footer__link developer__link"
+            href="#"
+            ><span class="developer__text">HTML Academy</span></a
+          >
+          <a
+            class="page-footer__link developer__link"
+            href="#"
+            ><img
+              class="developer__logo"
+              src="/Cat-energy/img/icon/developer__logo.png"
+              width="27"
+              height="34"
+              alt="Логотип-картинка html-academy."
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
