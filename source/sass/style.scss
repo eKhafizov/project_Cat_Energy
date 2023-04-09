@@ -2,16 +2,14 @@
 
 @import "./blocks/visually-hidden.scss";
 
+@import "variables.scss";
+
 html {
   height: 100%;
 }
 
 body {
-  color: beige;
-  background-color: #fff;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  color: $color-titles;
+  background-color: $color-background-main;
+  @include font-text;
 }

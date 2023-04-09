@@ -1,0 +1,23 @@
+//colors//
+$color-titles: #000;
+$color-titles-light: #fff;
+$color-text: #444;
+$color-background-main: #fff;
+
+//fonts//
+@mixin font-titles {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: $color-titles;
+}
+@mixin font-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
