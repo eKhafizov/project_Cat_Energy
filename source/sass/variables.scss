@@ -3,8 +3,15 @@ $color-titles: #000;
 $color-titles-light: #fff;
 $color-text: #444;
 $color-background-main: #fff;
+$color-background-item: #f2f2f2;
+$color-titles-400: #111;
+$color-darkgrey-2: #222222;
+$color-background-contrast: rgba(104, 183, 56, 0.85);
 
 //fonts//
+$font-heading: "Oswald", "Arial", sans-serif;
+$font-text: "Arial", sans-serif;
+
 @mixin font-titles {
   font-family: "Oswald";
   font-style: normal;

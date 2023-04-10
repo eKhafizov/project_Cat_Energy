@@ -1,0 +1,35 @@
+.navigation__button--open {
+  border: none;
+  background-color: inherit;
+}
+
+.navigation__list {
+  list-style: none;
+  margin: 0 auto;
+  width: 320px;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation__link {
+  text-decoration: none;
+  list-style: none;
+  color: $color-titles;
+  font-family: $font-heading;
+  text-transform: uppercase;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.navigation__item {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.navigation__link--current {
+  border-bottom: 2px solid $color-background-contrast;
+}

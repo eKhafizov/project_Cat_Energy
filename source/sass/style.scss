@@ -1,15 +1,39 @@
 @import "fonts.scss";
-
-@import "./blocks/visually-hidden.scss";
-
 @import "variables.scss";
 
-html {
-  height: 100%;
-}
-
-body {
-  color: $color-titles;
-  background-color: $color-background-main;
-  @include font-text;
-}
+//blocks//
+@import "./blocks/additiona-items.scss";
+@import "./blocks/additional-more.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/basics.scss";
+@import "./blocks/button.scss";
+@import "./blocks/catalog-gift.scss";
+@import "./blocks/catalog-main.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/contacts-section.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/description.scss";
+@import "./blocks/developer.scss";
+@import "./blocks/example.scss";
+@import "./blocks/form-main.scss";
+@import "./blocks/goals.scss";
+@import "./blocks/info.scss";
+@import "./blocks/item-block.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/page-body.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/presentation.scss";
+@import "./blocks/page.scss";
+@import "./blocks/program-choice.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/results.scss";
+@import "./blocks/site-nav.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/social.scss";
+@import "./blocks/visually-hidden.scss";

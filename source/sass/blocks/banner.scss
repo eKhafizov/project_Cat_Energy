@@ -1,0 +1,31 @@
+.banner {
+}
+
+.banner__block {
+  background-color: $color-background-main;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.banner__block {
+  padding: 20px;
+  background-color: $color-background-contrast;
+  background-image: url("/source/img/images__background/banner__block-image.jpg");
+  background-repeat: no-repeat;
+}
+
+.banner__list {
+  list-style: none;
+}
+.banner__link {
+  text-decoration: none;
+}
+
+.banner__text {
+  font-family: $font-text;
+  color: $color-titles-light;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,0 +1,24 @@
+.advantages__list {
+  list-style: none;
+  padding: 0;
+}
+
+.advantages__heading {
+  font-family: $font-heading;
+  color: $color-titles;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__info {
+  font-family: $font-text;
+  color: $color-text;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}

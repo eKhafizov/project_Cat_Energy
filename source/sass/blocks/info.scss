@@ -1,0 +1,31 @@
+.info__heading {
+  font-family: $font-heading;
+  color: $color-title;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.info__calltoaction {
+  font-family: $font-heading;
+  color: green;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.info__pet-name {
+  font-family: $font-heading;
+  color: red;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

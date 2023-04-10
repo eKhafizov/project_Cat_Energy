@@ -12,15 +12,94 @@
   src: url("/source/fonts/oswaldmedium.woff2"), url("/source/fonts/oswaldmedium.woff");
   font-display: swap;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.additional-items__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.additional {
+  padding: 20px;
+}
+
+.additional__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #222222;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional__name,
+.additional__price {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.advantages__list {
+  list-style: none;
   padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+}
+
+.advantages__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__info {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.banner__block {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.banner__block {
+  padding: 20px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("/source/img/images__background/banner__block-image.jpg");
+  background-repeat: no-repeat;
+}
+
+.banner__list {
+  list-style: none;
+}
+
+.banner__link {
+  text-decoration: none;
+}
+
+.banner__text {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 html {
@@ -35,4 +114,389 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  min-height: 100%;
 }
+
+img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.button {
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button--order {
+  background-color: rgba(104, 183, 56, 0.85);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #fff;
+}
+
+.button--more {
+  background-color: #f2f2f2;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #444;
+}
+
+.button--text {
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: inherit;
+  color: #000;
+}
+
+.catalog {
+  padding: 20px;
+}
+
+.catalog__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__name,
+.catalog__price {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__more {
+  padding: 20px;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__more-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__more-explain {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.contacts {
+  background-color: #f2f2f2;
+}
+
+.contacts__block {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  width: 280px;
+  padding: 20px;
+}
+
+.contacts__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  color: #111;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-map {
+  margin: 0 auto;
+}
+
+.description__wrapper {
+  padding: 20px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.form-main__wrapper {
+  width: 280px;
+  padding: 20px;
+  margin: 0 auto;
+  outline: 3px solid rebeccapurple;
+}
+
+.goals__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.info__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-catalog__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.navigation__button--open {
+  border: none;
+  background-color: inherit;
+}
+
+.navigation__list {
+  list-style: none;
+  margin: 0 auto;
+  width: 320px;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation__link {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.navigation__item {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.navigation__link--current {
+  border-bottom: 2px solid rgba(104, 183, 56, 0.85);
+}
+
+.page-body {
+  background-color: #fff;
+}
+
+.page-footer {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  width: 280px;
+  padding: 20px;
+}
+
+.presentation {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("/source/img/images__background/presentation__background--image.jpg");
+  background-repeat: repeat;
+}
+
+.presentation__block {
+  width: 280px;
+  padding: 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.presentation__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.presentation__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  min-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.programs-block {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.programs__list {
+  list-style: none;
+  padding: 20px;
+}
+
+.programs__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.results {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.results__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.results__story {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.results__item dt {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+.results__item dd {
+  font-family: "Arial", sans-serif;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.results__info {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.slider {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.slider__list {
+  list-style: none;
+  padding: 0;
+}
+
+.social {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */

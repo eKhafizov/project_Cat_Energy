@@ -1,0 +1,28 @@
+.button {
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+//buttons green//
+.button--order {
+  background-color: $color-background-contrast;
+  font-family: $font-heading;
+  color: $color-titles-light;
+}
+
+//button grey//
+.button--more {
+  background-color: $color-background-item;
+  font-family: $font-heading;
+  color: $color-text;
+}
+
+//button black on transparent//
+.button--text {
+  font-family: $font-heading;
+  background-color: inherit;
+  color: $color-titles;
+}

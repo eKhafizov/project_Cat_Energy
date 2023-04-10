@@ -1,0 +1,34 @@
+.additional {
+  padding: 20px;
+}
+
+.additional__heading {
+  font-family: $font-heading;
+  color: $color-titles;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__title {
+  font-family: $font-heading;
+  color: $color-darkgrey-2;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional__name,
+.additional__price {
+  font-family: $font-text;
+  color: $color-text;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}

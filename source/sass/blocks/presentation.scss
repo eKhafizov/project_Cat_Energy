@@ -1,0 +1,45 @@
+.presentation {
+  background-color: $color-background-contrast;
+  background-image: url("/source/img/images__background/presentation__background--image.jpg");
+  background-repeat: repeat;
+}
+
+.presentation__block {
+  width: 280px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation__heading {
+  font-family: $font-heading;
+  color: $color-titles-light;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.presentation__slogan {
+  font-family: $font-heading;
+  color: $color-titles-light;
+
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.presentation__link {
+  display: flex;
+  width: 280px;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+}

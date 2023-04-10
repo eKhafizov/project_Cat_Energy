@@ -1,0 +1,33 @@
+.contacts {
+  background-color: $color-background-item;
+}
+
+.contacts__block {
+  background-color: $color-background-item;
+  margin: 0 auto;
+  width: 280px;
+  padding: 20px;
+}
+
+.contacts__heading {
+  font-family: $font-heading;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-titles-400;
+}
+
+.contacts__address {
+  font-family: $font-text;
+  color: $color-titles-400;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-map {
+  margin: 0 auto;
+}

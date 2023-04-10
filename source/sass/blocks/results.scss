@@ -1,0 +1,53 @@
+.results {
+  background-color: $color-background-item;
+  padding: 20px;
+}
+
+.results__heading {
+  font-family: $font-heading;
+  color: $color-titles;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.results__story {
+  font-family: $font-text;
+  color: $color-text;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.results__item {
+  & dt {
+    font-family: $font-heading;
+    color: $color-titles;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  & dd {
+    font-family: $font-text;
+    color: $color-text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
+
+.results__info {
+  font-family: $font-heading;
+  color: $color-titles;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
