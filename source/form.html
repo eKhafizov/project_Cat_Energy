@@ -83,7 +83,7 @@
 
     <main class="form-main">
       <h1 class="visually-hidden">Страница оформления заказа.</h1>
-      
+
       <div class="form-main__wrapper">
         <section class="program-choice info">
           <h2 class="program-choice__heading info__heading">
@@ -104,6 +104,7 @@
                     class="info__pet-name"
                     for="pet-name"
                     >ИМЯ:*<input
+                      class="info__pet-input"
                       type="text"
                       name="pet-name"
                       id="pet-name"
@@ -115,6 +116,7 @@
                     class="info__pet-weight"
                     for="pet-weight"
                     >Вес (кг):*<input
+                      class="info__pet-input"
                       type="number"
                       name="pet-weight"
                       id="pet-weight"
@@ -126,6 +128,7 @@
                     class="info__pet-age"
                     for="pet-age"
                     >Возраст (лет):<input
+                      class="info__pet-input"
                       type="number"
                       name="pet-age"
                       id="pet-age"
@@ -216,7 +219,7 @@
                   id="comment-area"
                   cols="30"
                   rows="10">
-                  Расскажите обо всех повадках кота</textarea
+Расскажите обо всех повадках кота</textarea
                 ><span class="visually-hidden">Блок комментария.</span>
               </label>
             </fieldset>
@@ -275,9 +278,10 @@
               ><input
                 class="info__submit-button button button--order"
                 type="submit"
-                value="Подписаться" />* — Обязательные поля</label
-            >
+                value="Подписаться"
+            /></label>
           </form>
+          <p class="info__submit-explain">* — Обязательные поля</p>
         </section>
       </div>
 
@@ -299,7 +303,7 @@
         <div class="contacts-section__map-block contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.32089461569251!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sil!4v1680630114757!5m2!1sru!2sil"
-            width="320"
+            width="100%"
             height="362"
             style="border: 0"
             allowfullscreen=""

@@ -1,7 +1,6 @@
 .info__heading {
   font-family: $font-heading;
-  color: $color-title;
-
+  color: $color-titles;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -10,22 +9,117 @@
 
 .info__calltoaction {
   font-family: $font-heading;
-  color: green;
+  color: $color-titles;
 
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.info__pet-name {
+.info__pet-list {
+  padding: 0;
+  list-style: none;
+}
+
+.info__goal-list {
+  padding: 0;
+  list-style: none;
+}
+
+.info__owner-list {
+  padding: 0;
+  list-style: none;
+}
+
+.info__extra-list {
+  padding: 0;
+  list-style: none;
+}
+
+.info__comment-add,
+.info__owner-data,
+.info__extra-heading {
   font-family: $font-heading;
-  color: red;
+  color: $color-titles;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.info__checkbox-label {
+  font-family: $font-heading;
+  color: $color-titles;
 
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.info__submit-explain {
+  font-family: $font-text;
+  color: $color-titles;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 16px;
+}
+
+.info__comment-textarea {
+  font-family: $font-heading;
+  color: $color-text;
+
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0;
+}
+
+.info__pet-age,
+.info__pet-weight,
+.info__pet-name {
+  font-family: $font-heading;
+  color: $color-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.info__pet-input {
+  font-family: $font-heading;
+  color: $color-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.info__phone,
+.info__mail {
+  font-family: $font-heading;
+  color: $color-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.info__goal-label {
+  font-family: $font-heading;
+  color: $color-darkgrey-2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
