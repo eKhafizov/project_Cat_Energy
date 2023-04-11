@@ -1,4 +1,39 @@
 .goals__wrapper {
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
+  width: auto;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+  @media (min-width: 1440px) {
+    width: auto;
+  }
+}
+
+.goals__list {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  gap: 20px;
+  width: auto;
+  @media (min-width: 768px) {
+    padding: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0;
+    width: auto;
+    padding: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    outline: 3px solid purple;
+  }
 }

@@ -1,5 +1,17 @@
 .description__wrapper {
   padding: 20px;
-  width: 280px;
+  min-width: 280px;
+  width: auto;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 5px solid salmon;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
