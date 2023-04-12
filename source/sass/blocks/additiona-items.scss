@@ -1,4 +1,33 @@
 .additional-items__wrapper {
   margin: 0 auto;
-  width: 320px;
+  padding-top: 0;
+  min-width: $viewport-mobile - 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  outline: 3px solid blueviolet;
+  @media (min-width: $viewport-tablet) {
+    min-width: $viewport-tablet - 60px;
+    padding: 30px;
+  }
+  @media (min-width: $viewport-desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: $viewport-desktop;
+    padding: 110px;
+  }
+}
+
+.additional-items__list {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: $viewport-desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 }

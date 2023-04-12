@@ -1,0 +1,53 @@
+.additional-more__link {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/source/img/icon/additiona__icon.svg");
+  background-size: 30px 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media (min-width: $viewport-tablet) {
+    height: 180px;
+    background-image: url("/source/img/icon/additiona__icon.svg");
+    background-size: 60px 60px;
+  }
+  @media (min-width: $viewport-desktop) {
+    height: 180px;
+    background-image: url("/source/img/icon/additiona__icon.svg");
+    background-size: 60px 60px;
+  }
+}
+
+.additional-more__text-more {
+  width: 205px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 8px;
+  @media (min-width: $viewport-tablet) {
+    width: 160px;
+    margin-bottom: 23px;
+  }
+  @media (min-width: $viewport-desktop) {
+    width: 160px;
+    margin-bottom: 23px;
+  }
+}
+
+.additional-more__button-more {
+  margin-top: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 280px;
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 39px;
+    width: 248px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 40px;
+    width: 168px;
+  }
+}

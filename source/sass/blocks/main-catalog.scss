@@ -1,4 +1,18 @@
 .main-catalog__wrapper {
   margin: 0 auto;
-  width: 320px;
+  min-width: 280px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $viewport-tablet) {
+    min-width: $viewport-tablet - 60px;
+    padding: 30px;
+    width: auto;
+  }
+  @media (min-width: $viewport-desktop) {
+    min-width: $viewport-desktop - 220px;
+    padding: 110px;
+    width: auto;
+  }
 }
