@@ -1,6 +1,30 @@
 .page-footer {
   background-color: $color-background-item;
   margin: 0 auto;
-  width: 280px;
+  min-width: 280px;
   padding: 20px;
+}
+
+.page-footer__wrapper {
+  min-width: 280px;
+  min-height: 233px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $viewport-tablet) {
+    min-width: $viewport-tablet;
+    min-height: 147px;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: $viewport-desktop) {
+    min-height: 149px;
+    min-width: $viewport-desktop;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

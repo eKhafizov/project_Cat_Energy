@@ -1,6 +1,17 @@
 .advantages__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $viewport-tablet) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(280px, auto);
+  }
+  @media (min-width: $viewport-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(280px, auto);
+  }
 }
 
 .advantages__heading {
@@ -16,7 +27,6 @@
 .advantages__info {
   font-family: $font-text;
   color: $color-text;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

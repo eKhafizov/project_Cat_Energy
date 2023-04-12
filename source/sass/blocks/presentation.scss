@@ -1,38 +1,23 @@
-.presentation {
-}
-
 .presentation__block {
-  width: 280px;
-  padding: 20px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
   background-color: $color-background-contrast;
   background-image: url("/source/img/images__background/presentation__background--image.jpg");
   background-repeat: repeat;
-  outline: 5px solid red;
 
-  @media (min-width: 768px) {
-    width: 768px;
-    max-width: auto;
-    display: flex;
+  @media (min-width: $viewport-tablet) {
     flex-direction: column;
     background-color: $color-background-main;
     background-image: none;
-    padding: 0;
   }
-  @media (min-width: 1440px) {
-    width: auto;
-    max-width: 1440px;
-    padding: 0;
-    display: flex;
+  @media (min-width: $viewport-desktop) {
     flex-direction: row;
     background-color: $color-background-main;
-    background-image: url("/source/img/images__background/presentation__background--image.jpg")
-      right center;
+    background-image: url("/source/img/images__background/presentation__background--image.jpg");
+    background-position: right 10px center;
+    background-size: 50%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -44,8 +29,9 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  order: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: $viewport-tablet) {
     color: $color-titles;
   }
 }
@@ -53,7 +39,7 @@
 .presentation__slogan {
   font-family: $font-heading;
   color: $color-titles-light;
-
+  order: 2;
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -61,15 +47,33 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $viewport-tablet) {
     color: $color-titles;
+  }
+}
+
+.presentation__image {
+  order: 3;
+  @media (min-width: $viewport-tablet) {
+    order: 4;
+  }
+  @media (min-width: $viewport-desktop) {
+    order: 4;
   }
 }
 
 .presentation__link {
   display: flex;
-  width: 280px;
+  min-width: 280px;
+  width: auto;
   min-height: 40px;
   align-items: center;
   justify-content: center;
+  order: 4;
+  @media (min-width: $viewport-tablet) {
+    order: 2;
+  }
+  @media (min-width: $viewport-desktop) {
+    order: 3;
+  }
 }

@@ -1,1 +1,15 @@
-
+.item-block__wrapper {
+  min-width: $viewport-mobile;
+  width: auto;
+  margin: 0 auto;
+  outline: 5px solid red;
+  @media (min-width: $viewport-tablet) {
+    width: auto;
+    padding: 0;
+  }
+  @media (min-width: $viewport-desktop) {
+    width: auto;
+    padding: 0;
+    flex-direction: row;
+  }
+}

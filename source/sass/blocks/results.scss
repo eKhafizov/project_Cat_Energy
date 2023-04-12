@@ -1,6 +1,16 @@
 .results {
   background-color: $color-background-item;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: $viewport-desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .results__heading {

@@ -2,10 +2,18 @@
   background-color: $color-background-item;
   padding: 20px;
   margin: 0 auto;
-  width: 280px;
+  min-width: 280px;
+  width: auto;
 }
 
 .slider__list {
   list-style: none;
   padding: 0;
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+  }
+}
+
+.slider__buttons {
+  display: flex;
 }

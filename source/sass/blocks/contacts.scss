@@ -1,12 +1,15 @@
 .contacts {
-  background-color: $color-background-item;
+  background-color: $color-background-main;
 }
 
 .contacts__block {
-  background-color: $color-background-item;
+  background-color: $color-background-main;
   margin: 0 auto;
-  width: 280px;
+  min-width: 280px;
+  width: auto;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts__heading {
@@ -16,16 +19,23 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-titles-400;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__address {
   font-family: $font-text;
   color: $color-titles-400;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  flex-direction: column;
+
+  & span {
+    text-align: end;
+  }
 }
 
 .contacts-map {

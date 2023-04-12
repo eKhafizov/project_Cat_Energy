@@ -8,8 +8,8 @@
   justify-content: center;
   outline: 5px solid salmon;
 
-  @media (min-width: 768px) {
-    min-width: 768px;
+  @media (min-width: $viewport-tablet) {
+    min-width: $viewport-tablet;
     width: auto;
     display: flex;
     flex-wrap: wrap;
