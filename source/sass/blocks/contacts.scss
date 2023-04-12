@@ -10,6 +10,12 @@
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $viewport-tablet) {
+    min-width: $viewport-tablet - 60px;
+    width: auto;
+    padding: 0 30px;
+  }
 }
 
 .contacts__heading {

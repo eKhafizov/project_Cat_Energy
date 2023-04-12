@@ -1,19 +1,23 @@
 .page-footer {
   background-color: $color-background-item;
   margin: 0 auto;
-  min-width: 280px;
-  padding: 20px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__wrapper {
-  min-width: 280px;
+  min-width: 320px;
   min-height: 233px;
   width: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
   @media (min-width: $viewport-tablet) {
-    min-width: $viewport-tablet;
+    min-width: $viewport-tablet - 60px;
     min-height: 147px;
+    padding: 30px;
     width: auto;
     flex-direction: row;
     justify-content: space-between;
@@ -21,10 +25,61 @@
   }
   @media (min-width: $viewport-desktop) {
     min-height: 149px;
-    min-width: $viewport-desktop;
+    min-width: $viewport-desktop - 220px;
+    padding: 0 110px;
     width: auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.page-footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__logo {
+  margin-top: 39px;
+  margin-bottom: 56px;
+  display: flex;
+  position: relative;
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      width: 280px;
+      height: 1px;
+      background-color: $color-separator;
+      position: absolute;
+      top: 53px;
+      left: -80px;
+    }
+  }
+}
+
+.page-footer__list {
+  margin-top: 0;
+  position: relative;
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      width: 280px;
+      height: 1px;
+      background-color: $color-separator;
+      position: absolute;
+      top: 43px;
+      left: -65px;
+    }
+  }
+}
+
+.page-footer__studio {
+  min-width: 280px;
+  width: auto;
+  margin-top: 45px;
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

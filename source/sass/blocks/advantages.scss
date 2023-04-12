@@ -4,7 +4,7 @@
 
   @media (min-width: $viewport-tablet) {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(280px, auto);
   }
   @media (min-width: $viewport-desktop) {

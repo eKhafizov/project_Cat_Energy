@@ -1,0 +1,14 @@
+.site-nav {
+  @media (min-width: $viewport-tablet) {
+    min-width: 440px;
+    width: auto;
+    display: flex;
+    margin-left: auto;
+  }
+  @media (min-width: $viewport-desktop) {
+    min-width: 480px;
+    width: auto;
+    display: flex;
+    margin-left: auto;
+  }
+}

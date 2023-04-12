@@ -1,0 +1,13 @@
+.page__body {
+  margin: 0 auto;
+  min-width: 320px;
+  width: auto;
+  @media (min-width: $viewport-tablet) {
+    min-width: $viewport-tablet;
+    width: auto;
+  }
+  @media (min-width: $viewport-desktop) {
+    min-width: $viewport-desktop;
+    width: auto;
+  }
+}

@@ -17,12 +17,21 @@
   color: $color-titles;
   font-family: $font-heading;
   text-transform: uppercase;
-
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  text-transform: uppercase;
+
+  @media (min-width: $viewport-tablet) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .navigation__item {
