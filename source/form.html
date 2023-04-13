@@ -86,100 +86,102 @@
       <h1 class="visually-hidden">Страница оформления заказа.</h1>
 
       <div class="form-main__wrapper">
+        <h2 class="program-choice__heading info__heading">Подбор программы</h2>
+        <p class="program-choice__calltoaction info__calltoaction">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+
         <section class="program-choice info">
-          <h2 class="program-choice__heading info__heading">
-            Подбор программы
-          </h2>
-          <p class="program-choice__calltoaction info__calltoaction">
-            Заполните анкету, и мы подберем программу питания для вашего кота
-          </p>
           <form
             class="program-choice__form info__form"
             method="post"
             action="https://echo.htmlacademy.ru">
-            <fieldset class="program-choice__info info__pet-details">
-              <legend class="visually-hidden"></legend>
-              <ul class="info__pet-list">
-                <li class="info__pet-item">
-                  <label
-                    class="info__pet-name"
-                    for="pet-name"
-                    >ИМЯ:*<input
-                      class="info__pet-input"
-                      type="text"
-                      name="pet-name"
-                      id="pet-name"
-                      value="БАРСИК"
-                  /></label>
-                </li>
-                <li class="info__pet-item">
-                  <label
-                    class="info__pet-weight"
-                    for="pet-weight"
-                    >Вес (кг):*<input
-                      class="info__pet-input"
-                      type="number"
-                      name="pet-weight"
-                      id="pet-weight"
-                      value="7"
-                  /></label>
-                </li>
-                <li class="info__pet-item">
-                  <label
-                    class="info__pet-age"
-                    for="pet-age"
-                    >Возраст (лет):<input
-                      class="info__pet-input"
-                      type="number"
-                      name="pet-age"
-                      id="pet-age"
-                      value="7"
-                  /></label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form-main__container">
+              <fieldset class="program-choice__info info__pet-details">
+                <legend class="visually-hidden"></legend>
+                <ul class="info__pet-list">
+                  <li class="info__pet-item">
+                    <label
+                      class="info__pet-name"
+                      for="pet-name"
+                      >ИМЯ:*<input
+                        class="info__pet-input"
+                        type="text"
+                        name="pet-name"
+                        id="pet-name"
+                        value="БАРСИК"
+                    /></label>
+                  </li>
+                  <li class="info__pet-item">
+                    <label
+                      class="info__pet-weight"
+                      for="pet-weight"
+                      >Вес (кг):*<input
+                        class="info__pet-input"
+                        type="number"
+                        name="pet-weight"
+                        id="pet-weight"
+                        value="7"
+                    /></label>
+                  </li>
+                  <li class="info__pet-item">
+                    <label
+                      class="info__pet-age"
+                      for="pet-age"
+                      >Возраст (лет):<input
+                        class="info__pet-input"
+                        type="number"
+                        name="pet-age"
+                        id="pet-age"
+                        value="7"
+                    /></label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="program-choice__goal info__goal">
-              <legend class="info__goal-choice visually-hidden">
-                Выбор задачи
-              </legend>
-              <ul class="info__goal-list">
-                <li class="info__goal-item">
-                  <label
-                    class="info__goal-label"
-                    for="info__goal-slim"
-                    ><input
-                      class="info__goal-input"
-                      type="radio"
-                      name="info__goal-name"
-                      id="info__goal-slim"
-                      checked />Похудение</label
-                  >
-                </li>
-                <li class="info__goal-item">
-                  <label
-                    class="info__goal-label"
-                    for="info__goal-muscle"
-                    ><input
-                      class="info__goal-input"
-                      type="radio"
-                      name="info__goal-name"
-                      id="info__goal-muscle" />Набор массы</label
-                  >
-                </li>
-                <li class="info__goal-item">
-                  <label
-                    class="info__goal-label"
-                    for="info__goal-noinfo"
-                    ><input
-                      class="info__goal-input"
-                      type="radio"
-                      name="info__goal-name"
-                      id="info__goal-noinfo" />Не знаю (Нужен ваш совет)</label
-                  >
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="program-choice__goal info__goal">
+                <legend class="info__goal-choice visually-hidden">
+                  Выбор задачи
+                </legend>
+                <ul class="info__goal-list">
+                  <li class="info__goal-item">
+                    <label
+                      class="info__goal-label"
+                      for="info__goal-slim"
+                      ><input
+                        class="info__goal-input"
+                        type="radio"
+                        name="info__goal-name"
+                        id="info__goal-slim"
+                        checked />Похудение</label
+                    >
+                  </li>
+                  <li class="info__goal-item">
+                    <label
+                      class="info__goal-label"
+                      for="info__goal-muscle"
+                      ><input
+                        class="info__goal-input"
+                        type="radio"
+                        name="info__goal-name"
+                        id="info__goal-muscle" />Набор массы</label
+                    >
+                  </li>
+                  <li class="info__goal-item">
+                    <label
+                      class="info__goal-label"
+                      for="info__goal-noinfo"
+                      ><input
+                        class="info__goal-input"
+                        type="radio"
+                        name="info__goal-name"
+                        id="info__goal-noinfo" />Не знаю (Нужен ваш
+                      совет)</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
             <fieldset class="program-choice__owner info__owner">
               <legend class="info__owner-data">
@@ -275,14 +277,16 @@
               </ul>
             </fieldset>
 
-            <label class="info__submit-label"
-              ><input
-                class="info__submit-button button button--order"
-                type="submit"
-                value="Подписаться"
-            /></label>
+            <div class="info__submit-container">
+              <label class="info__submit-label"
+                ><input
+                  class="info__submit-button button button--order"
+                  type="submit"
+                  value="Подписаться"
+              /></label>
+              <span class="info__submit-explain">* — Обязательные поля</span>
+            </div>
           </form>
-          <p class="info__submit-explain">* — Обязательные поля</p>
         </section>
       </div>
 

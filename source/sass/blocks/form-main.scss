@@ -1,5 +1,29 @@
 .form-main__wrapper {
-  width: 280px;
+  min-width: 280px;
+  width: auto;
   padding: 20px;
   margin: 0 auto;
+  @media (min-width: $viewport-tablet) {
+    min-width: $viewport-tablet - 138px;
+    padding: 69px;
+    padding-top: 0;
+  }
+  @media (min-width: $viewport-desktop) {
+    min-width: $viewport-desktop - 220px;
+    padding: 110px;
+    padding-top: 0;
+  }
+}
+
+.form-main__container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: $viewport-desktop) {
+    display: flex;
+    flex-direction: row;
+  }
 }

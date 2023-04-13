@@ -2,23 +2,31 @@
   margin: 0 auto;
   padding-top: 0;
   min-width: $viewport-mobile - 40px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  outline: 3px solid blueviolet;
   @media (min-width: $viewport-tablet) {
     min-width: $viewport-tablet - 60px;
     padding: 30px;
+    margin: 0;
   }
   @media (min-width: $viewport-desktop) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    min-width: $viewport-desktop;
+    min-width: $viewport-desktop -220px;
     padding: 110px;
+    margin: 0;
   }
 }
 // нужно подправить разметку этого блока //
+
+.additional-items__container {
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 632px;
+  }
+}
 
 .additional-items__list {
   display: flex;
@@ -28,7 +36,24 @@
     flex-direction: column;
   }
   @media (min-width: $viewport-desktop) {
+    min-width: 896px;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.additional-items__item {
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (min-width: $viewport-desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 72px;
+    border-top: 1px solid $color-separator-dark;
+    border-bottom: 1px solid $color-separator-dark;
   }
 }

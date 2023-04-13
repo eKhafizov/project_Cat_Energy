@@ -15,6 +15,11 @@
     min-width: $viewport-tablet - 60px;
     width: auto;
     padding: 0 30px;
+    background-color: $color-background-item;
+    min-height: 199px;
+  }
+  @media (min-width: $viewport-desktop) {
+    background-color: $color-background-main;
   }
 }
 
@@ -38,7 +43,7 @@
   line-height: 20px;
   display: flex;
   flex-direction: column;
-
+  text-align: end;
   & span {
     text-align: end;
   }

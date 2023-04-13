@@ -82,4 +82,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $viewport-tablet) {
+    max-width: 163px;
+  }
+  @media (min-width: $viewport-desktop) {
+    max-width: 163px;
+  }
 }

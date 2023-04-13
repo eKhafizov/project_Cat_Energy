@@ -8,8 +8,6 @@
   }
   @media (min-width: $viewport-desktop) {
     width: auto;
-    min-width: $viewport-desktop - 380px;
-    padding: 0 190px;
-    flex-direction: row;
+    min-width: $viewport-desktop;
   }
 }
