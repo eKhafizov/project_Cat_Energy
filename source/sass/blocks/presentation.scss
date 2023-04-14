@@ -15,7 +15,7 @@
     padding-left: 190px;
     padding-right: 190px;
     display: grid;
-    max-width: $viewport-desktop - 380px;
+    max-width: $viewport-desktop;
     grid-template-columns: 414px 506px 140px;
     grid-template-rows: 120px 60px 106px;
   }
