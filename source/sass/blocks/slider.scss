@@ -16,4 +16,84 @@
 
 .slider__buttons {
   display: flex;
+  align-items: center;
+}
+
+.slider__toggle {
+  @media (max-width: $viewport-tablet) {
+    width: 83.8px;
+    height: 12px;
+    background-color: $color-background-main;
+    border-radius: 6px;
+    border: 1px solid $color-separator-dark;
+    position: relative;
+    display: block;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: 6px;
+      width: 35.66px;
+      height: 6px;
+      background-color: $color-background-contrast;
+      border: none;
+      border-radius: 6px;
+      display: block;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 3px;
+      right: 6px;
+      width: 35.66px;
+      height: 6px;
+      background-color: $color-background-contrast;
+      border: none;
+      border-radius: 6px;
+      display: none;
+    }
+  }
+  @media (min-width: $viewport-tablet) {
+    display: none;
+  }
+}
+
+.slider__range-section {
+  display: none;
+
+  @media (min-width: $viewport-tablet) {
+    display: block;
+    width: 426px;
+    height: 6px;
+    background-color: $color-grey;
+    border: none;
+    border-radius: 6px;
+    -webkit-appearance: none; /* Override default look */
+  }
+}
+
+.slider__range-section::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  border: 1px solid $color-separator-dark;
+  background: $color-background-main;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: $color-background-contrast;
+    color: $color-background-contrast;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    display: block;
+  }
 }

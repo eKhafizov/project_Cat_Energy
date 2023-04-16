@@ -18,6 +18,7 @@
   min-width: 280px;
   gap: 20px;
   width: auto;
+  margin: 0;
   @media (min-width: $viewport-tablet) {
     padding: 0;
     width: auto;
@@ -28,16 +29,11 @@
   }
   @media (min-width: $viewport-desktop) {
     padding: 0;
+    margin: 0;
     width: auto;
-    padding: 110px;
+    padding: 0 110px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-  }
-}
-
-.goals__block {
-  @media (min-width: $viewport-desktop) {
-    min-height: 371px;
   }
 }

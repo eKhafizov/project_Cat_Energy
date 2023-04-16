@@ -1,6 +1,10 @@
-.programs-block {
+.programs__block {
   background-color: $color-background-item;
   padding: 20px;
+
+  @media (min-width: $viewport-desktop) {
+    height: 370px;
+  }
 }
 
 .programs__title {
