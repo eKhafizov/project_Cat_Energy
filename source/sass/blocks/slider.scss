@@ -77,10 +77,10 @@
   width: 32px;
   height: 32px;
   border: 1px solid $color-separator-dark;
-  background-color: $color-background-main;
-  background-image: url("/source/img/icon/slider-point.svg");
+  background-color: $color-background-contrast;
   background-size: 8px 8px;
   background-position: center center;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: inset 0px 0px 0 11px $color-background-main;
 }

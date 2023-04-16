@@ -3,8 +3,10 @@
   flex-direction: column;
   align-items: center;
   background-color: $color-background-contrast;
-  background-image: url("/source/img/images__background/presentation__background--image.jpg");
+  background-image: url("/img/images__background/presentation__background--image.jpg");
+  background-size: 720px 694px;
   background-repeat: repeat;
+  position: relative;
 
   @media (min-width: $viewport-tablet) {
     flex-direction: column;
@@ -18,6 +20,31 @@
     max-width: $viewport-desktop;
     grid-template-columns: 414px 506px 140px;
     grid-template-rows: 120px 60px 106px;
+    min-height: 553px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 720px;
+      height: 694px;
+      top: -200px;
+      right: 370px;
+      background-color: $color-background-contrast;
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 720px;
+      height: 694px;
+      top: -200px;
+      right: 370px;
+      background-color: $color-background-contrast;
+      background-image: url("/img/images__background/index-background-desktop.jpg");
+      background: fill solid $color-background-contrast;
+      background-size: 720px 694px;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
   }
 }
 
@@ -70,6 +97,7 @@
   @media (min-width: $viewport-desktop) {
     grid-column: 2/3;
     grid-row: 1/-1;
+    z-index: 10;
   }
 }
 

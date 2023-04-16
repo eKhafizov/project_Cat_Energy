@@ -819,7 +819,8 @@ img {
   margin: 0 auto;
   width: 320px;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  z-index: 10; }
 
 .navigation__link {
   text-decoration: none;
@@ -840,14 +841,18 @@ img {
     .navigation__link {
       font-weight: 400;
       font-size: 20px;
-      line-height: 30px; } }
+      line-height: 30px;
+      z-index: 10;
+      color: #fff; } }
 
 .navigation__item {
   padding-top: 20px;
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+  z-index: 10; }
 
 .navigation__link--current {
-  border-bottom: 2px solid rgba(104, 183, 56, 0.85); }
+  border-bottom: 2px solid rgba(104, 183, 56, 0.85);
+  z-index: 10; }
 
 .page-footer {
   background-color: #f2f2f2;
@@ -976,8 +981,10 @@ img {
   flex-direction: column;
   align-items: center;
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("/source/img/images__background/presentation__background--image.jpg");
-  background-repeat: repeat; }
+  background-image: url("/img/images__background/presentation__background--image.jpg");
+  background-size: 720px 694px;
+  background-repeat: repeat;
+  position: relative; }
   @media (min-width: 768px) {
     .presentation__block {
       flex-direction: column;
@@ -990,7 +997,30 @@ img {
       display: grid;
       max-width: 1440px;
       grid-template-columns: 414px 506px 140px;
-      grid-template-rows: 120px 60px 106px; } }
+      grid-template-rows: 120px 60px 106px;
+      min-height: 553px; }
+      .presentation__block::before {
+        position: absolute;
+        content: "";
+        width: 720px;
+        height: 694px;
+        top: -200px;
+        right: 370px;
+        background-color: rgba(104, 183, 56, 0.85);
+        z-index: 1; }
+      .presentation__block::after {
+        position: absolute;
+        content: "";
+        width: 720px;
+        height: 694px;
+        top: -200px;
+        right: 370px;
+        background-color: rgba(104, 183, 56, 0.85);
+        background-image: url("/img/images__background/index-background-desktop.jpg");
+        background: fill solid rgba(104, 183, 56, 0.85);
+        background-size: 720px 694px;
+        background-repeat: no-repeat;
+        z-index: 0; } }
 
 .presentation__heading {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1037,7 +1067,8 @@ img {
   @media (min-width: 1440px) {
     .presentation__image {
       grid-column: 2/3;
-      grid-row: 1/-1; } }
+      grid-row: 1/-1;
+      z-index: 10; } }
 
 .presentation__link {
   display: flex;
@@ -1245,12 +1276,12 @@ img {
   width: 32px;
   height: 32px;
   border: 1px solid #cdcdcd;
-  background-color: #fff;
-  background-image: url("/source/img/icon/slider-point.svg");
+  background-color: rgba(104, 183, 56, 0.85);
   background-size: 8px 8px;
   background-position: center center;
   border-radius: 50%;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0 11px #fff; }
 
 .social {
   padding: 0;
