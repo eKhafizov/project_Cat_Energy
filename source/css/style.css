@@ -1226,7 +1226,8 @@ img {
     display: none; } }
 
 .slider__range-section {
-  display: none; }
+  display: none;
+  position: relative; }
   @media (min-width: 768px) {
     .slider__range-section {
       display: block;
@@ -1240,26 +1241,16 @@ img {
 
 .slider__range-section::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
   width: 32px;
   height: 32px;
   border: 1px solid #cdcdcd;
-  background: #fff;
+  background-color: #fff;
+  background-image: url("/source/img/icon/slider-point.svg");
+  background-size: 8px 8px;
+  background-position: center center;
   border-radius: 50%;
-  cursor: pointer;
-  position: relative; }
-  .slider__range-section::-webkit-slider-thumb::before {
-    position: absolute;
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color: rgba(104, 183, 56, 0.85);
-    color: rgba(104, 183, 56, 0.85);
-    border: none;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    display: block; }
+  cursor: pointer; }
 
 .social {
   padding: 0;
