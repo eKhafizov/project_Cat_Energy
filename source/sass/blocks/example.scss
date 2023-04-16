@@ -12,9 +12,9 @@
     width: auto;
   }
   @media (min-width: $viewport-desktop) {
-    min-width: $viewport-desktop - 200px;
+    min-width: $viewport-desktop - 220px;
     width: auto;
-    padding: 0 110px;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: $color-background-item;

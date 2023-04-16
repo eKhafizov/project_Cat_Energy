@@ -35,3 +35,9 @@
     gap: 80px;
   }
 }
+
+.goals__block {
+  @media (min-width: $viewport-desktop) {
+    min-height: 371px;
+  }
+}
