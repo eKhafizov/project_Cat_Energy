@@ -17,14 +17,3 @@
     margin-right: auto;
   }
 }
-
-.navigation__button {
-  @media (min-width: $viewport-tablet) {
-    display: none;
-  }
-  @media (min-width: $viewport-desktop) {
-    display: none;
-  }
-}
-
-

@@ -4,8 +4,13 @@
 
 .navigation__button {
   display: none;
+  cursor: pointer;
+  @media (min-width: $viewport-desktop) {
+    display: none;
+  }
 }
 
+//        КНОПКИ    //
 // закрытое - появлется кнопка открытия бургер //
 .navigation--closed .navigation__button {
   display: block;
@@ -18,6 +23,9 @@
   border: none;
   cursor: pointer;
   top: 2px;
+  @media (min-width: $viewport-tablet) {
+    display: none;
+  }
   &::before {
     position: absolute;
     content: "";
@@ -29,6 +37,9 @@
     background-color: black;
     box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
     cursor: pointer;
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
   }
 }
 
@@ -42,6 +53,10 @@
   height: 24px;
   background-color: inherit;
   border: none;
+  cursor: pointer;
+  @media (min-width: $viewport-tablet) {
+    display: none;
+  }
   &::before {
     position: absolute;
     content: "";
@@ -52,6 +67,10 @@
     left: 8px;
     transform: rotate(45deg);
     border-left: 1px solid $color-titles;
+    cursor: pointer;
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
   }
   &::after {
     position: absolute;
@@ -62,12 +81,22 @@
     top: 8px;
     left: -8px;
     transform: rotate(45deg);
+    cursor: pointer;
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
   }
 }
 
-// список пунктов навигации, который пропадает при увеличении экрана //
+.navigation--nojs .navigation__button {
+  display: none;
+}
+
+//        СПИСОК НАВИГАЦИИ      //
+// список пунктов навигации, который ПОЯВЛВ при увеличении экрана //
 .navigation__list {
   display: none;
+  flex-direction: column;
   list-style: none;
   margin: 0 auto;
   width: 320px;
@@ -79,6 +108,7 @@
     min-width: 440px;
     width: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   @media (min-width: $viewport-desktop) {
@@ -87,21 +117,6 @@
     width: auto;
     display: flex;
     justify-content: space-between;
-  }
-}
-.navigation__list--open {
-  @media (max-width: $viewport-tablet) {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    content: "";
-    min-width: auto;
-    max-width: $viewport-desktop - 1px;
-    min-height: 198px;
-    top: 30px;
-    right: -20px;
-    background-color: $color-titles-light;
-    z-index: 12;
   }
 }
 
