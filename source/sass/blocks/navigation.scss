@@ -1,15 +1,108 @@
-.navigation__button--open {
-  border: none;
-  background-color: inherit;
+.navigation {
+  position: relative;
 }
 
+.navigation__button {
+  display: none;
+}
+
+// закрытое - появлется кнопка открытия бургер //
+.navigation--closed .navigation__button {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  top: 2px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 1px;
+    border: none;
+    background-color: black;
+    box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+    cursor: pointer;
+  }
+}
+
+// открытое  - появляется кнопка закрыть //
+.navigation--opened .navigation__button {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: inherit;
+  border: none;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: none;
+    top: 8px;
+    left: 8px;
+    transform: rotate(45deg);
+    border-left: 1px solid $color-titles;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-top: 1px solid $color-titles;
+    top: 8px;
+    left: -8px;
+    transform: rotate(45deg);
+  }
+}
+
+// список пунктов навигации, который пропадает при увеличении экрана //
 .navigation__list {
+  display: none;
   list-style: none;
   margin: 0 auto;
   width: 320px;
   padding: 0;
   text-align: center;
   z-index: 10;
+  @media (min-width: $viewport-tablet) {
+    position: relative;
+    min-width: 440px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: $viewport-desktop) {
+    position: relative;
+    min-width: 480px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.navigation__list--open {
+  @media (max-width: $viewport-tablet) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    content: "";
+    min-width: auto;
+    max-width: $viewport-desktop - 1px;
+    min-height: 198px;
+    top: 30px;
+    right: -20px;
+    background-color: $color-titles-light;
+    z-index: 12;
+  }
 }
 
 .navigation__link {
