@@ -15,7 +15,7 @@
 .navigation--closed .navigation__button {
   display: block;
   position: relative;
-  margin: 0;
+  margin-left: 66px;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -46,7 +46,10 @@
 // открытое  - появляется кнопка закрыть //
 .navigation--opened .navigation__button {
   display: block;
-  position: relative;
+  position: absolute;
+  content: "";
+  top: -35px;
+  right: 10px;
   margin: 0;
   padding: 0;
   width: 24px;
@@ -117,7 +120,7 @@
     display: block;
     position: static;
     content: "";
-    height: 244px;
+    min-height: 190px;
     top: 50px;
     right: 0;
     flex-direction: column;

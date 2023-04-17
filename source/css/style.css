@@ -823,7 +823,7 @@ img {
 .navigation--closed .navigation__button {
   display: block;
   position: relative;
-  margin: 0;
+  margin-left: 66px;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -851,7 +851,10 @@ img {
 
 .navigation--opened .navigation__button {
   display: block;
-  position: relative;
+  position: absolute;
+  content: "";
+  top: -35px;
+  right: 10px;
   margin: 0;
   padding: 0;
   width: 24px;
@@ -916,7 +919,7 @@ img {
     display: block;
     position: static;
     content: "";
-    height: 244px;
+    min-height: 190px;
     top: 50px;
     right: 0;
     flex-direction: column;
@@ -1062,7 +1065,6 @@ img {
 .page-header__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px 20px;
   padding-bottom: 17px; }
@@ -1074,6 +1076,9 @@ img {
     .page-header__wrapper {
       padding: 55px 110px;
       justify-content: space-between; } }
+
+.page-header__logo-text {
+  margin-left: 56px; }
 
 .presentation__block {
   display: flex;

@@ -1,7 +1,6 @@
 .page-header__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px 20px;
   padding-bottom: 17px;
@@ -13,4 +12,8 @@
     padding: 55px 110px;
     justify-content: space-between;
   }
+}
+
+.page-header__logo-text {
+  margin-left: 56px;
 }
