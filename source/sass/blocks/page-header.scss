@@ -6,14 +6,10 @@
   padding-bottom: 17px;
   @media (min-width: $viewport-tablet) {
     padding: 26px 30px;
+    justify-content: space-between;
   }
   @media (min-width: $viewport-desktop) {
     padding: 55px 110px;
-  }
-}
-
-.page-header__logo-icon {
-  @media (min-width: $viewport-desktop) {
-    margin-right: auto;
+    justify-content: space-between;
   }
 }
