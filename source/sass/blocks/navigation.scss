@@ -189,4 +189,8 @@
 .navigation__link--current {
   border-bottom: 2px solid $color-background-contrast;
   z-index: 10;
+  @media (min-width: $viewport-desktop) {
+    border-bottom: 2px solid $color-titles-light;
+    z-index: 10;
+  }
 }

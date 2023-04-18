@@ -75,17 +75,16 @@
 }
 
 .page-footer__studio {
-  min-width: 280px;
-  width: auto;
+  width: 280px;
   margin-top: 45px;
   margin-bottom: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @media (min-width: $viewport-tablet) {
-    max-width: 163px;
+    width: 163px;
   }
   @media (min-width: $viewport-desktop) {
-    max-width: 163px;
+    width: 163px;
   }
 }
