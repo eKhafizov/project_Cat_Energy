@@ -59,9 +59,20 @@
   order: 1;
 
   @media (min-width: $viewport-tablet) {
+    font-style: $font-heading;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
     color: $color-titles;
+    width: 415px;
   }
   @media (min-width: $viewport-desktop) {
+    font-style: $font-heading;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
     color: $color-titles;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -81,9 +92,17 @@
 
   @media (min-width: $viewport-tablet) {
     color: $color-titles;
+    color: $color-titles;
+    font-family: $font-heading;
+    font-size: 20px;
+    line-height: 20px;
   }
   @media (min-width: $viewport-desktop) {
     color: $color-titles;
+    font-family: $font-heading;
+    order: 2;
+    font-size: 20px;
+    line-height: 20px;
     grid-column: 1/2;
     grid-row: 2/3;
   }

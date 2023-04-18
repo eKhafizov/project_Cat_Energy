@@ -207,6 +207,14 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px; }
+  @media (min-width: 768px) {
+    .advantages__heading {
+      font-size: 60px;
+      line-height: 60px; } }
+  @media (min-width: 1440px) {
+    .advantages__heading {
+      font-size: 60px;
+      line-height: 60px; } }
 
 .advantages__info {
   font-family: "Arial", sans-serif;
@@ -215,6 +223,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px; }
+  @media (min-width: 768px) {
+    .advantages__info {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media (min-width: 1440px) {
+    .advantages__info {
+      font-size: 16px;
+      line-height: 24px; } }
 
 .banner__block {
   background-color: rgba(104, 183, 56, 0.85);
@@ -311,12 +327,36 @@ img {
 .button--more {
   background-color: #f2f2f2;
   font-family: "Oswald", "Arial", sans-serif;
-  color: #444; }
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px; }
+  @media (min-width: 768px) {
+    .button--more {
+      font-size: 20px;
+      line-height: 20px; } }
+  @media (min-width: 1440px) {
+    .button--more {
+      font-size: 20px;
+      line-height: 20px; } }
 
 .button--text {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: inherit;
-  color: #000; }
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px; }
+  @media (min-width: 768px) {
+    .button--text {
+      font-size: 20px;
+      line-height: 30px; } }
+  @media (min-width: 1440px) {
+    .button--text {
+      font-size: 20px;
+      line-height: 30px; } }
 
 .catalog__heading {
   font-family: "Oswald", "Arial", sans-serif;
@@ -492,6 +532,10 @@ img {
   color: #111;
   margin: 0;
   padding: 0; }
+  @media (min-width: 768px) {
+    .contacts__heading {
+      font-size: 20px;
+      line-height: 26px; } }
 
 .contacts__address {
   font-family: "Arial", sans-serif;
@@ -505,6 +549,14 @@ img {
   text-align: end; }
   .contacts__address span {
     text-align: end; }
+  @media (min-width: 768px) {
+    .contacts__address {
+      font-size: 16px;
+      line-height: 20px; } }
+  @media (min-width: 1440px) {
+    .contacts__address {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .contacts-map {
   margin: 0 auto; }
@@ -540,7 +592,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 18.4px;
   font: "Arial", sans-serif; }
 
 .example {
@@ -897,7 +949,8 @@ img {
   display: none; }
 
 .navigation__list {
-  display: none; }
+  display: none;
+  list-style: none; }
   @media (min-width: 768px) {
     .navigation__list {
       position: relative;
@@ -961,8 +1014,10 @@ img {
   @media (min-width: 768px) {
     .navigation__link {
       font-weight: 400;
+      font-style: normal;
       font-size: 18px;
-      line-height: 24px; } }
+      line-height: 24px;
+      color: #000; } }
   @media (min-width: 1440px) {
     .navigation__link {
       font-weight: 400;
@@ -1137,9 +1192,20 @@ img {
   order: 1; }
   @media (min-width: 768px) {
     .presentation__heading {
-      color: #000; } }
+      font-style: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000;
+      width: 415px; } }
   @media (min-width: 1440px) {
     .presentation__heading {
+      font-style: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 60px;
+      line-height: 60px;
       color: #000;
       grid-column: 1/2;
       grid-row: 1/2; } }
@@ -1156,10 +1222,18 @@ img {
   text-transform: uppercase; }
   @media (min-width: 768px) {
     .presentation__slogan {
-      color: #000; } }
+      color: #000;
+      color: #000;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 20px;
+      line-height: 20px; } }
   @media (min-width: 1440px) {
     .presentation__slogan {
       color: #000;
+      font-family: "Oswald", "Arial", sans-serif;
+      order: 2;
+      font-size: 20px;
+      line-height: 20px;
       grid-column: 1/2;
       grid-row: 2/3; } }
 
@@ -1226,6 +1300,14 @@ img {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .programs__title {
+      font-size: 36px;
+      line-height: 36px; } }
+  @media (min-width: 1440px) {
+    .programs__title {
+      font-size: 36px;
+      line-height: 36px; } }
 
 .programs__description {
   font-family: "Arial", sans-serif;
@@ -1234,6 +1316,14 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px; }
+  @media (min-width: 768px) {
+    .programs__description {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media (min-width: 1440px) {
+    .programs__description {
+      font-size: 16px;
+      line-height: 24px; } }
 
 .results {
   background-color: #f2f2f2;
@@ -1258,6 +1348,14 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px; }
+  @media (min-width: 768px) {
+    .results__heading {
+      font-size: 60px;
+      line-height: 60px; } }
+  @media (min-width: 1440px) {
+    .results__heading {
+      font-size: 60px;
+      line-height: 60px; } }
 
 .results__story {
   font-family: "Arial", sans-serif;
@@ -1266,6 +1364,14 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px; }
+  @media (min-width: 768px) {
+    .results__story {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media (min-width: 1440px) {
+    .results__story {
+      font-size: 16px;
+      line-height: 24px; } }
 
 .results__item dt {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1274,6 +1380,14 @@ img {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px; }
+  @media (min-width: 768px) {
+    .results__item dt {
+      font-size: 30px;
+      line-height: 37px; } }
+  @media (min-width: 1440px) {
+    .results__item dt {
+      font-size: 30px;
+      line-height: 37px; } }
 
 .results__item dd {
   font-family: "Arial", sans-serif;
@@ -1281,7 +1395,15 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%; }
+  line-height: 12px; }
+  @media (min-width: 768px) {
+    .results__item dd {
+      font-size: 14px;
+      line-height: 14px; } }
+  @media (min-width: 1440px) {
+    .results__item dd {
+      font-size: 14px;
+      line-height: 14px; } }
 
 .results__info {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1291,6 +1413,14 @@ img {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .results__info {
+      font-size: 20px;
+      line-height: 20px; } }
+  @media (min-width: 1440px) {
+    .results__info {
+      font-size: 20px;
+      line-height: 20px; } }
 
 @media (min-width: 768px) {
   .site-nav {

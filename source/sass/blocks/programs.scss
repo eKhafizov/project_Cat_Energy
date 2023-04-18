@@ -10,20 +10,34 @@
 .programs__title {
   font-family: $font-heading;
   color: $color-titles;
-
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  @media (min-width: $viewport-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs__description {
   font-family: $font-text;
   color: $color-text;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

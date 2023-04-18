@@ -23,6 +23,14 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .results__story {
@@ -33,6 +41,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .results__item {
@@ -43,6 +59,14 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
+    @media (min-width: $viewport-tablet) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    @media (min-width: $viewport-desktop) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
   & dd {
     font-family: $font-text;
@@ -50,7 +74,15 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 100%;
+    line-height: 12px;
+    @media (min-width: $viewport-tablet) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    @media (min-width: $viewport-desktop) {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
 
@@ -62,4 +94,12 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

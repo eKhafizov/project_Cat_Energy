@@ -17,11 +17,18 @@
 .advantages__heading {
   font-family: $font-heading;
   color: $color-titles;
-
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__info {
@@ -31,4 +38,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

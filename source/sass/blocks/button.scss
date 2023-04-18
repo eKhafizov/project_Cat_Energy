@@ -19,6 +19,18 @@
   background-color: $color-background-item;
   font-family: $font-heading;
   color: $color-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 //button black on transparent//
@@ -26,4 +38,16 @@
   font-family: $font-heading;
   background-color: inherit;
   color: $color-titles;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

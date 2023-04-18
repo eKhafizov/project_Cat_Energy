@@ -32,6 +32,10 @@
   color: $color-titles-400;
   margin: 0;
   padding: 0;
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
@@ -46,6 +50,14 @@
   text-align: end;
   & span {
     text-align: end;
+  }
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
