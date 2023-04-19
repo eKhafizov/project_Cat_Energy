@@ -200,13 +200,69 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: minmax(280px, auto); } }
 
+.advantages__item {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: 1; }
+  @media (min-width: 768px) {
+    .advantages__item {
+      flex-direction: column;
+      width: 246px;
+      height: 280px; }
+      .advantages__item--nutrition::before {
+        position: absolute;
+        content: "1";
+        width: 134px;
+        height: 280px;
+        font-size: 280px;
+        line-height: 280px;
+        color: #f2f2f2;
+        top: -20px;
+        right: 0;
+        z-index: 0; }
+      .advantages__item--powder::before {
+        position: absolute;
+        content: "2";
+        width: 134px;
+        height: 280px;
+        font-size: 280px;
+        line-height: 280px;
+        color: #f2f2f2;
+        top: -20px;
+        right: 0;
+        z-index: 0; }
+      .advantages__item--supplements::before {
+        position: absolute;
+        content: "3";
+        width: 134px;
+        height: 280px;
+        font-size: 280px;
+        line-height: 280px;
+        color: #f2f2f2;
+        top: -20px;
+        right: 0;
+        z-index: 0; }
+      .advantages__item--result::before {
+        position: absolute;
+        content: "4";
+        width: 134px;
+        height: 280px;
+        font-size: 280px;
+        line-height: 280px;
+        color: #f2f2f2;
+        top: -20px;
+        right: 0;
+        z-index: 0; } }
+
 .advantages__heading {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px; }
+  line-height: 40px;
+  z-index: 2; }
   @media (min-width: 768px) {
     .advantages__heading {
       font-size: 60px;
@@ -222,7 +278,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px; }
+  line-height: 18px;
+  z-index: 2; }
   @media (min-width: 768px) {
     .advantages__info {
       font-size: 16px;
