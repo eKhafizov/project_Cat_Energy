@@ -204,10 +204,13 @@
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center; }
   @media (min-width: 768px) {
     .advantages__item {
       flex-direction: column;
+      justify-content: flex-start;
       width: 246px;
       height: 280px; }
       .advantages__item--nutrition::before {
@@ -279,15 +282,39 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  z-index: 2; }
+  z-index: 2;
+  width: 199px; }
   @media (min-width: 768px) {
     .advantages__info {
       font-size: 16px;
-      line-height: 24px; } }
+      line-height: 24px;
+      width: 205px;
+      margin-right: auto; } }
   @media (min-width: 1440px) {
     .advantages__info {
       font-size: 16px;
-      line-height: 24px; } }
+      line-height: 24px;
+      width: 205px; } }
+
+.advantages__icon--nutrition {
+  width: 60px;
+  height: 60px;
+  background-image: url("/img/description/description__icon/description__icon--nutrition.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .advantages__icon--nutrition {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+      background-repeat: no-repeat;
+      margin-right: auto; } }
+  @media (min-width: 1440px) {
+    .advantages__icon--nutrition {
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+      background-repeat: no-repeat; } }
 
 .banner__block {
   background-color: rgba(104, 183, 56, 0.85);
@@ -1449,6 +1476,42 @@ img {
     right: -40px;
     background-image: url("/img/icon/icon-arrow.svg");
     background-repeat: no-repeat; }
+
+.programs__icon--pro {
+  width: 50px;
+  height: 50px;
+  background-image: url("/img/goals/goals__icon/goals__icon--pro.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-color: inherit; }
+  @media (min-width: 768px) {
+    .programs__icon--pro {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px; } }
+  @media (min-width: 1440px) {
+    .programs__icon--pro {
+      width: 100px;
+      height: 100px;
+      background-size: 100px 100px; } }
+
+.programs__icon--slim {
+  width: 50px;
+  height: 50px;
+  background-image: url("/img/goals/goals__icon/goals__icon--slim.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-color: inherit; }
+  @media (min-width: 768px) {
+    .programs__icon--slim {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px; } }
+  @media (min-width: 1440px) {
+    .programs__icon--slim {
+      width: 100px;
+      height: 100px;
+      background-size: 100px 100px; } }
 
 .results {
   background-color: #f2f2f2;

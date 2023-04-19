@@ -19,8 +19,11 @@
   flex-wrap: nowrap;
   position: relative;
   z-index: 1;
+  justify-content: space-between;
+  align-items: center;
   @media (min-width: $viewport-tablet) {
     flex-direction: column;
+    justify-content: flex-start;
     width: 246px;
     height: 280px;
     &--nutrition {
@@ -108,12 +111,37 @@
   font-size: 14px;
   line-height: 18px;
   z-index: 2;
+  width: 199px;
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
+    width: 205px;
+    margin-right: auto;
   }
   @media (min-width: $viewport-desktop) {
     font-size: 16px;
     line-height: 24px;
+    width: 205px;
+  }
+}
+
+.advantages__icon--nutrition {
+  width: 60px;
+  height: 60px;
+  background-image: url("/img/description/description__icon/description__icon--nutrition.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  @media (min-width: $viewport-tablet) {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+  }
+  @media (min-width: $viewport-desktop) {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
   }
 }

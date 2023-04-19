@@ -107,3 +107,40 @@
     background-repeat: no-repeat;
   }
 }
+
+.programs__icon--pro {
+  width: 50px;
+  height: 50px;
+  background-image: url("/img/goals/goals__icon/goals__icon--pro.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  @media (min-width: $viewport-tablet) {
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+  }
+  @media (min-width: $viewport-desktop) {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+  }
+}
+.programs__icon--slim {
+  width: 50px;
+  height: 50px;
+  background-image: url("/img/goals/goals__icon/goals__icon--slim.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  @media (min-width: $viewport-tablet) {
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+  }
+  @media (min-width: $viewport-desktop) {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+  }
+}
