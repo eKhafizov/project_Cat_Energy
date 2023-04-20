@@ -5,13 +5,19 @@
   padding: 10px 20px;
   padding-bottom: 17px;
   @media (min-width: $viewport-tablet) {
-    padding: 26px 30px;
+    padding: 0 30px;
     justify-content: space-between;
+    min-height: 62px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
   @media (min-width: $viewport-desktop) {
-    padding: 55px 110px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 20px;
     padding-bottom: 0;
     justify-content: space-between;
+    width: $viewport-desktop;
   }
 }
 

@@ -14,12 +14,13 @@
     background-image: none;
   }
   @media (min-width: $viewport-desktop) {
-    padding-left: 190px;
-    padding-right: 190px;
-    display: grid;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     max-width: $viewport-desktop;
-    grid-template-columns: 414px 506px 140px;
-    grid-template-rows: 120px 60px 106px;
     min-height: 553px;
     &::before {
       position: absolute;
@@ -27,7 +28,7 @@
       width: 720px;
       height: 694px;
       top: -200px;
-      right: 370px;
+      right: 0;
       background-color: $color-background-contrast;
       z-index: 1;
     }
@@ -37,7 +38,7 @@
       width: 720px;
       height: 694px;
       top: -200px;
-      right: 370px;
+      right: 0;
       background-color: $color-background-contrast;
       background-image: url("/img/images__background/index-background-desktop.jpg");
       background: fill solid $color-background-contrast;
@@ -55,8 +56,8 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
   order: 1;
+  text-align: center;
 
   @media (min-width: $viewport-tablet) {
     font-style: $font-heading;
@@ -66,6 +67,8 @@
     line-height: 60px;
     color: $color-titles;
     width: 415px;
+    text-align: center;
+    margin-bottom: 41px;
   }
   @media (min-width: $viewport-desktop) {
     font-style: $font-heading;
@@ -74,8 +77,12 @@
     font-size: 60px;
     line-height: 60px;
     color: $color-titles;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    margin-top: 81px;
+    margin-left: 190px;
+    margin-bottom: 0;
+    width: 420px;
+    z-index: 11;
+    text-align: start;
   }
 }
 
@@ -89,13 +96,14 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-
   @media (min-width: $viewport-tablet) {
     color: $color-titles;
     color: $color-titles;
     font-family: $font-heading;
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    margin-bottom: 49px;
   }
   @media (min-width: $viewport-desktop) {
     color: $color-titles;
@@ -103,20 +111,47 @@
     order: 2;
     font-size: 20px;
     line-height: 20px;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    width: 290px;
+    margin-left: 190px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    z-index: 11;
   }
 }
 
 .presentation__image {
   order: 3;
+  background-image: url("/img/presentation/presentation__icon/presentation__image.png");
+  background-size: 280px 270px;
+  background-repeat: no-repeat;
+  position: static;
+  content: "";
+  width: 280px;
+  height: 270px;
+  z-index: 11;
+  bottom: 0;
+  background-color: transparent;
+  background-size: 280px 270px;
   @media (min-width: $viewport-tablet) {
-    order: 4;
+    position: absolute;
+    content: "";
+    width: 709px;
+    height: 609px;
+    z-index: 11;
+    bottom: 0;
+    background-color: transparent;
+    background-size: 709px 609px;
   }
   @media (min-width: $viewport-desktop) {
-    grid-column: 2/3;
-    grid-row: 1/-1;
-    z-index: 10;
+    position: absolute;
+    content: "";
+    width: 552px;
+    height: 499px;
+    z-index: 11;
+    top: 0;
+    background-color: transparent;
+    right: 310px;
+    background-size: 552px 499px;
   }
 }
 
@@ -130,9 +165,12 @@
   order: 4;
   @media (min-width: $viewport-tablet) {
     order: 2;
+    margin-bottom: 629px;
   }
   @media (min-width: $viewport-desktop) {
-    grid-template-columns: 1/2;
-    grid-row: 3/4;
+    z-index: 11;
+    margin-left: 190px;
+    margin-top: 52px;
+    margin-bottom: 185px;
   }
 }

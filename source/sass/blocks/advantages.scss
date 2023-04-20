@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: minmax(280px, auto);
+    margin: 0;
   }
 }
 
@@ -100,6 +101,7 @@
   @media (min-width: $viewport-desktop) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 72px;
   }
 }
 

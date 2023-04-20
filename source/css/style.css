@@ -198,7 +198,8 @@
     .advantages__list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: minmax(280px, auto); } }
+      grid-template-rows: minmax(280px, auto);
+      margin: 0; } }
 
 .advantages__item {
   display: flex;
@@ -273,7 +274,8 @@
   @media (min-width: 1440px) {
     .advantages__heading {
       font-size: 60px;
-      line-height: 60px; } }
+      line-height: 60px;
+      margin-bottom: 72px; } }
 
 .advantages__info {
   font-family: "Arial", sans-serif;
@@ -980,16 +982,16 @@ img {
 
 .item-block__wrapper {
   min-width: 320px;
-  width: auto;
+  width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .item-block__wrapper {
-      width: auto;
+      width: 768px;
       padding: 0; } }
   @media (min-width: 1440px) {
     .item-block__wrapper {
-      width: auto;
-      min-width: 1440px; } }
+      width: 1440px;
+      padding: 0; } }
 
 .main-catalog__wrapper {
   margin: 0 auto;
@@ -1104,7 +1106,8 @@ img {
       width: auto;
       display: flex;
       flex-direction: row;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      margin: 0; } }
   @media (min-width: 1440px) {
     .navigation__list {
       position: relative;
@@ -1274,13 +1277,19 @@ img {
   padding-bottom: 17px; }
   @media (min-width: 768px) {
     .page-header__wrapper {
-      padding: 26px 30px;
-      justify-content: space-between; } }
+      padding: 0 30px;
+      justify-content: space-between;
+      min-height: 62px;
+      margin: 0 auto;
+      margin-top: 10px; } }
   @media (min-width: 1440px) {
     .page-header__wrapper {
-      padding: 55px 110px;
+      padding: 0;
+      margin: 0 auto;
+      padding-top: 20px;
       padding-bottom: 0;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      width: 1440px; } }
 
 .page-header__logo-text {
   margin-left: 56px; }
@@ -1301,12 +1310,13 @@ img {
       background-image: none; } }
   @media (min-width: 1440px) {
     .presentation__block {
-      padding-left: 190px;
-      padding-right: 190px;
-      display: grid;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
       max-width: 1440px;
-      grid-template-columns: 414px 506px 140px;
-      grid-template-rows: 120px 60px 106px;
       min-height: 553px; }
       .presentation__block::before {
         position: absolute;
@@ -1314,7 +1324,7 @@ img {
         width: 720px;
         height: 694px;
         top: -200px;
-        right: 370px;
+        right: 0;
         background-color: rgba(104, 183, 56, 0.85);
         z-index: 1; }
       .presentation__block::after {
@@ -1323,7 +1333,7 @@ img {
         width: 720px;
         height: 694px;
         top: -200px;
-        right: 370px;
+        right: 0;
         background-color: rgba(104, 183, 56, 0.85);
         background-image: url("/img/images__background/index-background-desktop.jpg");
         background: fill solid rgba(104, 183, 56, 0.85);
@@ -1338,8 +1348,8 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
-  order: 1; }
+  order: 1;
+  text-align: center; }
   @media (min-width: 768px) {
     .presentation__heading {
       font-style: "Oswald", "Arial", sans-serif;
@@ -1348,7 +1358,9 @@ img {
       font-size: 60px;
       line-height: 60px;
       color: #000;
-      width: 415px; } }
+      width: 415px;
+      text-align: center;
+      margin-bottom: 41px; } }
   @media (min-width: 1440px) {
     .presentation__heading {
       font-style: "Oswald", "Arial", sans-serif;
@@ -1357,8 +1369,12 @@ img {
       font-size: 60px;
       line-height: 60px;
       color: #000;
-      grid-column: 1/2;
-      grid-row: 1/2; } }
+      margin-top: 81px;
+      margin-left: 190px;
+      margin-bottom: 0;
+      width: 420px;
+      z-index: 11;
+      text-align: start; } }
 
 .presentation__slogan {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1376,7 +1392,9 @@ img {
       color: #000;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 20px;
-      line-height: 20px; } }
+      line-height: 20px;
+      margin: 0;
+      margin-bottom: 49px; } }
   @media (min-width: 1440px) {
     .presentation__slogan {
       color: #000;
@@ -1384,19 +1402,46 @@ img {
       order: 2;
       font-size: 20px;
       line-height: 20px;
-      grid-column: 1/2;
-      grid-row: 2/3; } }
+      width: 290px;
+      margin-left: 190px;
+      margin-top: 40px;
+      margin-bottom: 0;
+      z-index: 11; } }
 
 .presentation__image {
-  order: 3; }
+  order: 3;
+  background-image: url("/img/presentation/presentation__icon/presentation__image.png");
+  background-size: 280px 270px;
+  background-repeat: no-repeat;
+  position: static;
+  content: "";
+  width: 280px;
+  height: 270px;
+  z-index: 11;
+  bottom: 0;
+  background-color: transparent;
+  background-size: 280px 270px; }
   @media (min-width: 768px) {
     .presentation__image {
-      order: 4; } }
+      position: absolute;
+      content: "";
+      width: 709px;
+      height: 609px;
+      z-index: 11;
+      bottom: 0;
+      background-color: transparent;
+      background-size: 709px 609px; } }
   @media (min-width: 1440px) {
     .presentation__image {
-      grid-column: 2/3;
-      grid-row: 1/-1;
-      z-index: 10; } }
+      position: absolute;
+      content: "";
+      width: 552px;
+      height: 499px;
+      z-index: 11;
+      top: 0;
+      background-color: transparent;
+      right: 310px;
+      background-size: 552px 499px; } }
 
 .presentation__link {
   display: flex;
@@ -1408,11 +1453,14 @@ img {
   order: 4; }
   @media (min-width: 768px) {
     .presentation__link {
-      order: 2; } }
+      order: 2;
+      margin-bottom: 629px; } }
   @media (min-width: 1440px) {
     .presentation__link {
-      grid-template-columns: 1/2;
-      grid-row: 3/4; } }
+      z-index: 11;
+      margin-left: 190px;
+      margin-top: 52px;
+      margin-bottom: 185px; } }
 
 .page__body {
   margin: 0 auto;

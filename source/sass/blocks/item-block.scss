@@ -1,13 +1,13 @@
 .item-block__wrapper {
   min-width: $viewport-mobile;
-  width: auto;
+  width: 320px;
   margin: 0 auto;
   @media (min-width: $viewport-tablet) {
-    width: auto;
+    width: $viewport-tablet;
     padding: 0;
   }
   @media (min-width: $viewport-desktop) {
-    width: auto;
-    min-width: $viewport-desktop;
+    width: $viewport-desktop;
+    padding: 0;
   }
 }
