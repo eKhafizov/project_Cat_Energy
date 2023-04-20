@@ -17,7 +17,7 @@
   @media (min-width: $viewport-tablet) {
     min-width: $viewport-tablet - 60px;
     min-height: 147px;
-    padding: 30px;
+    padding: 0 30px;
     width: auto;
     flex-direction: row;
     justify-content: space-between;
@@ -42,7 +42,7 @@
 
 .page-footer__logo {
   margin-top: 39px;
-  margin-bottom: 56px;
+  margin-bottom: 53px;
   display: flex;
   position: relative;
   @media (max-width: 767px) {
@@ -56,10 +56,20 @@
       left: -80px;
     }
   }
+  @media (min-width: $viewport-tablet) {
+    margin-top: 63px;
+    margin-bottom: 60px;
+  }
 }
 
 .page-footer__list {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  width: 130px;
+  min-height: 22px;
+  grid-template-columns: 1fr 1fr 1fr;
   position: relative;
   @media (max-width: 767px) {
     &::after {
@@ -72,17 +82,22 @@
       left: -65px;
     }
   }
+  @media (min-width: $viewport-tablet) {
+    margin-top: 59px;
+    margin-bottom: 61px;
+  }
 }
 
 .page-footer__studio {
   width: 280px;
   margin-top: 45px;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @media (min-width: $viewport-tablet) {
     width: 163px;
+    margin-bottom: 59px;
   }
   @media (min-width: $viewport-desktop) {
     width: 163px;
