@@ -8,7 +8,7 @@
   width: auto;
   @media (min-width: $viewport-tablet) {
     min-width: $viewport-tablet - 60px;
-    padding: 30px;
+    padding: 0 30px;
     width: auto;
   }
   @media (min-width: $viewport-desktop) {
