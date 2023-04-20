@@ -42,7 +42,7 @@
 
 .page-footer__logo {
   margin-top: 39px;
-  margin-bottom: 53px;
+  margin-bottom: 54px;
   display: flex;
   position: relative;
   @media (max-width: 767px) {
@@ -52,13 +52,17 @@
       height: 1px;
       background-color: $color-separator;
       position: absolute;
-      top: 53px;
+      top: 50px;
       left: -80px;
     }
   }
   @media (min-width: $viewport-tablet) {
     margin-top: 63px;
     margin-bottom: 60px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin-top: 63px;
+    margin-bottom: 62px;
   }
 }
 
@@ -86,6 +90,10 @@
     margin-top: 59px;
     margin-bottom: 61px;
   }
+  @media (min-width: $viewport-desktop) {
+    margin-top: 59px;
+    margin-bottom: 63px;
+  }
 }
 
 .page-footer__studio {
@@ -97,9 +105,19 @@
   align-items: center;
   @media (min-width: $viewport-tablet) {
     width: 163px;
-    margin-bottom: 59px;
+    margin-top: 57px;
+    margin-bottom: 56px;
   }
   @media (min-width: $viewport-desktop) {
     width: 163px;
+    margin-top: 59px;
+    margin-bottom: 56px;
+  }
+}
+
+.page-footer__link--icon {
+  height: 34px;
+  @media (min-width: $viewport-tablet) {
+    height: 34px;
   }
 }
