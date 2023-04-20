@@ -1,14 +1,19 @@
 .example {
-  background-color: $color-background-item;
+  background-color: $color-background-example;
+  @media (min-width: $viewport-tablet) {
+    background-color: $color-background-example;
+  }
 }
 
 .example__wrapper {
   margin: 0 auto;
   min-width: $viewport-mobile;
   width: auto;
+  display: flex;
+  flex-direction: column;
   @media (min-width: $viewport-tablet) {
     min-width: $viewport-tablet - 60px;
-    padding: 0 30px;
+    padding: 0;
     width: auto;
   }
   @media (min-width: $viewport-desktop) {
@@ -17,7 +22,14 @@
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: $color-background-item;
+    background-image: linear-gradient(
+      to bottom,
+      $color-background-main 0px,
+      $color-background-main 205px,
+      $color-background-example 205px,
+      $color-background-example 462px
+    );
+    position: relative;
   }
 }
 

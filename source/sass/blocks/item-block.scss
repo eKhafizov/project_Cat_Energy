@@ -1,6 +1,6 @@
 .item-block__wrapper {
   min-width: $viewport-mobile;
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   @media (min-width: $viewport-tablet) {
     width: $viewport-tablet;

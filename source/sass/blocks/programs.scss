@@ -126,19 +126,21 @@
   }
 }
 .programs__icon--pro {
-  position: absolute;
-  content: "";
-  width: 67px;
-  height: 50px;
-  top: 23px;
-  left: 13px;
+  @media (max-width: 767px) {
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 50px;
+    top: 23px;
+    left: 13px;
+  }
   @media (min-width: $viewport-tablet) {
     position: absolute;
     content: "";
     width: 268px;
     height: 200px;
     top: 91px;
-    left: 412px;
+    right: 28px;
   }
   @media (min-width: $viewport-desktop) {
     position: absolute;
@@ -170,12 +172,14 @@
 }
 
 .programs__icon--slim {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 53px;
-  top: 21px;
-  right: 214px;
+  @media (max-width: 767px) {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 53px;
+    top: 21px;
+    left: 22px;
+  }
   @media (min-width: $viewport-tablet) {
     position: absolute;
     content: "";

@@ -9,15 +9,15 @@
     justify-content: space-between;
     min-height: 62px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   @media (min-width: $viewport-desktop) {
-    padding: 0;
+    padding: 0 110px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 35px;
     padding-bottom: 0;
     justify-content: space-between;
-    width: $viewport-desktop;
+    width: $viewport-desktop - 220px;
   }
 }
 
