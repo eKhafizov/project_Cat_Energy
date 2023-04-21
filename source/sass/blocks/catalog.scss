@@ -7,6 +7,7 @@
   line-height: 36px;
   margin-top: 27px;
   margin-bottom: 41px;
+  margin-left: 20px;
   @media (min-width: $viewport-tablet) {
     margin-top: 68px;
     margin-bottom: 163px;
@@ -31,7 +32,7 @@
   line-height: 20px;
   width: 76px;
   min-height: 41px;
-  margin-left: 140px;
+  margin-left: 160px;
   margin-top: 19px;
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
@@ -202,7 +203,8 @@
 }
 
 .catalog__details {
-  margin-left: 140px;
+  margin-left: 160px;
+  margin-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -220,7 +222,7 @@
   @media (max-width: 767px) {
     position: absolute;
     content: "";
-    left: 19px;
+    left: 39px;
     top: 30px;
     background-color: transparent;
   }
@@ -245,4 +247,8 @@
 }
 .catalog {
   margin-bottom: 100px;
+  @media (max-width: 767px) {
+    border-top: 1px solid $color-separator;
+    margin-bottom: 0;
+  }
 }

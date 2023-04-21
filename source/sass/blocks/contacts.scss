@@ -50,6 +50,7 @@
 }
 
 .contacts__block--catalog {
+  background-color: $color-background-item;
   @media (min-width: $viewport-tablet) {
     background-color: $color-background-item;
   }

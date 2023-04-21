@@ -6,7 +6,12 @@
   justify-content: center;
   align-items: center;
   width: 280px;
-  margin-top: 54px;
+  min-height: 290px;
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   @media (min-width: $viewport-tablet) {
     padding: 0;
     margin-left: 0;

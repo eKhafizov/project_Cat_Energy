@@ -36,6 +36,8 @@
 .additional-items__list {
   display: flex;
   flex-direction: column;
+  margin-top: 22px;
+  border-bottom: 1px solid $color-separator-dark;
   @media (min-width: $viewport-tablet) {
     display: flex;
     flex-direction: column;
@@ -48,6 +50,9 @@
 }
 
 .additional-items__item {
+  @media (max-width: 767px) {
+    border-top: 1px solid $color-separator-dark;
+  }
   @media (min-width: $viewport-tablet) {
     display: flex;
     flex-direction: column;
