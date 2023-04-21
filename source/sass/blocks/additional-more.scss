@@ -3,18 +3,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/source/img/icon/additiona__icon.svg");
+  background-image: url("/img/icon/additiona__icon.svg");
   background-size: 30px 30px;
   background-position: center center;
   background-repeat: no-repeat;
   @media (min-width: $viewport-tablet) {
     height: 180px;
-    background-image: url("/source/img/icon/additiona__icon.svg");
+    background-image: url("/img/icon/additiona__icon.svg");
     background-size: 60px 60px;
   }
   @media (min-width: $viewport-desktop) {
     height: 180px;
-    background-image: url("/source/img/icon/additiona__icon.svg");
+    background-image: url("/img/icon/additiona__icon.svg");
     background-size: 60px 60px;
   }
 }

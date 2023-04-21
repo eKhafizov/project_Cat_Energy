@@ -195,3 +195,15 @@
     z-index: 10;
   }
 }
+.navigation__link--current-catalog {
+  @media (min-width: $viewport-desktop) {
+    border-bottom: 2px solid $color-background-contrast;
+    z-index: 10;
+  }
+}
+
+.navigation__link--catalog {
+  @media (min-width: $viewport-desktop) {
+    color: $color-titles;
+  }
+}
