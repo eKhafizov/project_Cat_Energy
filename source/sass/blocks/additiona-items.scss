@@ -6,7 +6,9 @@
   flex-direction: column;
   @media (min-width: $viewport-tablet) {
     min-width: $viewport-tablet - 60px;
-    padding: 30px;
+    border-top: 2px solid $color-background-contrast;
+    padding: 0 30px;
+    padding-top: 90px;
     margin: 0;
   }
   @media (min-width: $viewport-desktop) {
@@ -50,6 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid $color-separator-dark;
   }
   @media (min-width: $viewport-desktop) {
     display: flex;

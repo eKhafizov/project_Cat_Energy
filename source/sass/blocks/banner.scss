@@ -14,6 +14,8 @@
     margin-left: auto;
     margin-top: 75px;
     width: 707px;
+    min-height: 92px;
+    background-size: 707px 200px;
   }
   @media (min-width: $viewport-desktop) {
     width: 245px;
@@ -40,6 +42,7 @@
     justify-content: space-between;
     width: 465px;
     margin: 0 auto;
+    min-height: 200px;
   }
   @media (min-width: $viewport-desktop) {
     flex-direction: column;
