@@ -25,34 +25,30 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a
-          class="page-header__logo logo"
+          class="page-header__logo page-header__logo-icon logo"
           href="#"
           ><img
-            class="page-header__logo-icon logo__icon logo__icon--image"
-            src="/img//icon/logo__icon--image.png"
+            class="logo__icon logo__icon-image"
+            src="/img/icon/logo__icon--image.png"
             width="34"
             height="38"
             alt="иконка-логотип сайта."
         /></a>
         <a
-          class="page-header__logo logo"
+          class="page-header__logo page-header__logo-text logo"
           href="#"
           ><img
-            class="page-header__logo-text logo__icon logo__icon--text"
+            class="logo__icon logo__icon-text"
             src="/img/icon/logo__icon--text.png.png"
             width="101"
             height="18"
             alt="иконка-логотип сайта."
         /></a>
-        <nav class="site-nav navigation">
+        <nav class="site-nav navigation navigation--closed navigation--nojs">
           <button
-            class="site-nav__button navigation__button navigation__button--open"
+            class="site-nav__button navigation__button"
             type="button">
-            <img
-              src="/img/icon/site-nav__button.png"
-              width="24"
-              height="16"
-              alt="иконка меню сайта." />
+            <span class="visually-hidden">Кнопка открытия меню</span>
           </button>
           <ul class="site-nav__list navigation__list">
             <li class="site-nav__item navigation__item">
@@ -65,7 +61,7 @@
             <li class="site-nav__item navigation__item">
               <a
                 class="site-nav__link navigation__link navigation__link--current"
-                href="#"
+                href="/catalog.html"
                 >Каталог продукции</a
               >
             </li>
@@ -461,8 +457,8 @@
               ><img
                 class="social__icon social__icon--vk"
                 src="/img/socials/social__icon/social__icon--vk.png"
-                width="22"
-                height="22"
+                width="23"
+                height="16"
                 alt="иконка вконтакте."
             /></a>
           </li>
@@ -473,8 +469,8 @@
               ><img
                 class="social__icon social__icon--insta"
                 src="/img/socials/social__icon/social__icon--insta.png"
-                width="22"
-                height="22"
+                width="16"
+                height="16"
                 alt="иконка инстаграм."
             /></a>
           </li>
@@ -494,12 +490,12 @@
 
         <div class="page-footer__studio developer">
           <a
-            class="page-footer__link developer__link"
+            class="page-footer__link page-footer__link--text developer__link"
             href="#"
             ><span class="developer__text">HTML Academy</span></a
           >
           <a
-            class="page-footer__link developer__link"
+            class="page-footer__link page-footer__link--icon developer__link"
             href="#"
             ><img
               class="developer__logo"
@@ -511,5 +507,20 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector(".navigation");
+      var navToggle = document.querySelector(".navigation__button");
+      navMain.classList.remove("navigation--nojs");
+      navToggle.addEventListener("click", function () {
+        if (navMain.classList.contains("navigation--closed")) {
+          navMain.classList.remove("navigation--closed");
+          navMain.classList.add("navigation--opened");
+        } else {
+          navMain.classList.add("navigation--closed");
+          navMain.classList.remove("navigation--opened");
+        }
+      });
+    </script>
   </body>
 </html>
