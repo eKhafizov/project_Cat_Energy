@@ -28,8 +28,11 @@
       display: flex;
       flex-direction: row;
       min-width: 1440px -220px;
-      padding: 110px;
-      margin: 0; } }
+      padding: 0 110px;
+      padding-top: 92px;
+      padding-bottom: 86px;
+      margin: 0;
+      border-top: 2px solid rgba(104, 183, 56, 0.85); } }
 
 @media (min-width: 768px) {
   .additional-items__container {
@@ -120,7 +123,8 @@
 .additional {
   padding: 20px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
   @media (min-width: 768px) {
     .additional {
       padding: 0; } }
@@ -135,6 +139,18 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px; }
+  @media (min-width: 1440px) {
+    .additional__heading {
+      position: absolute;
+      content: "";
+      font-size: 36px;
+      line-height: 36px;
+      top: -50px;
+      left: 70px;
+      width: 413px;
+      min-height: 38px;
+      text-align: center;
+      background-color: #fff; } }
 
 .additional__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -142,11 +158,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px; }
+  line-height: 16px;
+  text-transform: uppercase; }
   @media (min-width: 1440px) {
     .additional__title {
       width: 130px;
-      margin-right: 160px; } }
+      margin-right: 160px;
+      font-size: 20px;
+      line-height: 20px; } }
 
 .additional__name,
 .additional__price {
@@ -156,6 +175,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px; }
+  @media (min-width: 768px) {
+    .additional__name,
+    .additional__price {
+      font-size: 16gpx;
+      line-height: 20px; } }
 
 .additional__button {
   margin-left: auto;
@@ -177,7 +201,8 @@
   .additional__details {
     margin-left: auto;
     display: flex;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    align-items: center; } }
 
 @media (min-width: 1440px) {
   .additional__details {
@@ -382,7 +407,8 @@
 
 .banner__block {
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("/source/img/images__background/banner__block-image.jpg");
+  background-image: url("/img/images__background/banner__block-image.jpg");
+  background-size: 245px 289px;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
@@ -399,7 +425,7 @@
   @media (min-width: 1440px) {
     .banner__block {
       width: 245px;
-      min-height: 289px;
+      height: 289px;
       display: flex;
       flex-direction: column;
       margin: 0;
@@ -440,7 +466,8 @@
       text-align: start; } }
   @media (min-width: 1440px) {
     .banner__text {
-      text-align: center; } }
+      text-align: center;
+      background-size: 245px 289px; } }
 
 html {
   height: 100%; }
@@ -743,6 +770,9 @@ img {
     left: 35px;
     top: -100px;
     background-color: transparent; } }
+
+.catalog {
+  margin-bottom: 100px; }
 
 .contacts {
   background-color: #fff;

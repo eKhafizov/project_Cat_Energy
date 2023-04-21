@@ -1,6 +1,7 @@
 .banner__block {
   background-color: $color-background-contrast;
-  background-image: url("/source/img/images__background/banner__block-image.jpg");
+  background-image: url("/img/images__background/banner__block-image.jpg");
+  background-size: 245px 289px;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
@@ -16,7 +17,7 @@
   }
   @media (min-width: $viewport-desktop) {
     width: 245px;
-    min-height: 289px;
+    height: 289px;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -60,5 +61,6 @@
   }
   @media (min-width: $viewport-desktop) {
     text-align: center;
+    background-size: 245px 289px;
   }
 }

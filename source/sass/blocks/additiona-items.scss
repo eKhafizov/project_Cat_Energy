@@ -13,8 +13,11 @@
     display: flex;
     flex-direction: row;
     min-width: $viewport-desktop -220px;
-    padding: 110px;
+    padding: 0 110px;
+    padding-top: 92px;
+    padding-bottom: 86px;
     margin: 0;
+    border-top: 2px solid $color-background-contrast;
   }
 }
 // нужно подправить разметку этого блока //
