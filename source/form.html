@@ -198,20 +198,26 @@
                   <label
                     class="info__mail"
                     for="info__owner-mail"
-                    >E-mail:*<input
+                    ><span class="info__owner-label">E-mail:*</span
+                    ><input
+                      class="info__owner-input"
                       type="email"
                       name="info__owner-mail"
                       id="info__owner-mail"
+                      value="kuklachev@gmail.com"
                   /></label>
                 </li>
                 <li class="info__owner-item">
                   <label
                     class="info__phone"
                     for="info__owner-phone"
-                    >Телефон:*<input
+                    ><span class="info__owner-label">Телефон:*</span
+                    ><input
+                      class="info__owner-input__phone"
                       type="tel"
                       name="info__owner-phone"
                       id="info__owner-phone"
+                      value="8 (960) 900-60-90"
                   /></label>
                 </li>
               </ul>
@@ -239,12 +245,16 @@
                 <li class="info__extra-item">
                   <label
                     class="info__checkbox-label"
-                    for="checbox-sugar"
-                    ><input
-                      class="info__checkbox-field"
+                    for="checbox-sugar">
+                    <input
+                      class="info__checkbox-field visually-hidden"
                       type="checkbox"
                       name="checbox-sugar"
-                      id="checbox-sugar" />Cахарозаменитель</label
+                      id="checbox-sugar" /><span
+                      class="info__extra-checkbox"></span
+                    ><span class="info__extra-label"
+                      >Cахарозаменитель</span
+                    ></label
                   >
                 </li>
                 <li class="info__extra-item">
@@ -252,10 +262,12 @@
                     class="info__checkbox-label"
                     for="checbox-milk"
                     ><input
-                      class="info__checkbox-field"
+                      class="info__checkbox-field visually-hidden"
                       type="checkbox"
                       name="checbox-milk"
-                      id="checbox-milk" />Молоко</label
+                      id="checbox-milk" /><span
+                      class="info__extra-checkbox"></span
+                    ><span class="info__extra-label">Молоко</span></label
                   >
                 </li>
                 <li class="info__extra-item">
@@ -263,10 +275,12 @@
                     class="info__checkbox-label"
                     for="checbox-water"
                     ><input
-                      class="info__checkbox-field"
+                      class="info__checkbox-field visually-hidden"
                       type="checkbox"
                       name="checbox-water"
-                      id="checbox-water" />Питьевая вода</label
+                      id="checbox-water" /><span
+                      class="info__extra-checkbox"></span
+                    ><span class="info__extra-label">Питьевая вода</span></label
                   >
                 </li>
                 <li class="info__extra-item">
@@ -274,10 +288,12 @@
                     class="info__checkbox-label"
                     for="checbox-vitamin"
                     ><input
-                      class="info__checkbox-field"
+                      class="info__checkbox-field visually-hidden"
                       type="checkbox"
                       name="checbox-vitamin"
-                      id="checbox-vitamin" />Витамины</label
+                      id="checbox-vitamin" /><span
+                      class="info__extra-checkbox"></span
+                    ><span class="info__extra-label">Витамины</span></label
                   >
                 </li>
               </ul>
@@ -296,15 +312,16 @@
         </section>
       </div>
 
-      <section class="contacts-section contacts">
+      <section class="contacts-section contacts contacts--mobile">
         <h2 class="visually-hidden">Контакты.</h2>
         <div
-          class="contacts-section__block contacts__block contacts__block--mobile">
-          <h3 class="contacts-section__heading contacts__heading">
+          class="contacts-section__block contacts__block contacts__block--catalog contacts__block--mobile">
+          <h3
+            class="contacts-section__heading contacts__heading contacts__heading--catalog">
             Приглашаем к сотрудничеству дилеров!
           </h3>
           <address
-            class="contacts-section__street contacts__address contacts__address--street">
+            class="contacts-section__street contacts__address contacts__address--catalog contacts__address--street">
             ул. Большая Конюшенная, д. 19/8
             <span class="contacts__address contacts__address--city"
               >Санкт-Петербург</span

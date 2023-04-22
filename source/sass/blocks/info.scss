@@ -7,6 +7,7 @@
   line-height: 36px;
   margin-top: 27px;
   margin-bottom: 0;
+  padding-left: 20px;
 }
 
 .info__calltoaction {
@@ -21,6 +22,7 @@
 
   margin-top: 35px;
   margin-bottom: 0;
+  padding-left: 20px;
 }
 
 .info__pet-details {
@@ -33,6 +35,7 @@
   list-style: none;
   margin: 0;
   margin-top: 25px;
+  padding-left: 20px;
 }
 
 .info__goal {
@@ -40,11 +43,15 @@
   padding: 0;
   margin-bottom: 25px;
   margin-top: 22px;
-  border-top: 1px solid $color-separator;
 }
 
 .info__goal-list {
+  border-top: 1px solid $color-separator;
+  border-bottom: 1px solid $color-separator;
   padding: 0;
+  padding-left: 20px;
+  padding-top: 22px;
+  padding-bottom: 20px;
   margin: 0;
   list-style: none;
 }
@@ -52,11 +59,73 @@
 .info__owner-list {
   padding: 0;
   list-style: none;
+  margin-top: 35px;
+  margin-bottom: 23px;
+}
+.info__owner-item {
+  display: flex;
+  margin-bottom: 14px;
+}
+.info__owner-data {
+  width: 201px;
+  padding: 0;
+  padding-left: 20px;
+  display: inline;
 }
 
-.info__extra-list {
-  padding: 0;
-  list-style: none;
+.info__mail {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 280px;
+  width: auto;
+  align-items: center;
+}
+.info__owner-label {
+  margin-left: 0;
+}
+.info__owner-input {
+  flex-grow: 1;
+  margin-left: 11px;
+  min-height: 43px;
+  border: 1px solid $color-separator-dark;
+  padding: 0 15px;
+  color: $color-text;
+  font-family: $font-heading;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  background-image: url("/img/icon/input__icon-mail.svg");
+  background-size: 20px 14px;
+  background-position: right 19px center;
+  background-repeat: no-repeat;
+}
+.info__owner-input__phone {
+  flex-grow: 1;
+  margin-left: 11px;
+  min-height: 43px;
+  border: 1px solid $color-separator-dark;
+  padding: 0 15px;
+  color: $color-text;
+  font-family: $font-heading;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  background-image: url("/img/icon/icon__phone.svg");
+  background-size: 20px 20px;
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+}
+
+.info__phone {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  width: auto;
+  margin-right: 20px;
+  min-width: 280px;
 }
 
 .info__comment-add,
@@ -73,7 +142,8 @@
 .info__checkbox-label {
   font-family: $font-heading;
   color: $color-titles;
-
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -84,6 +154,8 @@
 .info__submit-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (min-width: $viewport-tablet) {
     min-width: auto;
     flex-direction: row;
@@ -100,9 +172,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 32px;
 }
 .info__submit-button {
   min-width: 280px;
+  margin-bottom: 21px;
   @media (min-width: $viewport-tablet) {
     min-width: 282px;
   }
@@ -111,6 +185,12 @@
   }
 }
 
+.info__comment-add {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 38px;
+}
 .info__comment-textarea {
   font-family: $font-heading;
   color: $color-text;
@@ -120,6 +200,14 @@
   font-size: 16px;
   line-height: 18px;
   padding: 0;
+  margin-left: 20px;
+  min-width: 251px;
+  height: 139px;
+  padding-left: 15px;
+  padding-top: 9.5px;
+  padding-right: 12px;
+  border: 1px solid $color-border-input;
+  margin-bottom: 24px;
   @media (min-width: $viewport-tablet) {
     min-width: 590px;
     width: auto;
@@ -143,6 +231,7 @@
   border: none;
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 .info__pet-input {
@@ -236,6 +325,55 @@
 .info__extra,
 .info__comment,
 .info__owner {
+  padding: 0;
+  margin: 0;
   border: none;
   border-top: 2px solid $color-background-contrast;
+}
+
+.info__extra {
+  margin-left: 20px;
+}
+.info__extra-item {
+  display: flex;
+  min-height: 30px;
+  margin-bottom: 13px;
+  align-items: center;
+}
+.info__extra-heading {
+  margin: 0;
+  margin-bottom: 34px;
+}
+.info__extra-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 34px;
+}
+.info__extra-checkbox {
+  width: 28px;
+  height: 28px;
+  border: 1px solid $color-separator-dark;
+  background-color: inherit;
+  display: inline-block;
+  position: relative;
+}
+
+.info__extra-label {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-left: 16px;
+}
+
+.info__checkbox-field[type="checkbox"]:checked + .info__extra-checkbox::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url("/img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  top: 0;
+  left: 0;
 }
