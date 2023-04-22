@@ -84,7 +84,7 @@
       <div class="form-main__wrapper">
         <h2 class="program-choice__heading info__heading">Подбор программы</h2>
         <p class="program-choice__calltoaction info__calltoaction">
-          Заполните анкету, и мы подберем программу питания для вашего кота
+          Заполните анкету, и мы подберем<br />программу питания для вашего кота
         </p>
 
         <section class="program-choice info">
@@ -145,11 +145,14 @@
                       class="info__goal-label"
                       for="info__goal-slim"
                       ><input
-                        class="info__goal-input"
+                        class="info__goal-input visually-hidden"
                         type="radio"
                         name="info__goal-name"
                         id="info__goal-slim"
-                        checked />Похудение</label
+                        checked /><span class="goal__checkbox"></span
+                      ><span class="info__goal-input__span"
+                        >Похудение</span
+                      ></label
                     >
                   </li>
                   <li class="info__goal-item">
@@ -157,22 +160,29 @@
                       class="info__goal-label"
                       for="info__goal-muscle"
                       ><input
-                        class="info__goal-input"
+                        class="info__goal-input visually-hidden"
                         type="radio"
                         name="info__goal-name"
-                        id="info__goal-muscle" />Набор массы</label
+                        id="info__goal-muscle" /><span
+                        class="goal__checkbox"></span
+                      ><span class="info__goal-input__span"
+                        >Набор массы</span
+                      ></label
                     >
                   </li>
                   <li class="info__goal-item">
                     <label
                       class="info__goal-label"
-                      for="info__goal-noinfo"
-                      ><input
-                        class="info__goal-input"
+                      for="info__goal-noinfo">
+                      <input
+                        class="info__goal-input visually-hidden"
                         type="radio"
                         name="info__goal-name"
-                        id="info__goal-noinfo" />Не знаю (Нужен ваш
-                      совет)</label
+                        id="info__goal-noinfo" /><span
+                        class="goal__checkbox"></span
+                      ><span class="info__goal-input__span"
+                        >Не знаю (Нужен ваш совет)</span
+                      ></label
                     >
                   </li>
                 </ul>

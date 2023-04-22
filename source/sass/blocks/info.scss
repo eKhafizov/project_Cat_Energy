@@ -5,6 +5,8 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 0;
 }
 
 .info__calltoaction {
@@ -16,15 +18,34 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.info__pet-details {
+  margin: 0;
+  padding: 0;
 }
 
 .info__pet-list {
   padding: 0;
   list-style: none;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.info__goal {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  margin-top: 22px;
+  border-top: 1px solid $color-separator;
 }
 
 .info__goal-list {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -120,6 +141,8 @@
   line-height: 18px;
   text-transform: uppercase;
   border: none;
+  display: flex;
+  align-items: center;
 }
 
 .info__pet-input {
@@ -130,6 +153,16 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  min-height: 16.5px;
+  border: 1px solid $color-border-input;
+  padding: 0;
+  margin: 0;
+  margin-left: 12px;
+  margin-bottom: 7px;
+  flex-grow: 1;
+  padding-left: 15px;
+  padding-top: 13.2px;
+  padding-bottom: 13.5px;
 }
 
 .info__phone,
@@ -152,6 +185,52 @@
   line-height: 18px;
   text-transform: uppercase;
   border: none;
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+
+.info__goal-input {
+  margin-left: 32px;
+  position: relative;
+  font-family: $font-heading;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+.info__goal-input__span {
+  margin-left: 15px;
+  max-width: 230px;
+  display: flex;
+  align-items: center;
+}
+
+.goal__checkbox {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: inherit;
+  border-radius: 50%;
+  border: 1px solid $color-separator-dark;
+}
+
+.info__goal-input[type="radio"]:checked + .goal__checkbox::before {
+  position: absolute;
+  content: "";
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $color-background-contrast;
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  z-index: 12;
+}
+
+.info__goal-item {
+  min-height: 30px;
+  margin-bottom: 13px;
 }
 
 .info__extra,
