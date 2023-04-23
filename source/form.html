@@ -54,21 +54,21 @@
           <ul class="site-nav__list navigation__list">
             <li class="site-nav__item navigation__item">
               <a
-                class="site-nav__link navigation__link"
+                class="site-nav__link navigation__link navigation__link--catalog"
                 href="/index.html"
                 >Главная</a
               >
             </li>
             <li class="site-nav__item navigation__item">
               <a
-                class="site-nav__link navigation__link"
+                class="site-nav__link navigation__link navigation__link--current navigation__link--catalog"
                 href="/catalog.html"
                 >Каталог продукции</a
               >
             </li>
             <li class="site-nav__item navigation__item">
               <a
-                class="site-nav__link navigation__link navigation__link--current"
+                class="site-nav__link navigation__link navigation__link--catalog navigation__link--current-catalog"
                 href="/form.html"
                 >Подбор программы</a
               >
@@ -260,19 +260,6 @@
                 <li class="info__extra-item">
                   <label
                     class="info__checkbox-label"
-                    for="checbox-milk"
-                    ><input
-                      class="info__checkbox-field visually-hidden"
-                      type="checkbox"
-                      name="checbox-milk"
-                      id="checbox-milk" /><span
-                      class="info__extra-checkbox"></span
-                    ><span class="info__extra-label">Молоко</span></label
-                  >
-                </li>
-                <li class="info__extra-item">
-                  <label
-                    class="info__checkbox-label"
                     for="checbox-water"
                     ><input
                       class="info__checkbox-field visually-hidden"
@@ -281,6 +268,19 @@
                       id="checbox-water" /><span
                       class="info__extra-checkbox"></span
                     ><span class="info__extra-label">Питьевая вода</span></label
+                  >
+                </li>
+                <li class="info__extra-item">
+                  <label
+                    class="info__checkbox-label"
+                    for="checbox-milk"
+                    ><input
+                      class="info__checkbox-field visually-hidden"
+                      type="checkbox"
+                      name="checbox-milk"
+                      id="checbox-milk" /><span
+                      class="info__extra-checkbox"></span
+                    ><span class="info__extra-label">Молоко</span></label
                   >
                 </li>
                 <li class="info__extra-item">
@@ -332,7 +332,7 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.32089461569251!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sil!4v1680630114757!5m2!1sru!2sil"
             width="100%"
-            height="362"
+            height="100%"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"

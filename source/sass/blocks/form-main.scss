@@ -5,12 +5,12 @@
   margin: 0 auto;
   @media (min-width: $viewport-tablet) {
     min-width: $viewport-tablet - 138px;
-    padding: 69px;
+    padding: 0;
     padding-top: 0;
   }
   @media (min-width: $viewport-desktop) {
     min-width: $viewport-desktop - 220px;
-    padding: 110px;
+    padding: 0;
     padding-top: 0;
   }
 }

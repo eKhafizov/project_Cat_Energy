@@ -31,7 +31,7 @@
   @media (min-width: $viewport-tablet) {
     min-width: $viewport-tablet - 60px;
     width: auto;
-    padding: 0 30px;
+    padding: 0;
     background-color: $color-background-main;
     min-height: 199px;
   }
@@ -53,6 +53,9 @@
   background-color: $color-background-item;
   @media (min-width: $viewport-tablet) {
     background-color: $color-background-item;
+  }
+  @media (min-width: $viewport-desktop) {
+    background-color: $color-background-main;
   }
 }
 
@@ -91,6 +94,7 @@
   @media (min-width: $viewport-desktop) {
     font-size: 20px;
     line-height: 26px;
+    margin: 0;
   }
 }
 
@@ -125,10 +129,17 @@
   @media (min-width: $viewport-tablet) {
     margin-top: 13px;
   }
+  @media (min-width: $viewport-desktop) {
+    margin-top: 19px;
+    min-height: 0;
+  }
 }
 
 .contacts__address--catalog {
-  @media (min-width: $viewport-tablet) and (max-width: $viewport-desktop) {
+  @media (min-width: $viewport-tablet) {
     margin-right: 70px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin-right: 0;
   }
 }

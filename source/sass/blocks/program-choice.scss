@@ -1,8 +1,14 @@
 .program-choice__info {
   flex-grow: 1;
   border: none;
+  @media (min-width: $viewport-desktop) {
+    flex-grow: 0;
+  }
 }
 .program-choice__goal {
   flex-grow: 1;
   border: none;
+  @media (min-width: $viewport-desktop) {
+    flex-grow: 0;
+  }
 }
