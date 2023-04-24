@@ -13,9 +13,10 @@
     <title>Каталог Car-Energy.</title>
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/img//icon/favicon__size__32x32.svg" />
+      href="/img/fav-icons/fav-icon_32.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/img/fav-icons/fav-icon_152.png" />
     <link
       rel="stylesheet"
       href="/css/style.css" />
@@ -87,42 +88,76 @@
           </h2>
           <div class="main-catalog__list catalog__list">
             <div class="main-catalog__item catalog__item">
-              <img
-                class="catalog__image catalog__image--cat_energy_pro_500"
-                src="/img/catalog/catalog__item/catalog__image--cat_energy_pro_500.png"
-                width="68"
-                height="86"
-                alt="Коробка energy-pro 500." />
-              <h3 class="main-catalog__title catalog__title">
-                Cat Energy PRO 500 г
-              </h3>
-              <dl class="catalog__details">
-                <dt class="catalog__name">Масса</dt>
-                <dd class="catalog__price">500 г.</dd>
-              </dl>
-              <dl class="catalog__details">
-                <dt class="catalog__name">Вкус</dt>
-                <dd class="catalog__price">Курица</dd>
-              </dl>
-              <dl class="catalog__details">
-                <dt class="catalog__name">Цена</dt>
-                <dd class="catalog__price">700 Р</dd>
-              </dl>
-              <button
-                class="catalog__add-button button button--order"
-                type="button">
-                Заказать
-              </button>
-            </div>
-
-            <div class="main-catalog__item catalog__item">
-              <div class="catalog__image-containter">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  class="catalog__desktop--small"
+                  srcset="
+                    /img/catalog/desktop-images/icon-1-desktop.png    1x,
+                    /img/catalog/desktop-images/icon-1-desktop@2x.png 2x
+                  " />
+                <source
+                  class="catalog__tablet--small"
+                  media="(min-width: 768px)"
+                  srcset="
+                    /img/catalog/tablet-images/icon-1-tablet.png    1x,
+                    /img/catalog/tablet-images/icon-1-tablet@2x.png 2x
+                  " />
                 <img
                   class="catalog__image catalog__image--cat_energy_pro_1000"
-                  src="/img/catalog/catalog__item/catalog__image--cat_energy_pro_1000.png"
-                  width="84"
-                  height="101"
+                  src="/img/catalog/mobile-images/icon-1-mobile.png"
+                  srcset="/img/catalog/mobile-images/icon-1-mobile@2x.png"
+                  width="68"
+                  height="86"
                   alt="Коробка energy-pro 500." />
+              </picture>
+              <h3 class="main-catalog__title catalog__title">
+                Cat Energy PRO 500 г
+              </h3>
+              <dl class="catalog__details">
+                <dt class="catalog__name">Масса</dt>
+                <dd class="catalog__price">500 г.</dd>
+              </dl>
+              <dl class="catalog__details">
+                <dt class="catalog__name">Вкус</dt>
+                <dd class="catalog__price">Курица</dd>
+              </dl>
+              <dl class="catalog__details">
+                <dt class="catalog__name">Цена</dt>
+                <dd class="catalog__price">700 Р</dd>
+              </dl>
+              <button
+                class="catalog__add-button button button--order"
+                type="button">
+                Заказать
+              </button>
+            </div>
+
+            <div class="main-catalog__item catalog__item">
+              <div class="catalog__image-containter">
+                <picture>
+                  <source
+                    class="catalog__desktop--large"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      /img/catalog/desktop-images/icon-2-desktop.png    1x,
+                      /img/catalog/desktop-images/icon-2-desktop@2x.png 2x
+                    " />
+                  <source
+                    class="catalog__tablet--large"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/catalog/tablet-images/icon-2-tablet.png    1x,
+                      /img/catalog/tablet-images/icon-2-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="catalog__image catalog__image--cat_energy_pro_1000"
+                    src="/img/catalog/mobile-images/icon-2-mobile.png"
+                    srcset="/img/catalog/mobile-images/icon-2-mobile@2x.png"
+                    width="84"
+                    height="101"
+                    alt="Коробка energy-pro 500." />
+                </picture>
               </div>
               <h3 class="main-catalog__title catalog__title">
                 Cat Energy PRO 1000 г
@@ -148,12 +183,29 @@
 
             <div class="main-catalog__item catalog__item">
               <div class="catalog__image-containter">
-                <img
-                  class="catalog__image catalog__image--cat_energy_pro_500_fish"
-                  src="/img/catalog/catalog__item/catalog__image--cat_energy_pro_500_fish.png"
-                  width="68"
-                  height="86"
-                  alt="Коробка energy-pro 500." />
+                <picture>
+                  <source
+                    class="catalog__desktop--small"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      /img/catalog/desktop-images/icon-3-desktop.png    1x,
+                      /img/catalog/desktop-images/icon-3-desktop@2x.png 2x
+                    " />
+                  <source
+                    class="catalog__tablet--small"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/catalog/tablet-images/icon-3-tablet.png    1x,
+                      /img/catalog/tablet-images/icon-3-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="catalog__image catalog__image--cat_energy_pro_1000"
+                    src="/img/catalog/mobile-images/icon-3-mobile.png"
+                    srcset="/img/catalog/mobile-images/icon-3-mobile@2x.png"
+                    width="68"
+                    height="78"
+                    alt="Коробка energy-pro 500." />
+                </picture>
               </div>
               <h3 class="main-catalog__title catalog__title">
                 Cat Energy PRO 500 г
@@ -179,12 +231,29 @@
 
             <div class="main-catalog__item catalog__item">
               <div class="catalog__image-containter">
-                <img
-                  class="catalog__image catalog__image--cat_energy_pro_1000_fish"
-                  src="/img/catalog/catalog__item/catalog__image--cat_energy_pro_1000_fish.png"
-                  width="84"
-                  height="101"
-                  alt="Коробка energy-pro 500." />
+                <picture>
+                  <source
+                    class="catalog__desktop--large"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      /img/catalog/desktop-images/icon-4-desktop.png    1x,
+                      /img/catalog/desktop-images/icon-4-desktop@2x.png 2x
+                    " />
+                  <source
+                    class="catalog__tablet--large"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/catalog/tablet-images/icon-4-tablet.png    1x,
+                      /img/catalog/tablet-images/icon-4-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="catalog__image catalog__image--cat_energy_pro_1000"
+                    src="/img/catalog/mobile-images/icon-4-mobile.png"
+                    srcset="/img/catalog/mobile-images/icon-4-mobile@2x.png"
+                    width="84"
+                    height="101"
+                    alt="Коробка energy-pro 500." />
+                </picture>
               </div>
 
               <h3 class="main-catalog__title catalog__title">
@@ -211,12 +280,29 @@
 
             <div class="main-catalog__item catalog__item">
               <div class="catalog__image-containter">
-                <img
-                  class="catalog__image catalog__image--cat_energy_slim_500"
-                  src="/img/catalog/catalog__item/catalog__image--cat_energy_slim_500.png"
-                  width="68"
-                  height="86"
-                  alt="Коробка energy-pro 500." />
+                <picture>
+                  <source
+                    class="catalog__desktop--small"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      /img/catalog/desktop-images/icon-5-desktop.png    1x,
+                      /img/catalog/desktop-images/icon-5-desktop@2x.png 2x
+                    " />
+                  <source
+                    class="catalog__tablet--small"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/catalog/tablet-images/icon-5-tablet.png    1x,
+                      /img/catalog/tablet-images/icon-5-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="catalog__image catalog__image--cat_energy_pro_1000"
+                    src="/img/catalog/mobile-images/icon-5-mobile.png"
+                    srcset="/img/catalog/mobile-images/icon-5-mobile@2x.png"
+                    width="68"
+                    height="78"
+                    alt="Коробка energy-pro 500." />
+                </picture>
               </div>
 
               <h3 class="main-catalog__title catalog__title">
@@ -243,12 +329,29 @@
 
             <div class="main-catalog__item catalog__item">
               <div class="catalog__image-containter">
-                <img
-                  class="catalog__image catalog__image--cat_energy_slim_1000"
-                  src="/img/catalog/catalog__item/catalog__image--cat_energy_slim_1000.png"
-                  width="84"
-                  height="101"
-                  alt="Коробка energy-pro 500." />
+                <picture>
+                  <source
+                    class="catalog__desktop--large"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      /img/catalog/desktop-images/icon-6-desktop.png    1x,
+                      /img/catalog/desktop-images/icon-6-desktop@2x.png 2x
+                    " />
+                  <source
+                    class="catalog__tablet--large"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/catalog/tablet-images/icon-6-tablet.png    1x,
+                      /img/catalog/tablet-images/icon-6-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="catalog__image catalog__image--cat_energy_pro_1000"
+                    src="/img/catalog/mobile-images/icon-6-mobile.png"
+                    srcset="/img/catalog/mobile-images/icon-6-mobile@2x.png"
+                    width="84"
+                    height="100"
+                    alt="Коробка energy-pro 500." />
+                </picture>
               </div>
 
               <h3 class="main-catalog__title catalog__title">
@@ -275,12 +378,29 @@
 
             <div class="main-catalog__item catalog__item">
               <div class="catalog__image-containter">
-                <img
-                  class="catalog__image catalog__image--cat_energy_slim_500_rice"
-                  src="/img/catalog/catalog__item/catalog__image--cat_energy_slim_500_rice.png"
-                  width="68"
-                  height="86"
-                  alt="Коробка energy-pro 500." />
+                <picture>
+                  <source
+                    class="catalog__desktop--small"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      /img/catalog/desktop-images/icon-7-desktop.png    1x,
+                      /img/catalog/desktop-images/icon-7-desktop@2x.png 2x
+                    " />
+                  <source
+                    class="catalog__tablet--small"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/catalog/tablet-images/icon-7-tablet.png    1x,
+                      /img/catalog/tablet-images/icon-7-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="catalog__image catalog__image--cat_energy_pro_1000"
+                    src="/img/catalog/mobile-images/icon-7-mobile.png"
+                    srcset="/img/catalog/mobile-images/icon-7-mobile@2x.png"
+                    width="72"
+                    height="84"
+                    alt="Коробка energy-pro 500." />
+                </picture>
               </div>
               <h3 class="main-catalog__title catalog__title">
                 Cat Energy Slim 500 г

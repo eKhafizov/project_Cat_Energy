@@ -838,6 +838,26 @@ img {
       border-top: 1px solid #d9d9d9;
       margin-bottom: 0; } }
 
+@media (min-width: 768px) {
+  .catalog__tablet--large {
+    width: 168px;
+    height: 200px; } }
+
+@media (min-width: 1440px) {
+  .catalog__desktop--large {
+    width: 172px;
+    height: 196px; } }
+
+@media (min-width: 768px) {
+  .catalog__background--tablet {
+    width: 707px;
+    height: 200px; } }
+
+@media (min-width: 1440px) {
+  .catalog__background--desktop {
+    width: 245px;
+    height: 289px; } }
+
 .contacts {
   background-color: #fff;
   position: relative; }

@@ -1,7 +1,7 @@
 .banner__block {
   background-color: $color-background-contrast;
-  background-image: url("/img/images__background/banner__block-image.jpg");
-  background-size: 245px 289px;
+  background-image: url("/img/catalog/mobile-images/backgrounds-gift-mobile.jpg");
+  background-size: 280px 290px;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,10 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  @media (min-resolution: 2dppx) {
+    background-size: 280px 290px;
+  background-image: url("/img/catalog/mobile-images/backgrounds-gift-mobile@2x.jpg");
+  }
   @media (min-width: $viewport-tablet) {
     padding: 0;
     margin-left: 0;
@@ -19,8 +23,13 @@
     margin-left: auto;
     margin-top: 75px;
     width: 707px;
-    min-height: 92px;
+    min-height: 200px;
     background-size: 707px 200px;
+    background-image: url("/img/catalog/tablet-images/backgrounds-gift-tablet.jpg");
+    @media (min-resolution: 2dppx) {
+      background-size: 707px 200px;
+    background-image: url("/img/catalog/tablet-images/backgrounds-gift-tablet@2x.jpg");
+    }
   }
   @media (min-width: $viewport-desktop) {
     width: 245px;
@@ -29,8 +38,24 @@
     flex-direction: column;
     margin: 0;
     margin-left: auto;
+    background-image: url("/img/catalog/desktop-images/backgrounds-gift-desktop.jpg");
+    background-size: 245px 289px;
+    @media (min-resolution: 2dppx) {
+      background-size: 245px 289px;
+    background-image: url("/img/catalog/desktop-images/backgrounds-gift-desktop@2x.jpg");
+    }
   }
 }
+
+
+    /img/catalog/desktop-images/backgrounds-gift-desktop@2x.jpg 2x
+
+  class="catalog__background--tablet"
+  media="(min-width: 768px)"
+  srcset="
+    /img/catalog/tablet-images/backgrounds-gift-tablet.jpg    1x,
+    /img/catalog/tablet-images/backgrounds-gift-tablet@2x.jpg 2x
+
 
 .banner__list {
   list-style: none;

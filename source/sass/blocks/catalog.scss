@@ -252,3 +252,28 @@
     margin-bottom: 0;
   }
 }
+
+.catalog__tablet--large {
+  @media (min-width: $viewport-tablet) {
+    width: 168px;
+    height: 200px;
+  }
+}
+.catalog__desktop--large {
+  @media (min-width: $viewport-desktop) {
+    width: 172px;
+    height: 196px;
+  }
+}
+.catalog__background--tablet {
+  @media (min-width: $viewport-tablet) {
+    width: 707px;
+    height: 200px;
+  }
+}
+.catalog__background--desktop {
+  @media (min-width: $viewport-desktop) {
+    width: 245px;
+    height: 289px;
+  }
+}
