@@ -277,6 +277,17 @@
   }
 }
 
+.catalog__image {
+  @media (min-width: $viewport-tablet) {
+    width: 168px;
+    height: 200px;
+  }
+  @media (min-width: $viewport-desktop) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
 .catalog__image-container {
   @media (max-width: 767px) {
     width: 140px;
@@ -290,10 +301,18 @@
   @media (min-width: $viewport-tablet) {
     width: 168px;
     height: 200px;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media (min-width: $viewport-desktop) {
     width: 172px;
     height: 196px;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

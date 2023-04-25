@@ -865,6 +865,16 @@ img {
       min-height: 32px;
       align-items: center; } }
 
+@media (min-width: 768px) {
+  .catalog__image {
+    width: 168px;
+    height: 200px; } }
+
+@media (min-width: 1440px) {
+  .catalog__image {
+    width: 172px;
+    height: 196px; } }
+
 @media (max-width: 767px) {
   .catalog__image-container {
     width: 140px;
@@ -878,12 +888,20 @@ img {
 @media (min-width: 768px) {
   .catalog__image-container {
     width: 168px;
-    height: 200px; } }
+    height: 200px;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media (min-width: 1440px) {
   .catalog__image-container {
     width: 172px;
-    height: 196px; } }
+    height: 196px;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .catalog {
   margin-bottom: 100px; }
