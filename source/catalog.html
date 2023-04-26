@@ -27,14 +27,22 @@
       <div class="page-header__wrapper">
         <a
           class="page-header__logo page-header__logo-icon logo"
-          href="#"
-          ><img
-            class="logo__icon logo__icon-image"
-            src="/img/icon/logo__icon--image.png"
-            width="34"
-            height="38"
-            alt="иконка-логотип сайта."
-        /></a>
+          href="#">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/img/icon/logo__desktop.svg 1x" />
+            <source
+              media="(min-width: 768px)"
+              srcset="/img/icon/logo__tablet.svg 1x" />
+            <img
+              class="logo__icon logo__icon-image"
+              src="/img/icon/logo__icon--image.png"
+              width="34"
+              height="38"
+              alt="иконка-логотип сайта." />
+          </picture>
+        </a>
         <a
           class="page-header__logo page-header__logo-text logo"
           href="#"

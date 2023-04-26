@@ -1,0 +1,10 @@
+.logo__icon-image {
+  @media (min-width: $viewport-desktop) {
+    width: 202px;
+    height: 60px;
+  }
+  @media (min-width: $viewport-tablet) {
+    width: 174px;
+    height: 52px;
+  }
+}
