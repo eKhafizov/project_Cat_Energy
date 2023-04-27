@@ -31,6 +31,10 @@
 
 .slider__image {
   z-index: 11;
+  @media (min-width: $viewport-tablet) {
+    width: 592px;
+    height: 511px;
+  }
 }
 
 .slider__buttons {

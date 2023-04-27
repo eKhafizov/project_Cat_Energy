@@ -31,21 +31,30 @@
         <a
           class="page-header__logo page-header__logo-icon logo"
           href="#"
-          ><img
-            class="logo__icon logo__icon-image"
-            src="/img/icon/logo__icon--image.png"
-            width="34"
-            height="38"
-            alt="иконка-логотип сайта."
-        /></a>
+          >
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/img/icon/logo__desktop.svg" />
+            <source
+              media="(min-width: 768px)"
+              srcset="/img/icon/logo__tablet.svg" />
+            <img
+              class="logo__icon logo__icon-image"
+              src="/img/icon/logo__icon--image.png"
+              width="34"
+              height="38"
+              alt="иконка-логотип сайта." />
+          </picture>
+        </a>
         <a
           class="page-header__logo page-header__logo-text logo"
           href="#"
           ><img
             class="logo__icon logo__icon-text"
-            src="/img/icon/logo__icon--text.png.png"
+            src="/img/icon/logo__text.svg"
             width="101"
-            height="18"
+            height="19"
             alt="иконка-логотип сайта."
         /></a>
         <nav class="site-nav navigation navigation--closed navigation--nojs ">
@@ -105,7 +114,19 @@
           <p class="item-block__slogan presentation__slogan">
             Занялся собой? Займись котом!
           </p>
-          <div class="item-block__image presentation__image"></div>
+          <div class="item-block__image presentation__image">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="/img/index-can-desktop.png 1x, /img/index-can-desktop@2x.png 2x " >
+              <source media="(min-width: 768px)" srcset="/img/index-can-tablet.png 1x, /img/index-can-tablet@2x.png 2x " >
+              <img
+              class="presentation__image"
+              src="/img/index-can-mobile.png"
+              srcset="/img/index-can-mobile@2x.png 2x"
+              width="280"
+              height="270"
+              alt="фото банки с продукцией компании cat-energy">
+            </picture>
+          </div>
           <a
             class="item-block__button presentation__link button button--order"
             href="#"
@@ -233,24 +254,19 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <ul class="example__list slider__list">
-              <li class="example__item slider__item slider__item--before">
-                <img
-                  class="slider__image slider__image--before"
-                  src="/img/slider/slider__image/slider__image--before.png.png"
+            <div class="example__list slider__list">
+                <picture>
+                  <source media="(min-width: 768px)"
+                  srcset="/img/slider/slider__image/image__slider-tablet.png 1x, /img/slider/slider__image/image__slider-tablet.png 2x" >
+                  <img
+                  class="slider__image"
+                  src="/img/slider/slider__image/image__slider-mobile.png"
+                  srcset="/img/slider/slider__image/image__slider-mobile.png 2x"
                   width="280"
                   height="232"
                   alt="Фото толстого кота до cat-energy." />
-              </li>
-              <li class="example__item slider__item slider__item--after">
-                <img
-                  class="slider__image slider__image--after"
-                  src="/img/slider/slider__image/slider__image--after.png.png"
-                  width="280"
-                  height="232"
-                  alt="Фото худого кота." />
-              </li>
-            </ul>
+                </picture>
+              </div>
 
             <div class="example__buttons slider__buttons">
               <button
@@ -311,9 +327,9 @@
           href="">
           <img
             class="logo__icon logo__icon--text"
-            src="/img/icon/logo__icon--text.png.png"
-            width="101"
-            height="18"
+            src="/img/icon/logo__text.svg"
+            width="128"
+            height="24"
             alt="Текстовый логотип сайта Cat-energy." />
         </a>
 
