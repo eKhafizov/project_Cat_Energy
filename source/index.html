@@ -256,12 +256,16 @@
           <div class="example__slider slider">
             <div class="example__list slider__list">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="/img/slider/slider__image/image__slider-tablet.webp 1x, /img/slider/slider__image/image__slider-tablet@2x.webp 2x" />
+                  <source type="image/webp" media="(min-width: 320px)"
+                  srcset="/img/slider/slider__image/image__slider-mobile.webp 1x, /img/slider/slider__image/image__slider-mobile@2x.webp 2x" />
                   <source media="(min-width: 768px)"
-                  srcset="/img/slider/slider__image/image__slider-tablet.png 1x, /img/slider/slider__image/image__slider-tablet.png 2x" >
+                  srcset="/img/slider/slider__image/image__slider-tablet.png 1x, /img/slider/slider__image/image__slider-tablet@2x.png 2x" >
                   <img
                   class="slider__image"
                   src="/img/slider/slider__image/image__slider-mobile.png"
-                  srcset="/img/slider/slider__image/image__slider-mobile.png 2x"
+                  srcset="/img/slider/slider__image/image__slider-mobile@2x.png 2x"
                   width="280"
                   height="232"
                   alt="Фото толстого кота до cat-energy." />
