@@ -1901,6 +1901,9 @@ img {
   .logo__icon-text {
     display: none; } }
 
+.logo:hover {
+  opacity: 0.5; }
+
 .main-catalog__wrapper {
   margin: 0 auto;
   min-width: 280px;
@@ -2254,6 +2257,9 @@ img {
 
 .page-header__logo-text {
   margin-left: 56px; }
+  @media (min-width: 768px) {
+    .page-header__logo-text {
+      display: none; } }
 
 .presentation__block {
   display: flex;

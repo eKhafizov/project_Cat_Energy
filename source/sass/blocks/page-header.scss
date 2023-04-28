@@ -26,4 +26,7 @@
 
 .page-header__logo-text {
   margin-left: 56px;
+  @media (min-width: $viewport-tablet) {
+    display: none;
+  }
 }
