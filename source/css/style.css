@@ -2227,12 +2227,6 @@ img {
       margin-top: 59px;
       margin-bottom: 56px; } }
 
-.page-footer__link--icon {
-  height: 34px; }
-  @media (min-width: 768px) {
-    .page-footer__link--icon {
-      height: 34px; } }
-
 .page-header__wrapper {
   display: flex;
   align-items: center;
@@ -2973,6 +2967,26 @@ img {
 @media (min-width: 1440px) {
   .slider__item--after {
     display: none; } }
+
+.social__link:hover svg {
+  outline: 5px solid purple;
+  fill: yellow;
+  stroke: green; }
+
+@media (min-width: 768px) {
+  .social__link--insta svg {
+    width: 23px;
+    height: 23px; } }
+
+@media (min-width: 768px) {
+  .social__link--fb svg {
+    width: 28px;
+    height: 33px; } }
+
+@media (min-width: 768px) {
+  .social__link--vk svg {
+    width: 30px;
+    height: 22px; } }
 
 .visually-hidden {
   position: absolute;
