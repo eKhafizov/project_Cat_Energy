@@ -87,9 +87,9 @@ class ObjectStringifier extends Stringifier {
 		if (node.raws.inline) {
 			const text = node.raws.text || node.text;
 
-			this.builder('//' + left + text + right, node);
+			this.builder(`//${left}${text}${right}`, node);
 		} else {
-			this.builder('/*' + left + node.text + right + '*/', node);
+			this.builder(`/*${left}${node.text}${right}*/`, node);
 		}
 	}
 	raw(node, own, detect) {
@@ -99,7 +99,7 @@ class ObjectStringifier extends Stringifier {
 			(own === 'between' || (own === 'afterName' && node.type === 'atrule' && !node.nodes)) &&
 			!/:/.test(value)
 		) {
-			value = ':' + value;
+			value = `:${value}`;
 		} else if (own === 'before' && /^(decl|rule)$/.test(node.type)) {
 			value = value.replace(/\S+$/, '');
 		}
@@ -133,7 +133,7 @@ class ObjectStringifier extends Stringifier {
 			}
 		} else if (node.type === 'atrule') {
 			if (prop === 'name') {
-				value = '@' + value;
+				value = `@${value}`;
 			} else if (node.nodes) {
 				return;
 			}

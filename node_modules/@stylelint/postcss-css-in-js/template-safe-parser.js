@@ -9,13 +9,11 @@ class TemplateSafeParser extends SafeParser {
 	createTokenizer() {
 		this.tokenizer = templateTokenize(this.input, { ignoreErrors: true });
 	}
-	other() {
-		const args = arguments;
-
-		return helper.literal.apply(this, args) || super.other.apply(this, args);
+	other(start) {
+		return helper.literal.call(this, start) || super.other.call(this, start);
 	}
-	freeSemicolon() {
-		return helper.freeSemicolon.apply(this, arguments);
+	freeSemicolon(token) {
+		return helper.freeSemicolon.call(this, token);
 	}
 }
 module.exports = TemplateSafeParser;
