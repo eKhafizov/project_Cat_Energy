@@ -13,24 +13,82 @@ const csso = require('postcss-csso');
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+
+
 // Styles
-
-
-
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(), csso()
     ]))
+    .pipe(rename('style.min.scss'))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
-
 exports.styles = styles;
+
+// Scripts
+const scripts = () => {
+  return gulp.src("/js/script.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+exports.scripts = scripts;
+
+
+// HTML
+gulp.task('minify', () => {
+  return gulp.src('src/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+
+// webp manual version
+const createWebp = () => {
+  gulp.src('source/img/**/*.{jpg,png}')
+      .pipe(webp({optimize: 90}))
+      .pipe(gulp.dest('build/img'))
+};
+exports.createWebp = createWebp;
+
+
+//IMAGES
+const optimizeImage = () => {
+  return gulp.src('source/img/**/*.{jpg,png,svg}')
+    .pipe(squoosh())
+    .pipe(dest('build/img'));
+}
+exports.images = optimizeImage;
+
+const copyImage = () => {
+  return gulp.src('source/img/**/*.{jpg,png,svg}')
+    .pipe(squoosh())
+    .pipe(dest('build/img'));
+}
+exports.images = copyImage;
+
+//SVG
+const sprite = () => {
+  return gulp.src('source/img/**/*.svg')
+  .pipe(svgstore({ inlineSvg: true }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
+}
+exports.sprite = sprite;
+
+// DEL
+
+
+
+
+
 
 // Server
 
