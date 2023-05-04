@@ -3,6 +3,13 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const webp = require('gulp-webp');
+const rename = require("gulp-rename");
+const squoosh = require('gulp-libsquoosh');
+const htmlmin = require('gulp-htmlmin');
+const svgstore = require('gulp-svgstore');
+const terser = require('gulp-terser');
+const csso = require('postcss-csso');
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
