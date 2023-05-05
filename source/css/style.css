@@ -2235,7 +2235,8 @@ img {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px 20px;
-  padding-bottom: 17px; }
+  padding-bottom: 17px;
+}
   @media (min-width: 768px) {
     .page-header__wrapper {
       padding: 0 30px;
