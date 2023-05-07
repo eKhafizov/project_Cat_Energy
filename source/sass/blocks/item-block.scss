@@ -2,6 +2,7 @@
   min-width: $viewport-mobile;
   width: auto;
   margin: 0 auto;
+  position: relative;
   @media (min-width: $viewport-tablet) {
     width: $viewport-tablet;
     padding: 0;
@@ -9,5 +10,37 @@
   @media (min-width: $viewport-desktop) {
     width: $viewport-desktop;
     padding: 0;
+  }
+}
+.item-block__image {
+  order: 3;
+  position: static;
+  content: "";
+  width: 280px;
+  height: 270px;
+  z-index: 11;
+  bottom: 0;
+  background-color: transparent;
+  @media (min-width: $viewport-tablet) {
+    position: absolute;
+    content: "";
+    width: 709px;
+    height: 609px;
+    z-index: 11;
+    bottom: 0;
+    background-color: transparent;
+    background-size: 709px 609px;
+    z-index: 0;
+    top: 130px;
+  }
+  @media (min-width: $viewport-desktop) {
+    position: absolute;
+    content: "";
+    width: 552px;
+    height: 499px;
+    z-index: 11;
+    top: 0;
+    background-color: transparent;
+    right: 164px;
   }
 }

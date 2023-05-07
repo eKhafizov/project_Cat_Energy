@@ -13,6 +13,9 @@
     <title>Cat-energy</title>
     <link rel="icon" href="/img/fav-icons/fav-icon_32.png">
     <link rel="apple-touch-icon" href="/img/fav-icons/fav-icon_152.png">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="/img/images__background/presentation__background--image.webp " as="image" media="(max-width: 767px)"/>
     <link
       rel="stylesheet"
       href="/css/style.min.css" />
@@ -94,10 +97,13 @@
           </p>
           <div class="item-block__image presentation__image">
             <picture>
+              <source media="(min-width: 1440px)" srcset="/img/index-can-desktop.webp 1x, /img/index-can-desktop@2x.webp 2x " type="image/webp">
               <source media="(min-width: 1440px)" srcset="/img/index-can-desktop.png 1x, /img/index-can-desktop@2x.png 2x " >
+              <source media="(min-width: 768px)" srcset="/img/index-can-tablet.webp 1x, /img/index-can-tablet@2x.webp 2x " type="image/webp" >
               <source media="(min-width: 768px)" srcset="/img/index-can-tablet.png 1x, /img/index-can-tablet@2x.png 2x " >
+              <source media="(min-width: 320px)" srcset="/img/index-can-mobile.webp 1x, /img/index-can-mobile@2x.webp 2x " type="image/webp" >
               <img
-              class="presentation__image"
+              class="item-block__image"
               src="/img/index-can-mobile.png"
               srcset="/img/index-can-mobile@2x.png 2x"
               width="280"
@@ -261,7 +267,7 @@
                 class="example__range slider__range slider__range--desktop slider__range--before">
                 <span class="visually-hidden">форма тогглера</span>
                 <div class="example__slider slider__toggle"></div>
-                <label for="slider-range"><span class="visually-hidden">Слайдер переключение фото</span><input class="example__range-section slider__range-section" name='slider-range' type="range" min="17" max="83" value="50"></label>
+                <label for="slider-range"><span class="visually-hidden">Слайдер переключение фото</span><input class="example__range-section slider__range-section" id='slider-range' name='slider-range' type="range" min="17" max="83" value="50"></label>
               </div>
 
               <button
@@ -284,7 +290,7 @@
           <address
             class="contacts-section__street contacts__address contacts__address--street">
             <span>ул. Большая<br>Конюшенная, д. 19/8</span>
-            <span class="contacts__address--city"
+            <span class="contacts__address contacts__address--city"
               >Санкт-Петербург</span
             >
           </address>
@@ -292,8 +298,8 @@
         <div class="contacts-section__map-block contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.32089461569251!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sil!4v1680630114757!5m2!1sru!2sil"
-            width="100%"
-            height="100%"
+            width=100%
+            height=100%
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
