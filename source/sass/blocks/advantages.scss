@@ -86,24 +86,7 @@
   }
 }
 
-.advantages__heading {
-  font-family: $font-heading;
-  color: $color-titles;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  z-index: 2;
-  @media (min-width: $viewport-tablet) {
-    font-size: 60px;
-    line-height: 60px;
-  }
-  @media (min-width: $viewport-desktop) {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 72px;
-  }
-}
+
 
 .advantages__info {
   font-family: $font-text;

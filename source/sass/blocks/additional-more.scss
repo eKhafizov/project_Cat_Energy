@@ -42,12 +42,21 @@
   margin-right: auto;
   padding: 0;
   width: 280px;
+  font-size: 14px;
+  line-height: 18px;
+  min-height: 40px;
   @media (min-width: $viewport-tablet) {
     margin-bottom: 39px;
     width: 248px;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 40px;
   }
   @media (min-width: $viewport-desktop) {
     margin-bottom: 40px;
     width: 168px;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 40px;
   }
 }

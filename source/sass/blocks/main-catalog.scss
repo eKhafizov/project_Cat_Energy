@@ -16,3 +16,26 @@
     width: auto;
   }
 }
+
+.main-catalog__heading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 41px;
+  margin-left: 20px;
+  @media (min-width: $viewport-tablet) {
+    margin-top: 58px;
+    margin-left: 0;
+    margin-bottom: 82px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin-top: 73px;
+    margin-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+

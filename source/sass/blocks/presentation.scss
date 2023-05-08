@@ -126,25 +126,4 @@
 
 
 
-.presentation__link {
-  display: flex;
-  min-width: 280px;
-  width: auto;
-  min-height: 40px;
-  align-items: center;
-  justify-content: center;
-  order: 4;
-  @media (min-width: $viewport-tablet) {
-    order: 2;
-    margin-bottom: 629px;
-    z-index: 11;
-  }
-  @media (min-width: $viewport-desktop) {
-    z-index: 11;
-    margin-left: 190px;
-    margin-top: 52px;
-    margin-bottom: 185px;
-    background-color: $color-background-contrast;
-    opacity: 2;
-  }
-}
+

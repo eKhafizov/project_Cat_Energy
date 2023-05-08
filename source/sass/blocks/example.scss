@@ -39,3 +39,21 @@
     padding: 0;
   }
 }
+
+
+.example__heading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  @media (min-width: $viewport-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin-left: 110px;
+    margin-top: 69px;
+    z-index: 10;
+  }
+}

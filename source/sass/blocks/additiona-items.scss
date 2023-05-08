@@ -1,3 +1,7 @@
+.additional-items {
+  position: relative;
+}
+
 .additional-items__wrapper {
   margin: 0 auto;
   padding-top: 0;
@@ -22,7 +26,52 @@
     border-top: 2px solid $color-background-contrast;
   }
 }
-// нужно подправить разметку этого блока //
+
+
+.additional-items__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 25px;
+  @media (max-width: 767px) {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 0;
+    width: 267px;
+    max-width: 270px;
+    min-height: 24px;
+    text-align: center;
+    background-color: $color-background-main;
+  }
+  @media (min-width: $viewport-tablet) {
+    position: absolute;
+    content: "";
+    font-size: 36px;
+    line-height: 36px;
+    top: -50px;
+    left: 36px;
+    width: 411px;
+    min-height: 38px;
+    text-align: center;
+    background-color: $color-background-main;
+  }
+  @media (min-width: $viewport-desktop) {
+    position: absolute;
+    content: "";
+    font-size: 36px;
+    line-height: 36px;
+    top: -50px;
+    left: 70px;
+    width: 413px;
+    min-height: 38px;
+    text-align: center;
+    background-color: $color-background-main;
+  }
+}
+
+
 
 .additional-items__container {
   @media (min-width: $viewport-tablet) {
