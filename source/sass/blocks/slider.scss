@@ -1,14 +1,7 @@
 .slider {
   background-color: $color-background-example;
-  padding: 0 20px;
-  margin: 0 auto;
-  min-width: 280px;
-  width: auto;
   @media (min-width: $viewport-tablet) {
     background-color: $color-background-example;
-    padding: 0 88px;
-    min-width: 592px;
-    width: auto;
   }
   @media (min-width: $viewport-desktop) {
     background-color: transparent;
@@ -17,48 +10,26 @@
 
 .slider__list {
   list-style: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 7px;
   @media (min-width: $viewport-tablet) {
     display: flex;
   }
   @media (min-width: $viewport-desktop) {
     display: flex;
-    z-index: 11;
   }
 }
 
-.slider__image {
-  z-index: 11;
-  @media (min-width: $viewport-tablet) {
-    width: 592px;
-    height: 511px;
-  }
-}
 
 .slider__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
-  @media (min-width: $viewport-tablet) {
-    margin-bottom: 52px;
-  }
-  @media (min-width: $viewport-desktop) {
-    margin-top: 30px;
-    margin-bottom: 0;
-    z-index: 11;
-  }
 }
-.slider__button {
-  z-index: 11;
-}
+
+
+
 
 .slider__toggle {
   @media (max-width: $viewport-tablet) {
-    width: 83.8px;
-    height: 12px;
     background-color: $color-background-main;
     border-radius: 6px;
     border: 1px solid $color-separator-dark;
@@ -99,8 +70,6 @@
   position: relative;
   @media (min-width: $viewport-tablet) {
     display: block;
-    width: 426px;
-    height: 6px;
     background-color: $color-grey;
     border: none;
     border-radius: 6px;
@@ -110,8 +79,6 @@
 
 .slider__range-section::-webkit-slider-thumb {
   appearance: none;
-  width: 32px;
-  height: 32px;
   border: 1px solid $color-separator-dark;
   background-color: $color-background-contrast;
   background-size: 8px 8px;
@@ -121,18 +88,3 @@
   box-shadow: inset 0px 0px 0 11px $color-background-main;
 }
 
-.slider__item {
-  @media (min-width: $viewport-desktop) {
-    width: 592px;
-    height: 511px;
-    z-index: 11;
-  }
-}
-.slider__item--after {
-  @media (max-width: $viewport-tablet) {
-    display: none;
-  }
-  @media (min-width: $viewport-desktop) {
-    display: none;
-  }
-}

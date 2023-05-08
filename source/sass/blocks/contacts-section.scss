@@ -1,0 +1,124 @@
+.contacts-section {
+  position: relative;
+}
+
+.contacts-section__block {
+  margin: 0 auto;
+  min-width: 280px;
+  width: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  @media (min-width: $viewport-tablet) {
+    width: auto;
+    padding: 0;
+    min-height: 199px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @media (min-width: $viewport-desktop) {
+    position: absolute;
+    min-width: 100px;
+    margin: 0;
+    content: "";
+    width: 405px;
+    height: 86px;
+    top: 70px;
+    left: 100px;
+    padding: 0 80px;
+  }
+}
+
+.contacts-section__heading {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-titles-400;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts-section__heading--catalog {
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 172px;
+    margin-left: 70px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+  }
+}
+
+.contacts-section__map {
+  margin: 0 auto;
+  min-height: 362px;
+  height: 362px;
+  max-height: 367px;
+  @media (min-width: $viewport-tablet) {
+    min-height: 400px;
+    height: 400px;
+    max-height: 400px;
+  }
+  @media (min-width: $viewport-desktop) {
+    min-height: 400px;
+    height: 400px;
+    max-height: 400px;
+  }
+}
+
+
+.contacts-section__street {
+  font-size: 14px;
+  line-height: 20px;
+  & span {
+    text-align: end;
+  }
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 80px;
+  }
+}
+
+
+.contacts-section__address--city {
+  @media (min-width: $viewport-tablet) {
+    margin-top: 13px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin-top: 19px;
+    min-height: 0;
+  }
+}
+
+
+.contacts-section__address--catalog {
+  @media (min-width: $viewport-tablet) {
+    margin-right: 70px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin-right: 0;
+  }
+}

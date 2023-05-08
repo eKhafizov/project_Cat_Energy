@@ -1,53 +1,13 @@
 .contacts {
   background-color: $color-background-main;
-  position: relative;
 }
 
-.contacts__map {
-  margin: 0 auto;
-  min-height: 367px;
-  height: 367px;
-  max-height: 367px;
-  @media (min-width: $viewport-tablet) {
-    min-height: 400px;
-    height: 400px;
-    max-height: 400px;
-  }
-  @media (min-width: $viewport-desktop) {
-    min-height: 400px;
-    height: 400px;
-    max-height: 400px;
-  }
-}
+
 
 .contacts__block {
   background-color: $color-background-main;
-  margin: 0 auto;
-  min-width: 280px;
-  width: auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  @media (min-width: $viewport-tablet) {
-    min-width: $viewport-tablet - 60px;
-    width: auto;
-    padding: 0;
-    background-color: $color-background-main;
-    min-height: 199px;
-  }
-  @media (min-width: $viewport-desktop) {
-    position: absolute;
-    min-width: 100px;
-    margin: 0;
-    content: "";
-    width: 405px;
-    height: 86px;
-    background-color: $color-background-main;
-    top: 70px;
-    left: 100px;
-    padding: 0 80px;
-  }
 }
+
 
 .contacts__block--catalog {
   background-color: $color-background-item;
@@ -59,87 +19,23 @@
   }
 }
 
-.contacts__heading {
-  font-family: $font-heading;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: $color-titles-400;
-  margin: 0;
-  padding: 0;
-  @media (min-width: $viewport-tablet) {
-    font-size: 20px;
-    line-height: 26px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  @media (min-width: $viewport-desktop) {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-
-.contacts__heading--catalog {
-  @media (min-width: $viewport-tablet) {
-    font-size: 20px;
-    line-height: 26px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 172px;
-    margin-left: 70px;
-  }
-  @media (min-width: $viewport-desktop) {
-    font-size: 20px;
-    line-height: 26px;
-    margin: 0;
-  }
-}
 
 .contacts__address {
   font-family: $font-text;
   color: $color-titles-400;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   display: flex;
   flex-direction: column;
   text-align: end;
-  & span {
-    text-align: end;
-  }
   @media (min-width: $viewport-tablet) {
-    font-size: 16px;
-    line-height: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
   }
-  @media (min-width: $viewport-desktop) {
-    font-size: 16px;
-    line-height: 20px;
-    min-height: 80px;
-  }
-}
-.contacts__address--city {
-  @media (min-width: $viewport-tablet) {
-    margin-top: 13px;
-  }
-  @media (min-width: $viewport-desktop) {
-    margin-top: 19px;
-    min-height: 0;
-  }
 }
 
-.contacts__address--catalog {
-  @media (min-width: $viewport-tablet) {
-    margin-right: 70px;
-  }
-  @media (min-width: $viewport-desktop) {
-    margin-right: 0;
-  }
-}
+
+
+

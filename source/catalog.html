@@ -565,11 +565,11 @@
         <div
           class="contacts-section__block contacts__block contacts__block--catalog contacts__block--mobile">
           <h3
-            class="contacts-section__heading contacts__heading contacts__heading--catalog">
+            class="contacts-section__heading contacts__heading heading contacts-section__heading--catalog">
             Приглашаем к сотрудничеству дилеров!
           </h3>
           <address
-            class="contacts-section__street contacts__address contacts__address--catalog contacts__address--street">
+            class="contacts-section__street contacts__address contacts-section__address--catalog contacts__address--street">
             ул. Большая Конюшенная, д. 19/8
             <span class="contacts__address contacts__address--city"
               >Санкт-Петербург</span
@@ -661,19 +661,8 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector(".navigation");
-      var navToggle = document.querySelector(".navigation__button");
-      navMain.classList.remove("navigation--nojs");
-      navToggle.addEventListener("click", function () {
-        if (navMain.classList.contains("navigation--closed")) {
-          navMain.classList.remove("navigation--closed");
-          navMain.classList.add("navigation--opened");
-        } else {
-          navMain.classList.add("navigation--closed");
-          navMain.classList.remove("navigation--opened");
-        }
-      });
-    </script>
+
+
+    <script src='/js/script.min.js'></script>
   </body>
 </html>
