@@ -1,18 +1,5 @@
 .advantages__list {
   list-style: none;
-  padding: 0;
-
-  @media (min-width: $viewport-tablet) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(280px, auto);
-  }
-  @media (min-width: $viewport-desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(280px, auto);
-    margin: 0;
-  }
 }
 
 .advantages__item {
@@ -93,24 +80,8 @@
   color: $color-text;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  z-index: 2;
-  width: 199px;
-  @media (min-width: $viewport-tablet) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 245px;
-    margin-right: auto;
-    margin-top: 31px;
-  }
-  @media (min-width: $viewport-desktop) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 245px;
-    margin-top: 31px;
-  }
 }
+
 
 .advantages__icon--nutrition {
   width: 60px;
