@@ -1,52 +1,14 @@
-.programs__block {
-  background-color: $color-background-item;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  @media (min-width: $viewport-tablet) {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 370px;
-  }
-  @media (min-width: $viewport-desktop) {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 370px;
-  }
+.programs__list {
+  list-style: none;
 }
 
+.programs__block {
+  background-color: $color-background-item;
+}
+
+
 .programs__title {
-  font-family: $font-heading;
-  color: $color-titles;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-left: 91px;
-  margin-bottom: 29px;
-  width: 138px;
-  @media (min-width: $viewport-tablet) {
-    font-size: 36px;
-    line-height: 36px;
-    margin-left: 52px;
-    margin-top: 77px;
-    margin-bottom: 24px;
-    width: 210px;
-  }
-  @media (min-width: $viewport-desktop) {
-    font-size: 36px;
-    line-height: 36px;
-    margin-left: 214px;
-    margin-top: 77px;
-    margin-bottom: 73px;
-    width: 210px;
-  }
 }
 
 .programs__description {
@@ -54,52 +16,10 @@
   color: $color-text;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  width: 237px;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-bottom: 42px;
-  @media (min-width: $viewport-tablet) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 340px;
-    margin: 0;
-    margin-left: 52px;
-    margin-bottom: 52px;
-  }
-  @media (min-width: $viewport-desktop) {
-    font-size: 16px;
-    line-height: 24px;
-    width: 467px;
-    margin-left: 52px;
-    margin-bottom: 27px;
-  }
 }
 
-.programs__link {
-  width: 162px;
-  display: flex;
-  justify-content: flex-start;
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  min-height: 40px;
-  @media (min-width: $viewport-tablet) {
-    width: 162px;
-    margin-left: 52px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-  @media (min-width: $viewport-desktop) {
-    width: 162px;
-    margin-left: 52px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
+
+
 .programs__link span {
   position: relative;
   &::after {
