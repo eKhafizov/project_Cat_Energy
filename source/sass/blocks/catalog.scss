@@ -91,7 +91,7 @@
   }
 }
 
-.catalog__item--additional {
+.catalog__additional {
   background-color: $color-background-main;
   @media (min-width: $viewport-tablet) {
     border: 1px solid $color-background-item;
@@ -251,5 +251,20 @@
   @media (min-width: $viewport-tablet) {
     border-bottom: 1px solid $color-separator-dark;
     align-items: center;
+  }
+}
+
+.catalog__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/icon/additiona__icon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media (min-width: $viewport-tablet) {
+    background-image: url("/img/icon/additiona__icon.svg");
+  }
+  @media (min-width: $viewport-desktop) {
+    background-image: url("/img/icon/additiona__icon.svg");
   }
 }
