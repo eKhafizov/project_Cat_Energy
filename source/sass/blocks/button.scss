@@ -16,6 +16,13 @@
   color: $color-titles-light;
   font-weight: 400;
   font-style: normal;
+  &:hover {
+    background-color: $color-button-hover;
+  }
+  &:active {
+    background-color: $color-button-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 //button grey//
@@ -34,4 +41,7 @@
   color: $color-titles;
   font-weight: 400;
   font-style: normal;
+  &:active {
+    opacity: 0.3;
+  }
 }

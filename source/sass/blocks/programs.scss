@@ -6,7 +6,6 @@
   background-color: $color-background-item;
 }
 
-
 .programs__title {
   text-transform: uppercase;
 }
@@ -18,8 +17,6 @@
   font-weight: 400;
 }
 
-
-
 .programs__link span {
   position: relative;
   &::after {
@@ -28,8 +25,23 @@
     width: 24px;
     height: 12px;
     top: 6px;
-    right: -40px;
+    left: 125px;
     background-image: url("/img/icon/icon-arrow.svg");
+    background-size: 24px 12px;
+    background-repeat: no-repeat;
+  }
+}
+.programs__link:hover span {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 12px;
+    top: 6px;
+    left: 125px;
+    background-image: url("/img/icon/icon-arrow-large.svg");
+    background-size: 36px 12px;
     background-repeat: no-repeat;
   }
 }

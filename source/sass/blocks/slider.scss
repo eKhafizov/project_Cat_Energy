@@ -18,15 +18,11 @@
   }
 }
 
-
 .slider__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-
 
 .slider__toggle {
   @media (max-width: $viewport-tablet) {
@@ -86,5 +82,18 @@
   border-radius: 50%;
   cursor: pointer;
   box-shadow: inset 0px 0px 0 11px $color-background-main;
+  &:active {
+    border: 1px solid $color-background-contrast;
+  }
 }
 
+.slider__button--after span {
+  position: relative;
+  border-bottom: 1px dotted $color-grey;
+  &:hover {
+    border-bottom: 1px solid $color-separator-dark;
+  }
+  &:active {
+    border-bottom: none;
+  }
+}

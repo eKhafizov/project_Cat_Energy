@@ -37,8 +37,7 @@
   }
 }
 
-
-.goals__block  {
+.goals__block {
   padding: 0;
   margin: 0;
   display: flex;
@@ -59,30 +58,30 @@
 }
 
 .goals__heading {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
-    margin-top: 30px;
-    margin-left: 91px;
-    margin-bottom: 29px;
-    width: 138px;
-    @media (min-width: $viewport-tablet) {
-      font-size: 36px;
-      line-height: 36px;
-      margin-left: 52px;
-      margin-top: 77px;
-      margin-bottom: 24px;
-      width: 210px;
-    }
-    @media (min-width: $viewport-desktop) {
-      font-size: 36px;
-      line-height: 36px;
-      margin-left: 214px;
-      margin-top: 77px;
-      margin-bottom: 73px;
-      width: 210px;
-    }
-  };
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  margin-top: 30px;
+  margin-left: 91px;
+  margin-bottom: 29px;
+  width: 138px;
+  @media (min-width: $viewport-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 52px;
+    margin-top: 77px;
+    margin-bottom: 24px;
+    width: 210px;
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 214px;
+    margin-top: 77px;
+    margin-bottom: 73px;
+    width: 210px;
+  }
+}
 
 .goals__description {
   font-size: 14px;
@@ -108,8 +107,7 @@
   }
 }
 
-
-.goals__link  {
+.goals__link {
   width: 162px;
   display: flex;
   justify-content: flex-start;
@@ -132,9 +130,3 @@
     line-height: 30px;
   }
 }
-
-
-
-
-
-

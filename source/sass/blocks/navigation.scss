@@ -168,7 +168,12 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.2;
+  }
   @media (min-width: $viewport-tablet) {
     font-weight: 400;
     font-style: normal;
