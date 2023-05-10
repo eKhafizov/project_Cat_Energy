@@ -17,8 +17,18 @@
       type="image/png"
       sizes="32x32"
       href="/img/icon/favicon__size__32x32.svg" />
-      <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-      <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link
+      rel="preload"
+      href="/fonts/oswaldregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous" />
+    <link
+      rel="preload"
+      href="/fonts/oswaldregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
       href="/css/style.min.css" />
@@ -89,15 +99,16 @@
     </header>
 
     <main class="form-main">
-      <h1 class="visually-hidden">Страница оформления заказа.</h1>
+      <h1 class="visually-hidden">Страница заявки на подбор программы.</h1>
 
       <div class="form-main__wrapper">
-
-
         <section class="program-choice info">
-          <h2 class="program-choice__heading info__heading heading">Подбор программы</h2>
+          <h2 class="program-choice__heading info__heading heading">
+            Подбор программы
+          </h2>
           <p class="program-choice__calltoaction info__calltoaction">
-            Заполните анкету, и мы подберем<br />программу питания для вашего кота
+            Заполните анкету, и мы подберем<br />программу питания для вашего
+            кота
           </p>
           <form
             class="program-choice__form info__form"
@@ -106,13 +117,13 @@
             <div class="form-main__container">
               <fieldset class="program-choice__info info__pet-details">
                 <legend class="visually-hidden"></legend>
-                <ul class="info__pet-list">
-                  <li class="info__pet-item">
+                <ul class="program-choice__list info__pet-list">
+                  <li class="program-choice__item info__pet-item">
                     <label
-                      class="info__pet-name"
+                      class="program-choice__pet-name info__pet-name"
                       for="pet-name"
                       >ИМЯ:*<input
-                        class="info__pet-input"
+                        class="program-choice__pet-input info__pet-input"
                         type="text"
                         name="pet-name"
                         id="pet-name"
@@ -121,10 +132,10 @@
                   </li>
                   <li class="info__pet-item">
                     <label
-                      class="info__pet-weight"
+                      class="program-choice__pet-weight info__pet-weight"
                       for="pet-weight"
                       >Вес (кг):*<input
-                        class="info__pet-input"
+                        class="program-choice__pet-input info__pet-input"
                         type="number"
                         name="pet-weight"
                         id="pet-weight"
@@ -133,10 +144,10 @@
                   </li>
                   <li class="info__pet-item">
                     <label
-                      class="info__pet-age"
+                      class="program-choice__pet-age info__pet-age"
                       for="pet-age"
                       >Возраст (лет):<input
-                        class="info__pet-input"
+                        class="program-choice__pet-input info__pet-input"
                         type="number"
                         name="pet-age"
                         id="pet-age"
@@ -150,48 +161,52 @@
                 <legend class="info__goal-choice visually-hidden">
                   Выбор задачи
                 </legend>
-                <ul class="info__goal-list">
-                  <li class="info__goal-item">
+                <ul class="program-choice__goal-list info__goal-list">
+                  <li class="program-choice__goal-item info__goal-item">
                     <label
-                      class="info__goal-label"
+                      class="program-choice__label info__goal-label"
                       for="info__goal-slim"
                       ><input
-                        class="info__goal-input visually-hidden"
+                        class="program-choice__goal-input info__goal-input visually-hidden"
                         type="radio"
                         name="info__goal-name"
                         id="info__goal-slim"
-                        checked /><span class="info__goal-checkbox"></span
-                      ><span class="info__goal-input__span"
+                        checked /><span
+                        class="program-choice__goal-checkbox info__goal-checkbox"></span
+                      ><span
+                        class="program-choice__goal-input__span info__goal-input__span"
                         >Похудение</span
                       ></label
                     >
                   </li>
-                  <li class="info__goal-item">
+                  <li class="program-choice__goal-item info__goal-item">
                     <label
-                      class="info__goal-label"
+                      class="program-choice__label info__goal-label"
                       for="info__goal-muscle"
                       ><input
-                        class="info__goal-input visually-hidden"
+                        class="program-choice__goal-input info__goal-input visually-hidden"
                         type="radio"
                         name="info__goal-name"
                         id="info__goal-muscle" /><span
-                        class="info__goal-checkbox"></span
-                      ><span class="info__goal-input__span"
+                        class="program-choice__goal-checkbox info__goal-checkbox"></span
+                      ><span
+                        class="program-choice__goal-input__span info__goal-input__span"
                         >Набор массы</span
                       ></label
                     >
                   </li>
-                  <li class="info__goal-item">
+                  <li class="program-choice__goal-item info__goal-item">
                     <label
-                      class="info__goal-label"
+                      class="program-choice__label info__goal-label"
                       for="info__goal-noinfo">
                       <input
-                        class="info__goal-input visually-hidden"
+                        class="program-choice__goal-input info__goal-input visually-hidden"
                         type="radio"
                         name="info__goal-name"
                         id="info__goal-noinfo" /><span
-                        class="info__goal-checkbox"></span
-                      ><span class="info__goal-input__span"
+                        class="program-choice__goal-checkbox info__goal-checkbox"></span
+                      ><span
+                        class="program-choice__goal-input__span info__goal-input__span"
                         >Не знаю (Нужен ваш совет)</span
                       ></label
                     >
@@ -201,30 +216,32 @@
             </div>
 
             <fieldset class="program-choice__owner info__owner">
-              <legend class="info__owner-data heading">
+              <legend
+                class="program-choice__owner-data info__owner-data heading">
                 Контактные данные (владельца кота)
               </legend>
-              <ul class="info__owner-list">
-                <li class="info__owner-item">
+              <ul class="program-choice__owner-list info__owner-list">
+                <li class="program-choice__owner-item info__owner-item">
                   <label
-                    class="info__mail"
+                    class="program-choice__owner-mail info__mail"
                     for="info__owner-mail"
-                    ><span class="info__owner-label">E-mail:*</span
+                    ><span class="program-choice__owner-label info__owner-label"
+                      >E-mail:*</span
                     ><input
-                      class="info__owner-input"
+                      class="program-choice__owner-input info__owner-input"
                       type="email"
                       name="info__owner-mail"
                       id="info__owner-mail"
                       value="kuklachev@gmail.com"
                   /></label>
                 </li>
-                <li class="info__owner-item">
+                <li class="program-choice__owner-item info__owner-item">
                   <label
-                    class="info__phone"
+                    class="program-choice__owner-phone info__phone"
                     for="info__owner-phone"
                     ><span class="info__owner-label">Телефон:*</span
                     ><input
-                      class="info__owner-input__phone"
+                      class="program-choice__owner-input__phone info__owner-input__phone"
                       type="tel"
                       name="info__owner-phone"
                       id="info__owner-phone"
@@ -251,9 +268,12 @@
             </fieldset>
 
             <fieldset class="program-choice__extra info__extra">
-              <legend class="info__extra-heading heading">Дополнительно</legend>
-              <ul class="info__extra-list">
-                <li class="info__extra-item">
+              <legend
+                class="program-choice__extra-heading info__extra-heading heading">
+                Дополнительно
+              </legend>
+              <ul class="program-choice__extra-list info__extra-list">
+                <li class="program-choice__extra-item info__extra-item">
                   <label
                     class="info__checkbox-label"
                     for="checbox-sugar">
@@ -263,7 +283,7 @@
                       name="checbox-sugar"
                       id="checbox-sugar" /><span
                       class="info__extra-checkbox"></span
-                    ><span class="info__extra-label"
+                    ><span class="program-choice__extra-label info__extra-label"
                       >Cахарозаменитель</span
                     ></label
                   >
@@ -294,7 +314,7 @@
                     ><span class="info__extra-label">Молоко</span></label
                   >
                 </li>
-                <li class="info__extra-item">
+                <li class="program-choice__extra-item info__extra-item">
                   <label
                     class="info__checkbox-label"
                     for="checbox-vitamin"
@@ -339,7 +359,7 @@
             >
           </address>
         </div>
-        <div class="contacts-section__map-block contacts__map">
+        <div class="contacts-section__map contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.32089461569251!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sil!4v1680630114757!5m2!1sru!2sil"
             width="100%"
@@ -424,6 +444,6 @@
       </div>
     </footer>
 
-    <script src='/js/script.min.js'></script>
+    <script src="/js/script.min.js"></script>
   </body>
 </html>
