@@ -8,4 +8,19 @@
   font-family: $font-text;
 }
 
+.developer__link .developer__logo-hover {
+  display: none;
+}
 
+.developer__link:hover .developer__logo {
+  display: none;
+}
+.developer__link:hover .developer__logo-hover {
+  display: inline;
+}
+.developer__link:active {
+  opacity: 0.5;
+}
+.developer__link:active .developer__logo-hover {
+  opacity: 0.5;
+}

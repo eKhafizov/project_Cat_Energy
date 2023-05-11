@@ -32,6 +32,13 @@
   color: $color-text;
   font-style: normal;
   font-weight: 400;
+  &:hover {
+    background-color: $color-catalog-separator;
+  }
+  &:active {
+    background-color: $color-catalog-separator;
+    color: $color-text-opacity;
+  }
 }
 
 //button black on transparent//

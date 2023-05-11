@@ -1,7 +1,20 @@
 .social__link:hover svg {
-  outline: 5px solid purple;
-  fill: yellow;
-  stroke: green;
+  stroke: $color-background-contrast;
+}
+.social__link:active svg {
+  stroke: $color-background-contrast-opacity;
+}
+.social__link:hover path {
+  stroke: $color-background-contrast;
+}
+.social__link:active path {
+  stroke: $color-background-contrast-opacity;
+}
+.social__link:hover use {
+  stroke: $color-background-contrast;
+}
+.social__link:active use {
+  stroke: $color-background-contrast-opacity;
 }
 
 .social__link--insta svg {
@@ -11,6 +24,7 @@
   }
 }
 .social__link--fb svg {
+  stroke: #666;
   @media (min-width: $viewport-tablet) {
     width: 28px;
     height: 33px;
