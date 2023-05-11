@@ -46,6 +46,20 @@
   text-transform: uppercase;
   border: 1px solid $color-border-input;
   flex-grow: 1;
+  &:hover {
+    border: 1px solid $color-separator-dark;
+  }
+  &:focus {
+    border: none;
+    outline: 2px solid $color-text;
+  }
+  &:focus {
+    border: none;
+    outline: 2px solid $color-text;
+  }
+}
+.error {
+  outline: 2px solid $color-error;
 }
 
 .info__goal {
@@ -150,6 +164,17 @@
   font-style: normal;
   background-image: url("/img/icon/input__icon-mail.svg");
   background-repeat: no-repeat;
+  &:hover {
+    border: 1px solid $color-form-border;
+  }
+  &:active {
+    border: none;
+    outline: 2px solid $color-text;
+  }
+  &:focus {
+    border: none;
+    outline: 2px solid $color-text;
+  }
 }
 
 .info__owner-input__phone {
@@ -306,6 +331,17 @@
   padding-right: 12px;
   border: 1px solid $color-border-input;
   margin-bottom: 24px;
+  &:hover {
+    border: 1px solid $color-form-border;
+  }
+  &:active {
+    border: none;
+    outline: 2px solid $color-text;
+  }
+  &:focus {
+    border: none;
+    outline: 2px solid $color-text;
+  }
   @media (min-width: $viewport-tablet) {
     min-width: 590px;
     width: auto;
@@ -366,6 +402,16 @@
   background-color: inherit;
   display: inline-block;
   position: relative;
+  &:hover {
+    border: 1px solid $color-form-border;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:focus {
+    border: none;
+    outline: 2px solid $color-text;
+  }
   @media (min-width: $viewport-tablet) {
     width: 38px;
     height: 38px;
@@ -406,4 +452,11 @@
   background-color: inherit;
   border-radius: 50%;
   border: 1px solid $color-separator-dark;
+  &:hover {
+    border: 1px solid $color-form-border;
+  }
+  &:disabled {
+    border: 1px solid $color-form-border;
+    opacity: 0.3;
+  }
 }
