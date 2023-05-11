@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   padding: 10px 20px;
   padding-bottom: 17px;
+  border-bottom: 1px solid $color-separator;
   @media (min-width: $viewport-tablet) {
     padding: 0 30px;
     justify-content: space-between;
@@ -12,6 +13,7 @@
     margin-top: 0;
     flex-wrap: nowrap;
     padding-top: 27px;
+    border-bottom: none;
   }
   @media (min-width: $viewport-desktop) {
     padding: 0 110px;

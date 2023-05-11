@@ -42,7 +42,7 @@
 
 .page-footer__logo {
   margin-top: 39px;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
   display: flex;
   position: relative;
   @media (max-width: 767px) {
@@ -70,7 +70,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   width: 130px;
   min-height: 22px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -83,7 +84,7 @@
       background-color: $color-separator;
       position: absolute;
       top: 43px;
-      left: -65px;
+      left: -75px;
     }
   }
   @media (min-width: $viewport-tablet) {
@@ -98,8 +99,8 @@
 
 .page-footer__studio {
   width: 280px;
-  margin-top: 45px;
-  margin-bottom: 22px;
+  margin-top: 40px;
+  margin-bottom: 19px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,4 +124,11 @@
 
 .page-footer__text {
   margin-right: 22px;
+}
+
+.page-footer__link {
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+  align-items: center;
 }

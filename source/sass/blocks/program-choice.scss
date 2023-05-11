@@ -24,7 +24,7 @@
 .program-choice__calltoaction {
   font-size: 14px;
   line-height: 18px;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-bottom: 0;
   padding-left: 20px;
   @media (min-width: $viewport-tablet) {
@@ -53,7 +53,7 @@
 .program-choice__list {
   padding: 0;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 39px;
   padding-left: 20px;
   @media (min-width: $viewport-tablet) {
     padding-left: 70px;
@@ -97,17 +97,21 @@
   }
 }
 
+.program-choice__pet-weight {
+  width: 280px;
+}
+
 .program-choice__pet-input {
   font-size: 16px;
   line-height: 18px;
-  min-height: 16.5px;
+  min-height: 14.5px;
   padding: 0;
   margin: 0;
   margin-left: 12px;
-  margin-bottom: 7px;
+  margin-bottom: 14px;
   padding-left: 15px;
-  padding-top: 13.2px;
-  padding-bottom: 13.5px;
+  padding-top: 12.2px;
+  padding-bottom: 12.8px;
   @media (min-width: $viewport-tablet) {
     padding-left: 18.6px;
     padding-top: 11px;
@@ -130,7 +134,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  margin-top: 22px;
+  margin-top: 10px;
   @media (min-width: $viewport-tablet) {
     margin-top: 72px;
     margin-bottom: 75px;
@@ -149,7 +153,7 @@
   padding: 0;
   padding-left: 20px;
   padding-top: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   margin: 0;
   @media (min-width: $viewport-tablet) {
     padding-top: 0;
@@ -162,7 +166,7 @@
   }
 }
 
-.program-choice__goal-item {
+.program-choice__goal-item:not(:last-of-type) {
   min-height: 30px;
   margin-bottom: 13px;
 }
@@ -288,7 +292,7 @@
   }
 }
 .program-choice__owner-input__phone {
-  margin-left: 11px;
+  margin-left: 8px;
   min-height: 43px;
   padding: 0 15px;
   font-size: 16px;
@@ -311,7 +315,9 @@
 }
 
 .program-choice__extra {
-  margin-left: 20px;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0;
   @media (min-width: $viewport-tablet) {
     margin-left: 0;
   }
@@ -326,7 +332,10 @@
 
 .program-choice__extra-heading {
   margin: 0;
-  margin-bottom: 34px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  min-width: 166px;
+  max-width: 240px;
   @media (min-width: $viewport-tablet) {
     width: 252px;
     margin-left: 30px;
@@ -345,6 +354,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 34px;
+  margin-left: 20px;
   @media (min-width: $viewport-tablet) {
     margin-left: 70px;
     margin-right: 70px;
