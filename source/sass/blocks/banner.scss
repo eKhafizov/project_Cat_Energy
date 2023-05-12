@@ -5,9 +5,6 @@
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  min-height: 290px;
-  margin-top: 34px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -17,13 +14,6 @@
     background-image: url("/img/catalog/mobile-images/backgrounds-gift-mobile@2x.png");
   }
   @media (min-width: $viewport-tablet) {
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-left: auto;
-    margin-top: 75px;
-    width: 707px;
-    min-height: 200px;
     background-size: 707px 200px;
     background-image: url("/img/catalog/tablet-images/backgrounds-gift-tablet.jpg");
     @media (min-resolution: 2dppx) {
@@ -32,12 +22,8 @@
     }
   }
   @media (min-width: $viewport-desktop) {
-    width: 245px;
-    height: 289px;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    margin-left: auto;
     background-image: url("/img/catalog/desktop-images/backgrounds-gift-desktop.jpg");
     background-size: 245px 289px;
     @media (min-resolution: 2dppx) {
