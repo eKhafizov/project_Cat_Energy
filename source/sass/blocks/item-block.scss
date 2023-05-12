@@ -24,6 +24,10 @@
     line-height: 60px;
     width: 415px;
     margin-bottom: 41px;
+    margin-top: 64px;
+    margin-left: 117px;
+    margin-right: auto;
+    text-align: start;
   }
   @media (min-width: $viewport-desktop) {
     font-size: 60px;
@@ -47,6 +51,8 @@
     line-height: 20px;
     margin: 0;
     margin-bottom: 49px;
+    margin-left: 117px;
+    margin-right: auto;
   }
   @media (min-width: $viewport-desktop) {
     order: 2;
@@ -107,8 +113,11 @@
   margin-top: 3px;
   @media (min-width: $viewport-tablet) {
     order: 2;
-    margin-bottom: 629px;
+    margin-bottom: 526px;
     z-index: 11;
+    min-height: 54px;
+    margin-left: 117px;
+    margin-right: auto;
   }
   @media (min-width: $viewport-desktop) {
     z-index: 11;

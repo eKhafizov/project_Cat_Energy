@@ -62,7 +62,7 @@
   text-align: center;
   @media (min-width: $viewport-tablet) {
     color: $color-titles;
-    text-align: center;
+    text-align: start;
   }
   @media (min-width: $viewport-desktop) {
     text-align: start;

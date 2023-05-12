@@ -6,6 +6,15 @@
 }
 
 .results__wrapper {
+  @media (min-width: $viewport-tablet) {
+    background-image: linear-gradient(
+      to bottom,
+      $color-background-main 0px,
+      $color-background-main 619px,
+      $color-background-example 619px,
+      $color-background-example 1081px
+    );
+  }
   @media (min-width: $viewport-desktop) {
     background-image: linear-gradient(
       to bottom,
@@ -15,7 +24,6 @@
       $color-background-example 462px
     );
   }
-
 }
 
 .results__info {
@@ -27,7 +35,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 30px;
-    background-color: $color-background-main;
+    padding-bottom: 72px;
   }
   @media (min-width: $viewport-desktop) {
     display: flex;
@@ -36,7 +44,6 @@
     background-color: transparent;
   }
 }
-
 
 .results__story {
   font-family: $font-text;
@@ -115,6 +122,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-color: $color-background-main;
+    border-top: 1px solid $color-separator;
   }
   @media (min-width: $viewport-desktop) {
     display: flex;
