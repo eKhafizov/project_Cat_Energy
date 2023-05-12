@@ -54,7 +54,7 @@
 }
 
 .example__buttons {
-  margin-bottom: 32px;
+  margin-bottom: 45px;
   @media (min-width: $viewport-tablet) {
     margin-bottom: 52px;
   }
@@ -97,7 +97,7 @@
   padding: 0;
   margin: 0;
   margin-top: 0;
-  margin-bottom: 7px;
+  margin-bottom: 21px;
   @media (min-width: $viewport-tablet) {
     width: 366px;
     margin-left: 0;
@@ -152,7 +152,7 @@
 .example__info {
   font-size: 14px;
   line-height: 20px;
-  margin-top: 34px;
+  margin-top: 0;
   margin-bottom: 40px;
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
@@ -178,3 +178,29 @@
     padding: 0;
   }
 }
+
+.example__item {
+  width: 124px;
+  min-height: 56px;
+  margin: 0;
+  @media (min-width: $viewport-tablet) {
+    width: 160px;
+    height: 70px;
+  }
+  & dt {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 14.5px;
+    z-index: 10;
+    @media (min-width: $viewport-tablet) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    @media (min-width: $viewport-desktop) {
+      font-size: 30px;
+      line-height: 37px;
+      z-index: 10;
+    }
+  }
+}
+

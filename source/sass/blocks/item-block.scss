@@ -17,6 +17,8 @@
   font-size: 36px;
   line-height: 36px;
   order: 1;
+  margin-top: 27px;
+  margin-bottom: 0;
   @media (min-width: $viewport-tablet) {
     font-size: 60px;
     line-height: 60px;
@@ -102,6 +104,7 @@
   order: 4;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 3px;
   @media (min-width: $viewport-tablet) {
     order: 2;
     margin-bottom: 629px;
@@ -113,5 +116,13 @@
     margin-top: 52px;
     margin-bottom: 185px;
     opacity: 2;
+  }
+}
+
+
+.item-block__slogan {
+  @media (max-width: 767px) {
+    margin-top: 25px;
+    margin-bottom: 29px;
   }
 }

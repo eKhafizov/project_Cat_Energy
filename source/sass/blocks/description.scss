@@ -1,5 +1,5 @@
 .description__wrapper {
-  padding: 20px;
+  padding: 0 20px;
   min-width: 280px;
   width: auto;
   margin: 0 auto;
@@ -27,6 +27,8 @@
   font-size: 36px;
   line-height: 40px;
   z-index: 2;
+  margin-top: 0;
+  margin-bottom: 0;
   @media (min-width: $viewport-tablet) {
     font-size: 60px;
     line-height: 60px;
@@ -38,6 +40,8 @@
 
 .description__list {
   padding: 0;
+  margin-top: 40px;
+  margin-bottom: 29px;
   @media (min-width: $viewport-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,11 +55,19 @@
   }
 }
 
+.description__item {
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
 .description__info  {
   font-size: 14px;
   line-height: 18px;
   z-index: 2;
   width: 199px;
+  margin-top: 0;
+  margin-bottom: 0;
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
@@ -70,5 +82,6 @@
     margin-top: 31px;
   }
 }
+
 
 

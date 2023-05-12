@@ -89,7 +89,7 @@
   width: 237px;
   margin-top: 0;
   margin-left: 20px;
-  margin-bottom: 42px;
+  margin-bottom: 23px;
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
@@ -108,7 +108,7 @@
 }
 
 .goals__link {
-  width: 162px;
+  min-width: 134px;
   display: flex;
   justify-content: flex-start;
   margin: 0;
@@ -116,7 +116,11 @@
   padding: 0;
   font-size: 16px;
   line-height: 20px;
-  min-height: 40px;
+  min-height: 24px;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 18px;
+  margin-right: auto;
   @media (min-width: $viewport-tablet) {
     width: 162px;
     margin-left: 52px;
@@ -128,5 +132,15 @@
     margin-left: 52px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.goals__link-separator {
+  @media (max-width: 767px) {
+    width: 240px;
+    height: 1px;
+    margin-left: 20px;
+    margin-bottom: 19px;
+    background-color: $color-separator;
   }
 }
