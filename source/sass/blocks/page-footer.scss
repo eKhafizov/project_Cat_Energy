@@ -131,4 +131,7 @@
   justify-content: space-between;
   min-width: 280px;
   align-items: center;
+  @media (min-width: $viewport-tablet) {
+    min-width: 165px;
+  }
 }

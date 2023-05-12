@@ -286,13 +286,13 @@
     min-height: 52px;
     margin-bottom: 0;
     font-size: 20px;
-    min-height: 40px;
+    min-height: 52px;
   }
   @media (min-width: $viewport-desktop) {
     min-width: 568px;
     min-height: 52px;
     margin-bottom: 0;
-    min-height: 40px;
+    min-height: 52px;
   }
 }
 
@@ -302,9 +302,10 @@
   margin: 0;
   margin-bottom: 38px;
   @media (min-width: $viewport-tablet) {
-    min-width: 232px;
+    min-width: 185px;
     margin-bottom: 76px;
-    padding-left: 40px;
+    padding-left: 39px;
+    padding-right: 39px;
     margin-left: 30px;
   }
   @media (min-width: $viewport-desktop) {
@@ -344,21 +345,21 @@
     outline: 2px solid $color-text;
   }
   @media (min-width: $viewport-tablet) {
-    min-width: 590px;
+    min-width: 602px;
     width: auto;
     margin-left: 70px;
     margin-bottom: 65px;
-    height: 162px;
+    height: 152px;
     padding-top: 10px;
     font-size: 20px;
     line-height: 30px;
   }
   @media (min-width: $viewport-desktop) {
-    min-width: 1188px;
+    min-width: 1191px;
     width: auto;
     margin-left: 110px;
     margin-bottom: 67px;
-    height: 162px;
+    height: 152px;
     padding-top: 10px;
     font-size: 20px;
     line-height: 30px;
