@@ -27,10 +27,10 @@
     padding: 0 30px;
   }
   @media (min-width: $viewport-desktop) {
-    padding: 0;
     margin: 0;
     width: auto;
     padding: 0 110px;
+    padding-top: 82px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;

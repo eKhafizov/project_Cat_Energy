@@ -5,7 +5,7 @@
   background-image: url("/img/images__background/presentation__background--image.webp");
   background-image: -webkit-image-set(
     url("/img/images__background/presentation__background--image.webp"),
-    url('/img/images__background/presentation__background--image.jpg')
+    url("/img/images__background/presentation__background--image.jpg")
   );
   background-size: auto 302px;
   background-repeat: no-repeat;
@@ -29,8 +29,8 @@
       position: absolute;
       content: "";
       width: 720px;
-      height: 694px;
-      top: -200px;
+      height: 696px;
+      top: -117px;
       right: 0;
       background-color: $color-background-contrast;
       z-index: 1;
@@ -39,20 +39,18 @@
       position: absolute;
       content: "";
       width: 720px;
-      height: 694px;
-      top: -200px;
+      height: 696px;
+      top: -117px;
       right: 0;
       background-color: $color-background-contrast;
       background-image: url("/img/images__background/index-background-desktop.webp");
       background: fill solid $color-background-contrast;
-      background-size: 720px 694px;
+      background-size: 720px 696px;
       background-repeat: no-repeat;
       z-index: 0;
     }
   }
 }
-
-
 
 .presentation__heading {
   font-family: $font-heading;
@@ -69,8 +67,6 @@
   }
 }
 
-
-
 .presentation__slogan {
   font-family: $font-heading;
   color: $color-titles-light;
@@ -83,7 +79,3 @@
     font-family: $font-heading;
   }
 }
-
-
-
-

@@ -51,9 +51,8 @@
     margin-top: 72px;
   }
   @media (min-width: $viewport-desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(280px, auto);
+    display: flex;
+    justify-content: space-between;
     margin: 0;
   }
 }

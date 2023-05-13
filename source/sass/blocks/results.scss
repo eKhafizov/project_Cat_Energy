@@ -22,10 +22,16 @@
     background-image: linear-gradient(
       to bottom,
       $color-background-main 0px,
-      $color-background-main 205px,
-      $color-background-example 205px,
+      $color-background-main 180px,
+      $color-background-example 180px,
       $color-background-example 462px
     );
+  }
+}
+
+.results__heading {
+  @media (min-width: $viewport-desktop) {
+    text-transform: none;
   }
 }
 

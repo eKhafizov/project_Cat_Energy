@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 246px;
-    min-height: 280px;
+    min-height: 265px;
     &--nutrition {
       &::before {
         position: absolute;
@@ -24,7 +24,7 @@
         line-height: 280px;
         color: $color-background-item;
         top: -40px;
-        right: -20px;
+        right: 0px;
         z-index: 0;
       }
     }
@@ -73,15 +73,12 @@
   }
 }
 
-
-
 .advantages__info {
   font-family: $font-text;
   color: $color-text;
   font-style: normal;
   font-weight: 400;
 }
-
 
 .advantages__icon--nutrition {
   width: 60px;

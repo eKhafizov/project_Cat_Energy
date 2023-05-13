@@ -27,9 +27,9 @@
     margin: 0;
     content: "";
     width: 405px;
-    height: 86px;
-    top: 70px;
-    left: 100px;
+    height: 78px;
+    top: 95px;
+    left: 110px;
     padding: 60px 80px;
   }
 }
@@ -53,6 +53,7 @@
   @media (min-width: $viewport-desktop) {
     font-size: 20px;
     line-height: 26px;
+    text-transform: uppercase;
   }
 }
 
