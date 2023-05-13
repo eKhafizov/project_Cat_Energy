@@ -18,11 +18,13 @@
   @media (min-width: $viewport-desktop) {
     padding: 0 110px;
     margin: 0 auto;
+    margin-top: 0;
     padding-top: 54px;
     padding-bottom: 0;
     justify-content: space-between;
     flex-wrap: nowrap;
     width: $viewport-desktop - 220px;
+    min-height: 61px;
   }
 }
 
@@ -35,4 +37,7 @@
 }
 .page-header__logo-icon {
   height: 38px;
+  @media (min-width: $viewport-desktop) {
+    height: 60px;
+  }
 }

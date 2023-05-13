@@ -3,6 +3,9 @@
   @media (min-width: $viewport-tablet) {
     background-color: $color-background-example;
   }
+  @media (min-width: $viewport-desktop) {
+    background-color: $color-background-main;
+  }
 }
 
 .results__wrapper {
@@ -41,7 +44,8 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    background-color: transparent;
+    background-color: $color-background-example;
+    border: none;
   }
 }
 
@@ -96,6 +100,7 @@
     @media (min-width: $viewport-desktop) {
       font-size: 14px;
       line-height: 14px;
+      width: 97px;
       z-index: 13;
       background-color: $color-background-example;
     }
@@ -129,6 +134,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border-top: none;
+    background-color: transparent;
   }
 }
 

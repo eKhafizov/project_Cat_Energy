@@ -46,7 +46,7 @@
   @media (min-width: $viewport-desktop) {
     margin-left: 0;
     padding-left: 0;
-    margin-top: 69px;
+    margin-top: 43px;
     z-index: 10;
   }
 }
@@ -60,14 +60,24 @@
     margin-top: 30px;
     margin-bottom: 0;
     z-index: 11;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 .example__button {
   z-index: 11;
+  @media (min-width: $viewport-desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .example__button span {
   @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (min-width: $viewport-desktop) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -169,8 +179,8 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 110px;
-    margin-top: 60px;
-    margin-bottom: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
     width: auto;
     z-index: 10;
     grid-column: 1/2;
@@ -216,10 +226,23 @@
     flex-direction: column;
     align-items: flex-end;
   }
+  @media (min-width: $viewport-desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 327px;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 75px;
+  }
 }
 
 .example__costs {
   @media (min-width: $viewport-tablet) {
     margin-bottom: 9px;
+  }
+  @media (min-width: $viewport-desktop) {
+    margin: 0;
   }
 }

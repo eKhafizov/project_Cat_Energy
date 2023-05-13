@@ -11,5 +11,12 @@
     width: auto;
     display: flex;
     margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+.site-nav__item {
+  @media (min-width: $viewport-desktop) {
+    padding: 0;
   }
 }
