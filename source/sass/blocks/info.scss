@@ -161,6 +161,7 @@
   color: $color-text;
   font-family: $font-heading;
   font-weight: 400;
+  text-transform: uppercase;
   font-style: normal;
   background-image: url("/img/icon/input__icon-mail.svg");
   background-repeat: no-repeat;
@@ -246,7 +247,7 @@
   }
   @media (min-width: $viewport-desktop) {
     flex-direction: row;
-    padding-left: 110px;
+    padding-left: 112px;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 82px;
@@ -332,7 +333,7 @@
   padding-right: 12px;
   padding-bottom: 10px;
   border: 1px solid $color-border-input;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
   &:hover {
     border: 1px solid $color-form-border;
   }
@@ -348,7 +349,7 @@
     min-width: 602px;
     width: auto;
     margin-left: 70px;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
     height: 152px;
     padding-top: 10px;
     font-size: 20px;
@@ -358,7 +359,7 @@
     min-width: 1191px;
     width: auto;
     margin-left: 110px;
-    margin-bottom: 67px;
+    margin-bottom: 63px;
     height: 152px;
     padding-top: 10px;
     font-size: 20px;
