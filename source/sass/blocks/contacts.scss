@@ -46,8 +46,8 @@
     margin-left: 10px;
   }
   @media (min-width: $viewport-desktop) {
-    text-align: end;
-    justify-content: flex-end;
+    text-align: start;
+    justify-content: flex-start;
     margin-bottom: 18px;
     margin-left: 10px;
   }

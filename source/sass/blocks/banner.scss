@@ -14,6 +14,9 @@
     background-image: url("/img/catalog/mobile-images/backgrounds-gift-mobile@2x.png");
   }
   @media (min-width: $viewport-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     background-size: 707px 200px;
     background-image: url("/img/catalog/tablet-images/backgrounds-gift-tablet.jpg");
     @media (min-resolution: 2dppx) {
@@ -46,7 +49,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 465px;
+    min-width: 465px;
+    width: 707px;
     margin: 0 auto;
     min-height: 200px;
   }
@@ -54,6 +58,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 205px;
+    min-width: 205px;
   }
 }
 

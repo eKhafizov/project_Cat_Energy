@@ -4,10 +4,10 @@
     margin-bottom: 0;
   }
   @media (min-width: $viewport-tablet) {
-    margin-bottom: 91px;
+    margin-bottom: 87px;
   }
   @media (min-width: $viewport-desktop) {
-    margin-bottom: 100px;
+    margin-bottom: 94px;
   }
 }
 
@@ -62,7 +62,8 @@
   @media (min-width: $viewport-desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    column-gap: 79px;
+    row-gap: 60px;
   }
 }
 
@@ -146,11 +147,11 @@
     min-height: 41px;
     margin-left: 0;
     margin-top: 19;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
   @media (min-width: $viewport-tablet) {
     min-width: 90px;
-  max-width: 155px;
+    max-width: 155px;
     font-size: 20px;
     line-height: 24px;
     width: 154px;
@@ -158,16 +159,16 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 19px;
-    margin-top: 34px;
+    margin-bottom: 16px;
+    margin-top: 40px;
   }
   @media (min-width: $viewport-desktop) {
     font-size: 20px;
     line-height: 21px;
     width: 140px;
     min-height: 46px;
-    margin-bottom: 21px;
-    margin-top: 42px;
+    margin-bottom: 12px;
+    margin-top: 47px;
   }
 }
 
