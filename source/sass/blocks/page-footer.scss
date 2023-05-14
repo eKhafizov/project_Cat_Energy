@@ -38,6 +38,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 767px) {
+    height: 22px;
+    max-height: auto;
+  }
 }
 
 .page-footer__logo {
@@ -52,8 +56,8 @@
       height: 1px;
       background-color: $color-separator;
       position: absolute;
-      top: 50px;
-      left: -80px;
+      top: 54px;
+      left: -78px;
     }
   }
   @media (min-width: $viewport-tablet) {
@@ -83,7 +87,7 @@
       height: 1px;
       background-color: $color-separator;
       position: absolute;
-      top: 43px;
+      top: 40px;
       left: -75px;
     }
   }

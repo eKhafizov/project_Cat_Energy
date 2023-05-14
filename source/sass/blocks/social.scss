@@ -1,3 +1,14 @@
+.social__link {
+  @media (max-width: 767px) {
+    max-height: 22px;
+  }
+}
+.social__link svg {
+  @media (max-width: 767px) {
+    max-height: 22px;
+  }
+}
+
 .social__link:hover svg {
   stroke: $color-background-contrast;
 }
