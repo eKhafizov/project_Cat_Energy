@@ -23,12 +23,8 @@
     height: 23px;
   }
 }
-.social__link--fb svg {
-  stroke: #666;
-  @media (min-width: $viewport-tablet) {
-    width: 28px;
-    height: 33px;
-  }
+.social__link--fb:hover svg {
+  stroke: $color-background-contrast;
 }
 .social__link--vk svg {
   @media (min-width: $viewport-tablet) {

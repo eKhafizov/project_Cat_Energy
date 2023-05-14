@@ -23,8 +23,8 @@
     font-size: 60px;
     line-height: 60px;
     width: 415px;
-    margin-bottom: 41px;
-    margin-top: 64px;
+    margin-bottom: 39px;
+    margin-top: 60px;
     margin-left: 117px;
     margin-right: auto;
     text-align: start;
@@ -110,8 +110,12 @@
     margin-bottom: 526px;
     z-index: 11;
     min-height: 54px;
-    margin-left: 117px;
+    margin-left: 120px;
+    margin-top: 0;
     margin-right: auto;
+    min-width: 244px;
+    font-size: 20px;
+    line-height: 20px;
   }
   @media (min-width: $viewport-desktop) {
     z-index: 11;

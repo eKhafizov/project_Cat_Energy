@@ -49,6 +49,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(280px, auto);
     margin-top: 72px;
+    column-gap: 60px;
+    row-gap: 36px;
+    margin-bottom: 22px;
   }
   @media (min-width: $viewport-desktop) {
     display: flex;

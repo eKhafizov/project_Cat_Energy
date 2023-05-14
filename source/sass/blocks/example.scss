@@ -56,6 +56,8 @@
   margin-bottom: 45px;
   @media (min-width: $viewport-tablet) {
     margin-bottom: 59px;
+    margin-top: 22px;
+    margin-left: 5px;
   }
   @media (min-width: $viewport-desktop) {
     margin-top: 22px;
@@ -114,7 +116,7 @@
   margin-bottom: 21px;
   @media (min-width: $viewport-tablet) {
     min-width: 366px;
-    margin-left: 22px;
+    margin-left: 0;
     margin-right: auto;
     margin-bottom: 28px;
   }
@@ -147,7 +149,7 @@
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 63px;
+    margin-top: 64px;
     margin-bottom: 54px;
   }
   @media (min-width: $viewport-desktop) {
@@ -183,7 +185,6 @@
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 72px;
   }
   @media (min-width: $viewport-desktop) {
     font-size: 20px;
@@ -218,16 +219,24 @@
   & dt {
     font-size: 24px;
     line-height: 24px;
-    margin-top: 14.5px;
+    margin-top: 14px;
     z-index: 10;
     @media (min-width: $viewport-tablet) {
       font-size: 30px;
       line-height: 37px;
+      margin-top: 14px;
+      width: 127px;
     }
     @media (min-width: $viewport-desktop) {
       font-size: 30px;
       line-height: 37px;
       z-index: 10;
+    }
+  }
+  & dd {
+    @media (min-width: $viewport-tablet) {
+      font-size: 14px;
+      width: 127px;
     }
   }
 }

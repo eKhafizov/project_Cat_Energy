@@ -57,7 +57,7 @@
     }
   }
   @media (min-width: $viewport-tablet) {
-    margin-top: 63px;
+    margin-top: 59px;
     margin-bottom: 60px;
   }
   @media (min-width: $viewport-desktop) {
@@ -72,7 +72,7 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 130px;
+  width: 128px;
   min-height: 22px;
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
@@ -88,8 +88,9 @@
     }
   }
   @media (min-width: $viewport-tablet) {
-    margin-top: 59px;
+    margin-top: 60px;
     margin-bottom: 61px;
+    margin-left: 18px;
   }
   @media (min-width: $viewport-desktop) {
     margin-top: 59px;

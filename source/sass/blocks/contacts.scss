@@ -40,7 +40,13 @@
 
 .contacts__address--city:nth-of-type(1) {
   @media (min-width: $viewport-tablet) {
-    text-align: start;
+    text-align: end;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+    margin-left: 10px;
+  }
+  @media (min-width: $viewport-desktop) {
+    text-align: end;
     justify-content: flex-end;
     margin-bottom: 18px;
     margin-left: 10px;

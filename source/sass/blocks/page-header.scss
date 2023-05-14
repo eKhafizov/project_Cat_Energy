@@ -12,7 +12,7 @@
     margin: 0 auto;
     margin-top: 0;
     flex-wrap: nowrap;
-    padding-top: 27px;
+    padding-top: 20px;
     border-bottom: none;
   }
   @media (min-width: $viewport-desktop) {
@@ -37,7 +37,10 @@
 }
 .page-header__logo-icon {
   height: 38px;
+  @media (min-width: $viewport-tablet) {
+    min-height: 52px;
+  }
   @media (min-width: $viewport-desktop) {
-    height: 60px;
+    min-height: 60px;
   }
 }

@@ -16,9 +16,9 @@
     width: auto;
     padding: 0;
     min-height: 80px;
-    padding-left: 70px;
+    padding-left: 71px;
     padding-right: 70px;
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 60px;
   }
   @media (min-width: $viewport-desktop) {
@@ -49,6 +49,7 @@
     align-items: center;
     width: 175px;
     margin-right: auto;
+    text-transform: uppercase;
   }
   @media (min-width: $viewport-desktop) {
     font-size: 20px;
