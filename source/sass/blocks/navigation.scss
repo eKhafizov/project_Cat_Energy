@@ -5,6 +5,7 @@
 .navigation__button {
   cursor: pointer;
   position: relative;
+  margin-top: 7px;
 }
 
 //        КНОПКИ    //
@@ -12,7 +13,7 @@
 .navigation--closed .navigation__button {
   display: block;
   position: relative;
-  margin-left: 65px;
+  margin-left: auto;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -108,11 +109,13 @@
   }
   @media (min-width: $viewport-desktop) {
     position: relative;
-    width: 480px;
+    width: 515px;
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
     align-content: center;
+    z-index: 100;
+    padding: 0;
   }
 }
 .navigation--nojs .navigation__list {
@@ -138,14 +141,14 @@
     display: block;
     position: static;
     content: "";
-    height: 244px;
+    height: 198px;
     top: 50px;
     right: 0;
     flex-direction: column;
     list-style: none;
     background-color: $color-titles-light;
     margin: 0;
-    width: 300px;
+    min-width: 320px;
     padding: 0;
     text-align: center;
     z-index: 12;
@@ -185,9 +188,14 @@
 }
 
 .navigation__item {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 24px;
   z-index: 10;
+  font-size: 20px;
+  line-height: 20px;
+  @media (max-width: 767px) {
+    border-top: 1px solid $color-catalog-separator;
+  }
   @media (min-width: $viewport-tablet) {
     padding: 0;
   }

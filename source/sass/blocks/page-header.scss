@@ -6,12 +6,13 @@
   padding: 10px 20px;
   padding-bottom: 17px;
   margin: 0 auto;
-  width: 280px;
+  min-width: 280px;
   @media (min-width: $viewport-tablet) {
     display: flex;
     padding: 0 30px;
     justify-content: space-between;
     min-height: 62px;
+    width: auto;
     margin: 0 auto;
     margin-top: 0;
     flex-wrap: nowrap;
@@ -44,7 +45,8 @@
 }
 
 .page-header__logo-text {
-  margin-left: 56px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 7px;
   @media (min-width: $viewport-tablet) {
     display: none;
