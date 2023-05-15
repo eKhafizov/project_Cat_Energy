@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   padding: 10px 20px;
   padding-bottom: 17px;
+  margin: 0 auto;
+  width: 280px;
   @media (min-width: $viewport-tablet) {
     display: flex;
     padding: 0 30px;

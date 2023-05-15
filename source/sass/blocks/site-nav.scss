@@ -1,5 +1,5 @@
 .site-nav {
-  margin-top: 8px;
+  margin-top: 0;
   @media (min-width: $viewport-tablet) {
     min-width: 440px;
     width: auto;
@@ -19,5 +19,11 @@
 .site-nav__item {
   @media (min-width: $viewport-desktop) {
     padding: 0;
+  }
+}
+
+.site-nav__button {
+  @media (max-width: 767px) {
+    margin-top: 7px;
   }
 }

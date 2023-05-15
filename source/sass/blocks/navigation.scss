@@ -5,21 +5,6 @@
 .navigation__button {
   cursor: pointer;
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 24px;
-    height: 1px;
-    border: none;
-    background-color: black;
-    box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
-    cursor: pointer;
-    @media (min-width: $viewport-tablet) {
-      display: none;
-    }
-  }
 }
 
 //        КНОПКИ    //
@@ -60,13 +45,13 @@
   display: block;
   position: absolute;
   content: "";
-  top: -35px;
-  right: 10px;
+  top: -30px;
+  right: 20px;
   margin: 0;
   padding: 0;
   width: 24px;
   height: 24px;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   @media (min-width: $viewport-tablet) {
@@ -78,7 +63,7 @@
     width: 24px;
     height: 24px;
     border: none;
-    top: 8px;
+    top: 58px;
     left: 8px;
     transform: rotate(45deg);
     border-left: 1px solid $color-titles;
@@ -93,7 +78,7 @@
     width: 24px;
     height: 24px;
     border-top: 1px solid $color-titles;
-    top: 8px;
+    top: 58px;
     left: -8px;
     transform: rotate(45deg);
     cursor: pointer;
