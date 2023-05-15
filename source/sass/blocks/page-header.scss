@@ -27,6 +27,18 @@
   }
 }
 
+.page-header__wrapper--index {
+  @media (min-width: $viewport-desktop) {
+    background-image: linear-gradient(
+      to right,
+      #fff 0px,
+      #fff 720px,
+      $color-background-contrast 720px,
+      $color-background-contrast 1440px
+    );
+  }
+}
+
 .page-header__logo-text {
   margin-left: 56px;
   margin-top: 7px;

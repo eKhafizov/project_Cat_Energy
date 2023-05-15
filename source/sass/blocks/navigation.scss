@@ -102,21 +102,18 @@
   list-style: none;
   @media (min-width: $viewport-tablet) {
     position: relative;
-    min-width: 440px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 480px;
+    display: grid;
+    grid-template-columns: auto auto auto;
     align-items: center;
     align-content: center;
     margin: 0;
   }
   @media (min-width: $viewport-desktop) {
     position: relative;
-    min-width: 480px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
+    width: 480px;
+    display: grid;
+    grid-template-columns: auto auto auto;
     align-items: center;
     align-content: center;
   }

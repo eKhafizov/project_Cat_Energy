@@ -99,6 +99,8 @@
   @media (min-width: $viewport-desktop) {
     margin-top: 59px;
     margin-bottom: 63px;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 }
 

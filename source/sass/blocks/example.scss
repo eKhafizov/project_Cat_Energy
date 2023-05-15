@@ -221,7 +221,7 @@
   margin: 0;
   @media (min-width: $viewport-tablet) {
     width: 160px;
-    height: 70px;
+    min-height: 70px;
   }
   & dt {
     font-size: 24px;
