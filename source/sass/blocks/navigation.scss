@@ -3,10 +3,22 @@
 }
 
 .navigation__button {
-  display: none;
   cursor: pointer;
-  @media (min-width: $viewport-desktop) {
-    display: none;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 1px;
+    border: none;
+    background-color: black;
+    box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+    cursor: pointer;
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
   }
 }
 

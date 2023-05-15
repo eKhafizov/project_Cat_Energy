@@ -1,10 +1,12 @@
 .page-header__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   flex-wrap: wrap;
   padding: 10px 20px;
   padding-bottom: 17px;
   @media (min-width: $viewport-tablet) {
+    display: flex;
     padding: 0 30px;
     justify-content: space-between;
     min-height: 62px;
